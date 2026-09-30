@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { askAboutInsight } from "./ask";
 import { categoryLabel, plural, type Vault } from "./data";
 import { href, topicHref } from "./router";
 import type { Insight, LocatedInsight } from "./types";
@@ -51,6 +52,7 @@ export function Consensus({ count }: { count: number }) {
 
 export function InsightItem({ insight, vault, showTopic = false }: { insight: Insight | LocatedInsight; vault: Vault; showTopic?: boolean }) {
   const located = "topic" in insight ? insight : null;
+  const forAsk = located ?? vault.insightsById.get(insight.id);
   return (
     <li className="insight">
       <p className="insight-text">
@@ -64,6 +66,7 @@ export function InsightItem({ insight, vault, showTopic = false }: { insight: In
             {vault.reelsById.get(id)?.author ?? id}
           </a>
         ))}
+        {forAsk && <AskClaude compact href={askAboutInsight(vault, forAsk)} />}
       </div>
       {insight.nuances.length > 0 && (
         <ul className="nuances">
@@ -96,6 +99,16 @@ export function ToolRow({ id, vault }: { id: string; vault: Vault }) {
         <Chip>{categoryLabel(tool.category)}</Chip>
         {tool.mentions.length > 1 && <span className="muted">{plural(tool.mentions.length, "mention")}</span>}
       </div>
+    </a>
+  );
+}
+
+/** Opens Claude (app or claude.ai) with a prefilled prompt; uses the viewer's own plan. */
+export function AskClaude({ href, label = "Ask Claude", compact = false }: { href: string; label?: string; compact?: boolean }) {
+  return (
+    <a className={compact ? "ask-link" : "button button-secondary"} href={href} target="_blank" rel="noreferrer">
+      {label}
+      <span aria-hidden="true"> ↗</span>
     </a>
   );
 }

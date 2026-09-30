@@ -1,4 +1,5 @@
-import { Chip, Empty, InsightItem, PageHeader } from "../components";
+import { askAboutTopic } from "../ask";
+import { AskClaude, Chip, Empty, InsightItem, PageHeader } from "../components";
 import { plural, type Vault } from "../data";
 import { href } from "../router";
 
@@ -17,6 +18,7 @@ export function Topic({ vault, path }: { vault: Vault; path: string }) {
         subtitle={`${topic.area} · ${plural(topic.insightCount, "insight")} from ${plural(topic.reelCount, "reel")}`}
         back={{ to: href("topics"), label: "Topics" }}
       />
+      <AskClaude href={askAboutTopic(topic)} label="What am I missing on this topic?" />
       {topic.groups.map((g) => {
         const name = g.name ?? "Ungrouped";
         return (

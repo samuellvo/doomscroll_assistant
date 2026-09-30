@@ -1,4 +1,5 @@
-import { Empty, InsightItem, PageHeader, Section, ToolRow } from "../components";
+import { askAboutReel } from "../ask";
+import { AskClaude, Empty, InsightItem, PageHeader, Section, ToolRow } from "../components";
 import { formatDate, type Vault } from "../data";
 
 export function Reel({ vault, id }: { vault: Vault; id: string }) {
@@ -21,6 +22,7 @@ export function Reel({ vault, id }: { vault: Vault; id: string }) {
       <a className="button" href={reel.url} target="_blank" rel="noreferrer">
         Open in Instagram
       </a>
+      <AskClaude href={askAboutReel(vault, reel)} label="Ask Claude about this reel" />
       <Section title="Summary">
         <p className="prose">{reel.summary}</p>
       </Section>

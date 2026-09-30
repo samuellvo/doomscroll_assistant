@@ -47,6 +47,8 @@ flowchart LR
    hand-edited, so they can always be rebuilt.
 6. **Browse.** A read-only React + TypeScript web app on GitHub Pages loads `app.json`, works
    offline from the Home Screen, and redeploys after every vault change.
+   **Ask Claude** buttons on insights, reels, tools, and topics open Claude with a prefilled,
+   context-rich prompt (no API key or backend; it runs on the viewer's own Claude plan).
 7. **Learn from feedback.** I correct Claude in plain English ("that's not caching"). Claude
    edits the data, and records a rule in [`feedback.md`](vault/feedback.md) and
    [`taxonomy.md`](vault/taxonomy.md). Gemini reads both on every run, so the same mistake

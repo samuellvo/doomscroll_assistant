@@ -1,4 +1,5 @@
-import { Chip, Empty, PageHeader, Section } from "../components";
+import { askAboutTool } from "../ask";
+import { AskClaude, Chip, Empty, PageHeader, Section } from "../components";
 import { categoryLabel, formatDate, titleCase, type Vault } from "../data";
 import { href } from "../router";
 
@@ -19,6 +20,7 @@ export function Tool({ vault, id }: { vault: Vault; id: string }) {
           Open {tool.link.replace(/^https?:\/\//, "")}
         </a>
       )}
+      <AskClaude href={askAboutTool(vault, tool)} label={`Is ${tool.name} worth trying?`} />
       <Section title="What creators claimed">
         <ul className="list">
           {tool.mentions.map((m) => (

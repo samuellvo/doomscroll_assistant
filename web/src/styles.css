@@ -455,3 +455,18 @@ h2 {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+/* Ask Claude */
+.button-secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.button + .button {
+  margin-top: 8px;
+}
+.ask-link {
+  margin-left: auto;
+  font-weight: 500;
+  white-space: nowrap;
+}
