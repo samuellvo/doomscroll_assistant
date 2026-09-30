@@ -1,0 +1,335 @@
+{
+ "schema": 1,
+ "generated": "2026-09-30",
+ "stats": {
+  "reels": 2,
+  "insights": 8,
+  "tools": 4,
+  "ungrouped": 8
+ },
+ "topics": [
+  {
+   "path": "game-dev/roblox",
+   "title": "Roblox",
+   "area": "Game Dev",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "f51a04c21f",
+       "text": "Roblox 3D asset uploads can be automated by granting an AI agent access to a Roblox Open Cloud API key with read and write permissions for assets.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "software-engineering/practices",
+   "title": "Practices",
+   "area": "Software Engineering",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "ca1135720a",
+       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "system-design/async-processing",
+   "title": "Async Processing",
+   "area": "System Design",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "650b19e155",
+       "text": "Long-running asynchronous background tasks can be managed using message queues to buffer work, worker pools to process jobs in parallel, and workflow engines for multi-step execution.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "system-design/databases",
+   "title": "Databases",
+   "area": "System Design",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "37ed3fd43a",
+       "text": "The Command Query Responsibility Segregation (CQRS) pattern allows separating read and write data models to optimize them independently.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "system-design/real-time",
+   "title": "Real Time",
+   "area": "System Design",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "16bc2a2817",
+       "text": "Real-time client-server communication is typically achieved via WebSockets, Server-Sent Events (SSE), or long polling.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "system-design/reliability",
+   "title": "Reliability",
+   "area": "System Design",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "320535cbed",
+       "text": "System reliability and fault tolerance rely on retries with backoff, idempotency, circuit breakers, and automated self-healing.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "system-design/scalability",
+   "title": "Scalability",
+   "area": "System Design",
+   "insightCount": 2,
+   "reelCount": 1,
+   "ungroupedCount": 2,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "83623bc9cc",
+       "text": "Read-heavy workloads can be scaled using in-memory caching, read replicas, or proper database indexing.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "8187e7c84b",
+       "text": "Write-heavy workloads can be scaled through batching multiple writes, sharding data across nodes, or persisting writes asynchronously.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddec1pfRwwc"
+       ],
+       "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "id": "blender",
+   "name": "Blender",
+   "whatItIs": "An open-source 3D computer graphics software toolset.",
+   "category": "dev-tools/game-dev",
+   "link": "https://www.blender.org",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Dd4_kY-StGS",
+     "claim": "Used in conjunction with Claude to automate the generation of 3D models."
+    }
+   ]
+  },
+  {
+   "id": "claude",
+   "name": "Claude",
+   "whatItIs": "An AI assistant and LLM family developed by Anthropic.",
+   "category": "dev-tools/ai",
+   "link": "https://claude.ai",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Dd4_kY-StGS",
+     "claim": "Used to generate 3D models with Blender and automatically import them into Roblox."
+    }
+   ]
+  },
+  {
+   "id": "devmaxx",
+   "name": "Devmaxx",
+   "whatItIs": "A mobile learning application designed for daily system design practice and interview preparation.",
+   "category": "products/other",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-28",
+   "mentions": [
+    {
+     "reel": "Ddec1pfRwwc",
+     "claim": "Pitched by the creator as a tool to learn and practice system design concepts every day."
+    }
+   ]
+  },
+  {
+   "id": "roblox-open-cloud-api",
+   "name": "Roblox Open Cloud API",
+   "whatItIs": "A set of REST APIs allowing external services to interact with Roblox resources and assets.",
+   "category": "dev-tools/game-dev",
+   "link": "https://create.roblox.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Dd4_kY-StGS",
+     "claim": "Enables Claude to programmatically upload and configure assets within a Roblox game."
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "Dd4_kY-StGS",
+   "url": "https://www.instagram.com/reel/Dd4_kY-StGS/",
+   "author": "cuhfilme",
+   "title": "Automating 3D Asset Import in Roblox with Claude and Open Cloud APIs",
+   "summary": "The creator demonstrates how to automate importing 3D assets into Roblox using Claude and Blender. By configuring a Roblox Open Cloud API key with asset read and write permissions and providing it via an environment variable, Claude can automatically upload and place assets directly into the game.",
+   "transcript": "Claude Opus 5.5 is genuinely insane at using Blender to make 3D models for your Roblox game. But chances are you're probably using it wrong, or you're just not using it as efficiently. But yeah, if you're looking around this map, everything in here—the terrain isn't loading, that's why it looks weird—but everything in here was made by Claude. It just used Blender, Opus 5.5. But basically, I didn't have to import any of this, like I literally didn't have to do anything, Claude just did it all for me. And so how you do this is, you know, instead of having to import something and then go through all the files, import every single one, and it takes so long time, literally what you can do, you just head over to Roblox. So here, I'm using an alt account, just like make it easier. But yeah, go over to Create. And so once you're on your Creator Dashboard, click All Tools here, and then go down to, here, this API Keys. And once you're here, you want to do Create API Key. If you're under a group, it's going to pop up Create Group Key. Do not do that one, just do the regular API Key. So once you're here, it'll ask for a name. You can just name it whatever, description if you want. But for access permissions, what you want to put, you want to do, this is right here, asset permissions and assets. And then you want to do read and write for assets and for asset permissions, write. And then if you want, you can also add Creator Store products, developer products, game passes, which basically just lets Claude make those as well for you. And then you can add some more security features if you want. But then when you make it, understand, and then just create the key. And basically it's just going to give you like a really long key. You want to make sure you copy that and store somewhere safe. You don't want to just paste it into your Claude, because that's like a security risk. You want to, you can look it up if you want, you want to do make an environment variable and store it there, so that way it's more secure. It takes like 2 seconds, you can literally like ask ChatGPT how to do it if you aren't sure. But yeah, once you do that, you can go over here and you can tell Claude where the key's at, how to access it, and then basically just tell it to import models from now on on its self, and you won't have to do anything. So yeah, hope this video helped you guys.",
+   "note": "Roblox game dev",
+   "saved": "2026-09-30",
+   "insights": [
+    "f51a04c21f",
+    "ca1135720a"
+   ],
+   "tools": [
+    "blender",
+    "claude",
+    "roblox-open-cloud-api"
+   ]
+  },
+  {
+   "id": "Ddec1pfRwwc",
+   "url": "https://www.instagram.com/reel/Ddec1pfRwwc/",
+   "author": "Arjay McCandless",
+   "title": "System Design Architecture Patterns Cheat Sheet",
+   "summary": "Most modern system architectures rely on standard design patterns categorized by specific scaling and reliability needs. Common architectural solutions are outlined for scaling reads, scaling writes, real-time data, long-running processes, fault tolerance, and separating read/write pipelines.",
+   "transcript": "Something I wish I knew when I started learning system design is that most systems follow the same exact patterns. If you wanna scale reads, you can reach for caching, read replicas, or database indexing. If you wanna scale writes, you can reach for batching, sharding, or asynchronous writes. If you need real-time data, think WebSockets, server-sent events, or long polling. For long-running processes, you have message queues, worker pools, and workflow engines. For failures and reliability, you want retries with backoff, idempotency, circuit breakers, and self-healing. And if you need to separate reads and writes, you can apply a CQRS pattern. If you want to learn this stuff and practice every single day, you can do it on my app Devmaxx. Hiring for both interns and full-time roles is picking up right now, so it's the perfect time to get sharp on these skills. Comment dev for the link.",
+   "note": "testing",
+   "saved": "2026-09-28",
+   "insights": [
+    "83623bc9cc",
+    "8187e7c84b",
+    "16bc2a2817",
+    "650b19e155",
+    "320535cbed",
+    "37ed3fd43a"
+   ],
+   "tools": [
+    "devmaxx"
+   ]
+  }
+ ]
+}

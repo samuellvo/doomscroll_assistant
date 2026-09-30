@@ -1,7 +1,9 @@
 import numpy as np
 import pytest
 
-from doomscroll import config, render
+import json
+
+from doomscroll import config, export, render
 from doomscroll.pipeline import shortcode
 from doomscroll.regroup import cluster, regroup
 from doomscroll.store import Insight, ReelRecord, Tool, Vault
@@ -74,3 +76,21 @@ def test_render_all(tmp_vault):
 ])
 def test_shortcode(url, code):
     assert shortcode(url) == code
+
+
+def test_export_app_json(tmp_vault):
+    v = make_vault()
+    v.insights["a"].group = v.insights["b"].group = v.insights["d"].group = "Invalidation"
+    render.render_all(v)
+    data = json.loads((tmp_vault / "app.json").read_text())
+
+    assert data["schema"] == export.SCHEMA
+    assert data["stats"] == {"reels": 3, "insights": 4, "tools": 1, "ungrouped": 1}
+    (topic,) = data["topics"]
+    assert (topic["title"], topic["area"], topic["ungroupedCount"]) == ("Caching", "System Design", 1)
+    assert [g["name"] for g in topic["groups"]] == ["Invalidation", None]  # Ungrouped last
+    first = topic["groups"][0]["insights"][0]
+    assert first["text"] == "Invalidate on write" and first["count"] == 2
+    assert first["nuances"] == [{"text": "Breaks with many writers", "count": 1}]
+    r1 = next(r for r in data["reels"] if r["id"] == "r1")
+    assert set(r1["insights"]) == {"a", "c"} and r1["tools"] == ["bun"]

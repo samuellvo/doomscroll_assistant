@@ -17,7 +17,8 @@ Start at `vault/index.md`. Then:
 ## Source of truth: edit data, not markdown
 
 Everything under `vault/topics`, `vault/tools`, `vault/reels`, and `queue.md`/`inbox.md`/
-`index.md` is **generated** and gets overwritten. To change anything, edit:
+`index.md`/`app.json` is **generated** and gets overwritten. (`app.json` feeds the web app in
+`web/`, which redeploys to GitHub Pages after each push.) To change anything, edit:
 - `vault/data/insights.jsonl` — one insight per line (`topic`, `group`, `parent`, `sources`, `contradicts`)
 - `vault/data/tools.jsonl` — tools (`status`: new | investigating | tried | adopted | dropped; `notes`)
 - `vault/data/reels.jsonl` — reels

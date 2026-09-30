@@ -227,3 +227,7 @@ def render_all(vault: Vault) -> None:
     (config.VAULT / "queue.md").write_text(render_queue(vault))
     (config.VAULT / "inbox.md").write_text(render_inbox(vault))
     (config.VAULT / "index.md").write_text(render_index(vault))
+
+    from . import export  # imported here: export reuses helpers from this module
+
+    export.write(vault)
