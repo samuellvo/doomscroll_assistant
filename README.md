@@ -1,7 +1,7 @@
 # doomscroll_assistant
 
 Turn the Instagram reels I save while scrolling into a **deduplicated, self-organizing
-knowledge base** that an AI assistant (Claude) can read, curate, and learn my preferences from.
+knowledge base** that an AI assistant (currently, Claude) can read, curate, and learn my preferences from.
 
 Share a reel on iPhone → ~2 minutes later it's filed into [`vault/`](vault/index.md), merged with
 everything similar I've saved before, and browsable in the
