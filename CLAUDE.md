@@ -9,6 +9,7 @@ Your job is to **read, curate, and apply my feedback**.
 Start at `vault/index.md`. Then:
 - `vault/topics/**.md` — insights grouped by similarity. `(×N)` means N reels said it; higher N
   = more consensus. Nuances are nested under the idea they refine; ⚠️ marks conflicts.
+  **Ungrouped** (last section) holds new arrivals; "See also" links related groups.
 - `vault/queue.md` + `vault/tools/*.md` — tools to investigate, by status.
 - `vault/reels/*.md` — per-reel summary and transcript; cite these when answering.
 - `vault/inbox.md` — low-confidence reels, unapproved topic paths, and conflicts to resolve.
@@ -20,6 +21,7 @@ Everything under `vault/topics`, `vault/tools`, `vault/reels`, and `queue.md`/`i
 - `vault/data/insights.jsonl` — one insight per line (`topic`, `group`, `parent`, `sources`, `contradicts`)
 - `vault/data/tools.jsonl` — tools (`status`: new | investigating | tried | adopted | dropped; `notes`)
 - `vault/data/reels.jsonl` — reels
+- `vault/data/groups.jsonl` — one line per group (`topic`, `name`, `pinned`)
 - `vault/taxonomy.md` — allowed topic/category paths (Gemini reads this every run)
 - `vault/feedback.md` — rules Gemini follows every run
 
@@ -39,6 +41,19 @@ When I correct something ("that's not caching", "these are the same", "split thi
 Merging duplicates: union `sources` into the surviving insight, repoint any `parent`/
 `contradicts` references, delete the other line.
 
+## Groups, Ungrouped, and pinning
+
+- New insights arrive with `group: null` (Ungrouped). The weekly regroup Action
+  (`python -m doomscroll regroup`) sorts them: it keeps existing group names stable, folds
+  similar ones into existing groups, names genuinely new clusters, and leaves loners Ungrouped.
+- **Any group you create, rename, or edit by hand must be pinned** (`"pinned": true` in
+  `groups.jsonl`), or the weekly regroup may reshape it. Pinned groups are never re-clustered,
+  renamed, split, or merged, though new similar insights can still join them.
+- Renaming a group: update `group` on its insights and the `name` in `groups.jsonl`, and pin it.
+- "Group the ungrouped insights in X": reuse existing group names where they fit, create new
+  groups only for clear themes of 2+ insights, pin every group you touch, and leave true loners
+  Ungrouped.
+
 ## Weekly curation (when asked to "review the vault")
 
 - Work through `inbox.md`: approve or remap new paths, resolve conflicts (or leave both
@@ -51,4 +66,4 @@ Merging duplicates: union `sources` into the surviving insight, repoint any `par
 ## Code
 
 `src/doomscroll/`: `fetch` (yt-dlp) → `gemini` (analysis, embeddings, judge) → `dedup` →
-`store` → `render`; `regroup` re-clusters weekly. Tests: `pytest`.
+`store` → `render`; `regroup` re-clusters weekly (see its module docstring). Tests: `pytest`.

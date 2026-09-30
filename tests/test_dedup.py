@@ -90,12 +90,12 @@ def test_ambiguous_band_asks_judge(vault, relation, action):
         assert other.contradicts == ["a"] and v.insights["a"].contradicts == [other.id]
 
 
-def test_new_insight_joins_nearest_group_in_same_topic(vault):
+def test_new_insights_arrive_ungrouped(vault):
     v, base = vault
     place_insights(v, [Candidate("y", "pattern", "system-design/caching")],
-                   np.stack([vec_with_similarity(base, 0.72)]), "r2", never_called)
+                   np.stack([vec_with_similarity(base, 0.80)]), "r2", never_called)
     new = next(i for i in v.insights.values() if i.id != "a")
-    assert new.group == "Invalidation"
+    assert new.group is None
 
 
 def test_empty_vault():

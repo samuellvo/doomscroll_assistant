@@ -39,16 +39,6 @@ def _best_match(vault: Vault, vec: np.ndarray, exclude: set[str]) -> tuple[str |
     return ids[j], float(sims[j])
 
 
-def _nearest_group(vault: Vault, topic: str, vec: np.ndarray) -> str | None:
-    peers = [i for i, ins in vault.insights.items()
-             if ins.topic == topic and ins.parent is None and ins.group and i in vault.vectors]
-    if not peers:
-        return None
-    sims = vault.matrix(peers) @ vec
-    j = int(np.argmax(sims))
-    return vault.insights[peers[j]].group if sims[j] >= config.GROUP_THRESHOLD else None
-
-
 def _add(vault: Vault, c: Candidate, vec: np.ndarray, reel_id: str, exclude: set[str], **kw) -> Insight:
     ins = Insight(id=new_id(), text=c.text, kind=c.kind, topic=c.topic, sources=[reel_id], **kw)
     vault.insights[ins.id] = ins
@@ -74,7 +64,7 @@ def place_insights(vault: Vault, candidates: list[Candidate], vectors: np.ndarra
         elif match and sim >= config.AMBIGUOUS_THRESHOLD:
             ambiguous.append((c, vec, match, sim))
         else:
-            _add(vault, c, vec, reel_id, same_reel, group=_nearest_group(vault, c.topic, vec))
+            _add(vault, c, vec, reel_id, same_reel)  # Ungrouped until the weekly regroup or Claude
             outcomes.append(Outcome(c.text, "new", None, sim))
 
     relations = judge([(c.text, vault.insights[m].text) for c, _, m, _ in ambiguous])
@@ -91,12 +81,11 @@ def place_insights(vault: Vault, candidates: list[Candidate], vectors: np.ndarra
             _add(vault, c, vec, reel_id, same_reel, parent=parent.id, group=parent.group)
             outcomes.append(Outcome(c.text, "nuance", parent.id, sim))
         elif rel == Relation.contradicts:
-            ins = _add(vault, c, vec, reel_id, same_reel, contradicts=[match],
-                       group=_nearest_group(vault, c.topic, vec))
+            ins = _add(vault, c, vec, reel_id, same_reel, contradicts=[match])
             existing.contradicts.append(ins.id)
             outcomes.append(Outcome(c.text, "contradicts", match, sim))
         else:
-            _add(vault, c, vec, reel_id, same_reel, group=_nearest_group(vault, c.topic, vec))
+            _add(vault, c, vec, reel_id, same_reel)
             outcomes.append(Outcome(c.text, "new", None, sim))
 
     return outcomes

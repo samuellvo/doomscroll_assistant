@@ -16,13 +16,20 @@ from . import config
 
 
 @dataclass
+class Group:
+    topic: str
+    name: str
+    pinned: bool = False  # set by you or Claude; the weekly regroup never changes pinned groups
+
+
+@dataclass
 class Insight:
     id: str
     text: str
     kind: str
     topic: str
     sources: list[str]  # reel ids; len() is how many times this idea was seen
-    group: str | None = None
+    group: str | None = None  # None = Ungrouped
     parent: str | None = None  # set when this insight is a nuance of another
     contradicts: list[str] = field(default_factory=list)
     created: str = field(default_factory=lambda: date.today().isoformat())
@@ -77,11 +84,12 @@ def _write_jsonl(path: Path, items) -> None:
 
 class Vault:
     def __init__(self, reels: list[ReelRecord], insights: list[Insight], tools: list[Tool],
-                 vectors: dict[str, np.ndarray]):
+                 vectors: dict[str, np.ndarray], groups: list[Group] | None = None):
         self.reels = {r.id: r for r in reels}
         self.insights = {i.id: i for i in insights}
         self.tools = {t.id: t for t in tools}
         self.vectors = vectors  # insight id -> unit vector
+        self.groups = {(g.topic, g.name): g for g in groups or []}
 
     @classmethod
     def load(cls) -> "Vault":
@@ -94,15 +102,24 @@ class Vault:
             _read_jsonl(config.INSIGHTS_FILE, Insight),
             _read_jsonl(config.TOOLS_FILE, Tool),
             vectors,
+            _read_jsonl(config.GROUPS_FILE, Group),
         )
 
     def save(self) -> None:
         _write_jsonl(config.REELS_FILE, self.reels.values())
         _write_jsonl(config.INSIGHTS_FILE, self.insights.values())
         _write_jsonl(config.TOOLS_FILE, sorted(self.tools.values(), key=lambda t: t.id))
+        _write_jsonl(config.GROUPS_FILE, sorted(self.groups.values(), key=lambda g: (g.topic, g.name)))
         ids = [i for i in self.insights if i in self.vectors]
         matrix = np.stack([self.vectors[i] for i in ids]) if ids else np.zeros((0, config.EMBEDDING_DIM))
         np.savez_compressed(config.EMBEDDINGS_FILE, ids=np.array(ids), vectors=matrix.astype(np.float32))
+
+    def pinned(self, topic: str) -> set[str]:
+        return {g.name for g in self.groups.values() if g.topic == topic and g.pinned}
+
+    def centroid(self, ids: list[str]) -> np.ndarray:
+        c = self.matrix(ids).mean(axis=0)
+        return c / np.linalg.norm(c)
 
     def matrix(self, ids: list[str]) -> np.ndarray:
         if not ids:

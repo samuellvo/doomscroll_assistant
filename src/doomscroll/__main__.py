@@ -40,8 +40,8 @@ def main(argv: list[str] | None = None) -> int:
 
     elif args.cmd == "regroup":
         vault = Vault.load()
-        for topic, n in regroup(vault, gemini.name_groups).items():
-            print(f"{topic}: {n} groups")
+        for topic, s in regroup(vault, gemini.name_groups).items():
+            print(f"{topic}: kept {s.kept}, folded {s.folded}, new {s.new}, ungrouped {s.ungrouped}")
         vault.save()
         render_all(vault)
 

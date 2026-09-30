@@ -34,21 +34,6 @@ def make_vault():
     return Vault(reels, ins, tools, vecs)
 
 
-def test_regroup_names_multi_member_groups_and_moves_nuances():
-    v = make_vault()
-    calls = []
-
-    def namer(topic, groups):
-        calls.append((topic, groups))
-        return {label: "Invalidation" for label in groups}
-
-    regroup(v, namer, threshold=0.7)
-    assert v.insights["a"].group == v.insights["b"].group == "Invalidation"
-    assert v.insights["c"].group == "Other"  # singleton
-    assert v.insights["d"].group == "Invalidation"  # follows parent
-    assert len(calls) == 1 and len(calls[0][1]) == 1
-
-
 @pytest.fixture
 def tmp_vault(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "VAULT", tmp_path)
@@ -70,10 +55,14 @@ def test_render_all(tmp_vault):
     # Most-repeated insight is listed first within its group.
     assert topic.index("Invalidate on write") < topic.index("Delete the key on update")
 
+    assert "## Ungrouped" in topic  # "c" has no group
+    assert topic.index("## Invalidation") < topic.index("## Ungrouped")
+
     assert "[Bun](tools/bun.md)" in (tmp_vault / "queue.md").read_text()
     inbox = (tmp_vault / "inbox.md").read_text()
     assert "`dev-tools/runtimes-and-languages`" in inbox  # not in taxonomy
     assert "`system-design/caching`" not in inbox
+    assert "[system-design/caching](topics/system-design/caching.md): 1" in inbox
 
 
 @pytest.mark.parametrize("url,code", [

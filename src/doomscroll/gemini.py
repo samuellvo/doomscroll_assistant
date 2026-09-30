@@ -170,13 +170,19 @@ def judge_pairs(pairs: list[tuple[str, str]]) -> list[Relation]:
     return [by_index.get(i, Relation.different) for i in range(len(pairs))]
 
 
-def name_groups(topic: str, groups: dict[int, list[str]]) -> dict[int, str]:
-    listing = "\n\n".join(
-        f"Group {g}:\n" + "\n".join(f"- {t}" for t in texts[:8]) for g, texts in groups.items()
-    )
+def name_groups(topic: str, groups: dict[int, list[str]], avoid: dict[int, list[str]]) -> dict[int, str]:
+    def block(g: int, texts: list[str]) -> str:
+        lines = [f"Group {g}:"] + [f"- {t}" for t in texts[:8]]
+        if avoid.get(g):
+            lines.append("Must be clearly distinct from existing groups: " + ", ".join(avoid[g]))
+        return "\n".join(lines)
+
+    listing = "\n\n".join(block(g, texts) for g, texts in groups.items())
     prompt = (
         f"These are clusters of insights under the topic '{topic}'. Give each group a short "
-        f"(2-5 word) section heading that describes what its insights have in common.\n\n{listing}"
+        f"(2-5 word) section heading that describes what its insights have in common. "
+        f"Where existing group names are listed, choose a heading that reads as a different "
+        f"subject from them, not a synonym.\n\n{listing}"
     )
     return {g.group: g.name for g in generate(config.LIGHT_MODELS, prompt, list[GroupName])}
 
