@@ -2,19 +2,19 @@
  "schema": 1,
  "generated": "2026-09-30",
  "stats": {
-  "reels": 3,
-  "insights": 11,
-  "tools": 7,
-  "ungrouped": 11
+  "reels": 4,
+  "insights": 14,
+  "tools": 12,
+  "ungrouped": 13
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 2,
-   "reelCount": 1,
-   "ungroupedCount": 2,
+   "insightCount": 3,
+   "reelCount": 2,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": null,
@@ -40,6 +40,18 @@
        "count": 1,
        "sources": [
         "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "07123f63c1",
+       "text": "Converting a codebase into a knowledge graph reduces AI agent token consumption by eliminating repetitive full-file reads during context retrieval.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdXLdluKNwi"
        ],
        "created": "2026-09-30",
        "nuances": [],
@@ -82,9 +94,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 2,
-   "reelCount": 2,
-   "ungroupedCount": 2,
+   "insightCount": 3,
+   "reelCount": 3,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": null,
@@ -110,6 +122,18 @@
        "count": 1,
        "sources": [
         "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b34a21ed9f",
+       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdXLdluKNwi"
        ],
        "created": "2026-09-30",
        "nuances": [],
@@ -210,8 +234,8 @@
    "path": "system-design/reliability",
    "title": "Reliability",
    "area": "System Design",
-   "insightCount": 1,
-   "reelCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
    "ungroupedCount": 1,
    "groups": [
     {
@@ -228,7 +252,12 @@
         "Ddec1pfRwwc"
        ],
        "created": "2026-09-28",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Automated multi-provider model routing provides fallback mechanisms to bypass token rate limits and maintain coding session continuity.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       }
      ]
@@ -279,6 +308,22 @@
  ],
  "tools": [
   {
+   "id": "agent-skills",
+   "name": "Agent Skills",
+   "whatItIs": "A collection of 24 modular software engineering workflow prompts and processes for AI agents.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "Created by former Google AI engineering director Addy Osmani to enforce structured planning, testing, and coding standards."
+    }
+   ]
+  },
+  {
    "id": "blender",
    "name": "Blender",
    "whatItIs": "An open-source 3D computer graphics software toolset.",
@@ -307,6 +352,22 @@
     {
      "reel": "Dd4_kY-StGS",
      "claim": "Used to generate 3D models with Blender and automatically import them into Roblox."
+    }
+   ]
+  },
+  {
+   "id": "claude-code",
+   "name": "Claude Code",
+   "whatItIs": "An agentic command-line interface tool for automated coding and project editing.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "The primary platform discussed for vibe coding and hosting plugins."
     }
    ]
   },
@@ -343,6 +404,22 @@
    ]
   },
   {
+   "id": "graphify",
+   "name": "Graphify",
+   "whatItIs": "A code analysis tool that builds a queryable knowledge graph out of an existing codebase.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "Prevents AI agents from burning tokens repeatedly rereading repository files."
+    }
+   ]
+  },
+  {
    "id": "notion",
    "name": "Notion",
    "whatItIs": "A connected workspace for note-taking, project management, and task tracking.",
@@ -371,6 +448,38 @@
     {
      "reel": "Db7Vx2Hhf9c",
      "claim": "Recommended as the visual interface for viewing and managing the agent folder hierarchy."
+    }
+   ]
+  },
+  {
+   "id": "omni-route",
+   "name": "Omni Route",
+   "whatItIs": "An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "Enables near-unlimited coding sessions by auto-switching models when rate limits are exceeded."
+    }
+   ]
+  },
+  {
+   "id": "ponytail",
+   "name": "Ponytail",
+   "whatItIs": "An optimization plugin designed to compress output and reduce token usage for coding agents.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "Claimed to cut Claude Code token usage by over 50% without sacrificing accuracy."
     }
    ]
   },
@@ -429,6 +538,28 @@
     "github",
     "notion",
     "obsidian"
+   ]
+  },
+  {
+   "id": "DdXLdluKNwi",
+   "url": "https://www.instagram.com/reel/DdXLdluKNwi/",
+   "author": "PeterCodeLab",
+   "title": "Top 4 Plugins for Claude Code",
+   "summary": "Enhance Claude Code workflows using four essential plugins: Ponytail for token optimization, Omni Route for multi-provider fallback routing, Graphify for codebase knowledge graphs, and Agent Skills for structured engineering workflows. These extensions minimize token consumption and improve agent reliability.",
+   "transcript": "Don't start vibe coding with Claude Code unless you've installed these four plugins. The first is Ponytail, which optimizes Claude Code's output and cuts your token usage by over 50% without losing you any accuracy at all. The second is Omni Route, which gives Claude Code almost unlimited usage by connecting it to over 300 other free AI providers, so the moment that your usage limit runs out, it'll automatically switch you to the next best model and give you up to 1.6 billion free tokens every single month. The third is Graphify, which turns your entire codebase into a knowledge graph, so your agent doesn't have to waste tokens by rereading files again and again. And finally, there's Agent Skills, which is a pack of 24 skills that let you vibe code like a real senior engineer, built by the former AI engineering director at Google. It has dedicated skills for planning, coding, testing, and publishing, and it activates the right one at the specific stages of coding it needs, all on its own.",
+   "note": "AI orchestration info",
+   "saved": "2026-09-30",
+   "insights": [
+    "b34a21ed9f",
+    "07123f63c1",
+    "27f5c41a66"
+   ],
+   "tools": [
+    "agent-skills",
+    "claude-code",
+    "graphify",
+    "omni-route",
+    "ponytail"
    ]
   },
   {

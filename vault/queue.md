@@ -2,14 +2,19 @@
 
 # Tool queue
 
-## New (7)
+## New (12)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
+| [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
+| [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 1 | A developer platform for version control and code hosting. |
+| [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [Notion](tools/notion.md) | `dev-tools/productivity` | 1 | A connected workspace for note-taking, project management, and task tracking. |
 | [Obsidian](tools/obsidian.md) | `dev-tools/productivity` | 1 | A markdown-based knowledge base and note-taking application. |
+| [Omni Route](tools/omni-route.md) | `dev-tools/ai` | 1 | An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers. |
+| [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 1 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
