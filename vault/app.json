@@ -2,12 +2,53 @@
  "schema": 1,
  "generated": "2026-09-30",
  "stats": {
-  "reels": 2,
-  "insights": 8,
-  "tools": 4,
-  "ungrouped": 8
+  "reels": 3,
+  "insights": 11,
+  "tools": 7,
+  "ungrouped": 11
  },
  "topics": [
+  {
+   "path": "ai-ml/engineering",
+   "title": "Engineering",
+   "area": "AI ML",
+   "insightCount": 2,
+   "reelCount": 1,
+   "ungroupedCount": 2,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "91d3c2ceb1",
+       "text": "Structuring an AI agent workspace with specialized memory, index, and rule files maintains context persistence across sessions and prevents project context bleeding.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "bf63ab512a",
+       "text": "Offloading repetitive task logic to local executable scripts reduces unnecessary token consumption during AI agent execution.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
   {
    "path": "game-dev/roblox",
    "title": "Roblox",
@@ -41,9 +82,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 1,
-   "reelCount": 1,
-   "ungroupedCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": null,
@@ -57,6 +98,18 @@
        "count": 1,
        "sources": [
         "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5cb4776f2d",
+       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
        ],
        "created": "2026-09-30",
        "nuances": [],
@@ -274,6 +327,54 @@
    ]
   },
   {
+   "id": "github",
+   "name": "GitHub",
+   "whatItIs": "A developer platform for version control and code hosting.",
+   "category": "dev-tools/infra",
+   "link": "https://github.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Db7Vx2Hhf9c",
+     "claim": "Recommended for providing version control over the agent's file system."
+    }
+   ]
+  },
+  {
+   "id": "notion",
+   "name": "Notion",
+   "whatItIs": "A connected workspace for note-taking, project management, and task tracking.",
+   "category": "dev-tools/productivity",
+   "link": "https://www.notion.so",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Db7Vx2Hhf9c",
+     "claim": "Used to track open tasks for each project across agent sessions."
+    }
+   ]
+  },
+  {
+   "id": "obsidian",
+   "name": "Obsidian",
+   "whatItIs": "A markdown-based knowledge base and note-taking application.",
+   "category": "dev-tools/productivity",
+   "link": "https://obsidian.md",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Db7Vx2Hhf9c",
+     "claim": "Recommended as the visual interface for viewing and managing the agent folder hierarchy."
+    }
+   ]
+  },
+  {
    "id": "roblox-open-cloud-api",
    "name": "Roblox Open Cloud API",
    "whatItIs": "A set of REST APIs allowing external services to interact with Roblox resources and assets.",
@@ -308,6 +409,26 @@
     "blender",
     "claude",
     "roblox-open-cloud-api"
+   ]
+  },
+  {
+   "id": "Db7Vx2Hhf9c",
+   "url": "https://www.instagram.com/reel/Db7Vx2Hhf9c/",
+   "author": "Cooper Simson | Actionable AI | Agents | AI Content",
+   "title": "Fix These 20 Common AI Agent Mistakes",
+   "summary": "This video outlines a 20-step folder and file structure layout designed to maximize context retention, token efficiency, and security when working with AI agents. It covers key files like CLAUDE.md, memory folders, model routing, project context files, and secret isolation.",
+   "transcript": "[On-screen text: Fix These 20 Common AI Agent Mistakes (in 53 seconds)] Have one main folder that holds all your projects. A brain folder inside that with a CLAUDE.md at the top with all your rules and preferences. Set up model routing to save on tokens and have five main context files on your business, offer, customers, voice, and goals. Have a memory folder to keep track of all your sessions, an index file to keep track of where everything is, a Tools.md file with all your connected apps, project folders for each thing you're working on, a context file in each so it knows where everything stands. All of that connected to Obsidian, then link to GitHub for version control. Then set up a Now.md file for short-term memory, connected to Notion to organize open tasks for each project across sessions, and a rules file to organize everything so projects don't bleed together. Have all your skills in one folder, all your workflows in another, then a folder with scripts for repeat tests to save on token usage. Have your passwords and keys in one .env file and .gitignore so everything stays secure. And if you comment FILE, I'll send you the whole breakdown plus a guide with every prompt so you can build this yourself.",
+   "note": "AI workflow architecture tips ",
+   "saved": "2026-09-30",
+   "insights": [
+    "91d3c2ceb1",
+    "bf63ab512a",
+    "5cb4776f2d"
+   ],
+   "tools": [
+    "github",
+    "notion",
+    "obsidian"
    ]
   },
   {

@@ -2,11 +2,14 @@
 
 # Tool queue
 
-## New (4)
+## New (7)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
+| [GitHub](tools/github.md) | `dev-tools/infra` | 1 | A developer platform for version control and code hosting. |
+| [Notion](tools/notion.md) | `dev-tools/productivity` | 1 | A connected workspace for note-taking, project management, and task tracking. |
+| [Obsidian](tools/obsidian.md) | `dev-tools/productivity` | 1 | A markdown-based knowledge base and note-taking application. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
