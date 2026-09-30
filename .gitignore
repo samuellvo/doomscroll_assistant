@@ -1,0 +1,17 @@
+# Secrets — these live in GitHub Actions secrets, never in the repo
+.env
+cookies.txt
+*.cookies
+
+# Videos are downloaded to a temp dir and never committed
+*.mp4
+*.webm
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+.DS_Store

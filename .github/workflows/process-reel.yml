@@ -1,0 +1,84 @@
+name: Process reel
+
+on:
+  # Sent by the iOS Shortcut: POST /repos/{owner}/{repo}/dispatches
+  repository_dispatch:
+    types: [new-reel]
+  # Manual runs from the Actions tab
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Reel URL
+        required: true
+      note:
+        description: Why you saved it
+        required: false
+        default: ""
+  # Weekly re-clustering and group naming
+  schedule:
+    - cron: "0 9 * * 1"
+
+permissions:
+  contents: write
+
+# Runs that write to the vault must not overlap, or their commits would conflict.
+concurrency:
+  group: vault-writer
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -e .
+
+      - name: Load Instagram cookies (optional)
+        env:
+          IG_COOKIES: ${{ secrets.IG_COOKIES }}
+        run: |
+          if [ -n "$IG_COOKIES" ]; then
+            printf '%s' "$IG_COOKIES" > "$RUNNER_TEMP/cookies.txt"
+            echo "IG_COOKIES_FILE=$RUNNER_TEMP/cookies.txt" >> "$GITHUB_ENV"
+          fi
+
+      # The URL is read from the event file rather than ${{ }} (script injection) or job env
+      # (public logs would show share tokens). It's validated, then stripped of its query string.
+      - name: Process reel
+        if: github.event_name != 'schedule'
+        run: |
+          URL=$(jq -r '.client_payload.url // .inputs.url // ""' "$GITHUB_EVENT_PATH")
+          NOTE=$(jq -r '.client_payload.note // .inputs.note // ""' "$GITHUB_EVENT_PATH")
+          URL="${URL%%\?*}"
+          if ! [[ "$URL" =~ ^https://(www\.)?instagram\.com/[A-Za-z0-9_/.-]+$ ]]; then
+            echo "::error::Not an Instagram URL"
+            exit 1
+          fi
+          echo "REEL_URL=$URL" >> "$GITHUB_ENV"
+          python -m doomscroll process "$URL" --note "$NOTE"
+
+      - name: Regroup
+        if: github.event_name == 'schedule'
+        run: python -m doomscroll regroup
+
+      - name: Commit vault
+        run: |
+          git config user.name "doomscroll-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vault
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "vault: ${GITHUB_EVENT_NAME} ${REEL_URL:-}"
+          git pull --rebase
+          git push
