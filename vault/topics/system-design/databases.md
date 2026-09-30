@@ -5,4 +5,6 @@ _1 insight from 1 reel · `system-design/databases`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **The Command Query Responsibility Segregation (CQRS) pattern allows separating read and write data models to optimize them independently.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)

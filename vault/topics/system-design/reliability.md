@@ -5,4 +5,6 @@ _1 insight from 1 reel · `system-design/reliability`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **System reliability and fault tolerance rely on retries with backoff, idempotency, circuit breakers, and automated self-healing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)

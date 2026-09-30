@@ -5,4 +5,6 @@ _1 insight from 1 reel · `system-design/real-time`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **Real-time client-server communication is typically achieved via WebSockets, Server-Sent Events (SSE), or long polling.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)

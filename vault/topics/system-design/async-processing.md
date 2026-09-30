@@ -5,4 +5,6 @@ _1 insight from 1 reel · `system-design/async-processing`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **Long-running asynchronous background tasks can be managed using message queues to buffer work, worker pools to process jobs in parallel, and workflow engines for multi-step execution.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)

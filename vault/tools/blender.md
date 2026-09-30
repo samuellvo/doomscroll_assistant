@@ -2,7 +2,7 @@
 
 ---
 name: Blender
-category: dev-tools/productivity
+category: dev-tools/game-dev
 status: new
 first_seen: 2026-09-30
 mentions: 1

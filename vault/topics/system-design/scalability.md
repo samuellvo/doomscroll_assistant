@@ -5,5 +5,7 @@ _2 insights from 1 reel · `system-design/scalability`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **Read-heavy workloads can be scaled using in-memory caching, read replicas, or proper database indexing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
 - **Write-heavy workloads can be scaled through batching multiple writes, sharding data across nodes, or persisting writes asynchronously.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)

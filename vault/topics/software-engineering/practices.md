@@ -5,4 +5,6 @@ _1 insight from 1 reel · `software-engineering/practices`_
 
 ## Ungrouped
 
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.** · _principle_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)

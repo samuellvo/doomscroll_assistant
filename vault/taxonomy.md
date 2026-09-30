@@ -17,6 +17,8 @@ then remap existing records in `data/*.jsonl` (see CLAUDE.md).
 - `software-engineering/practices` — testing, code review, debugging, architecture patterns
 - `ai-ml/engineering` — building with LLMs, RAG, evals, agents
 - `career/interviews` — interview prep, resumes, job search
+- `game-dev/roblox` — Roblox development: Studio, Luau scripting, Open Cloud APIs, asset pipelines
+- `game-dev/general` — game design, engines, 3D assets, and workflows that aren't platform-specific
 
 ## Tool categories
 
@@ -25,4 +27,5 @@ then remap existing records in `data/*.jsonl` (see CLAUDE.md).
 - `dev-tools/infra` — hosting, deployment, observability, CI/CD
 - `dev-tools/productivity` — editors, terminals, CLIs, workflow tools
 - `dev-tools/ai` — AI coding assistants, model APIs, AI frameworks
+- `dev-tools/game-dev` — game engines, 3D/asset tools, and game platform APIs
 - `products/other` — anything that isn't a developer tool
