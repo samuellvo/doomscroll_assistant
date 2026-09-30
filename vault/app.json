@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-09-30",
  "stats": {
-  "reels": 4,
-  "insights": 14,
-  "tools": 12,
-  "ungrouped": 13
+  "reels": 5,
+  "insights": 15,
+  "tools": 15,
+  "ungrouped": 14
  },
  "topics": [
   {
@@ -65,9 +65,9 @@
    "path": "game-dev/roblox",
    "title": "Roblox",
    "area": "Game Dev",
-   "insightCount": 1,
-   "reelCount": 1,
-   "ungroupedCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": null,
@@ -81,6 +81,18 @@
        "count": 1,
        "sources": [
         "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "f3afe50d6c",
+       "text": "UI layer names in design tools like Figma can be tagged with special suffixes to automatically generate interactive animations during platform import.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdkCWaDpjIc"
        ],
        "created": "2026-09-30",
        "nuances": [],
@@ -388,6 +400,38 @@
    ]
   },
   {
+   "id": "figma",
+   "name": "Figma",
+   "whatItIs": "A collaborative web-based interface design tool.",
+   "category": "dev-tools/productivity",
+   "link": "https://figma.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdkCWaDpjIc",
+     "claim": "Used to design the game UI and tag layer names with animation triggers before exporting."
+    }
+   ]
+  },
+  {
+   "id": "framewisp",
+   "name": "Framewisp",
+   "whatItIs": "A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts.",
+   "category": "dev-tools/game-dev",
+   "link": "https://framewisp.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdkCWaDpjIc",
+     "claim": "Converts Figma layer tags directly into animated Roblox UI components without manual Luau scripting."
+    }
+   ]
+  },
+  {
    "id": "github",
    "name": "GitHub",
    "whatItIs": "A developer platform for version control and code hosting.",
@@ -498,6 +542,22 @@
      "claim": "Enables Claude to programmatically upload and configure assets within a Roblox game."
     }
    ]
+  },
+  {
+   "id": "roblox-studio",
+   "name": "Roblox Studio",
+   "whatItIs": "The development environment for creating Roblox experiences.",
+   "category": "dev-tools/game-dev",
+   "link": "https://create.roblox.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdkCWaDpjIc",
+     "claim": "Serves as the target game engine where the generated UI code and animations are imported."
+    }
+   ]
   }
  ],
  "reels": [
@@ -560,6 +620,24 @@
     "graphify",
     "omni-route",
     "ponytail"
+   ]
+  },
+  {
+   "id": "DdkCWaDpjIc",
+   "url": "https://www.instagram.com/reel/DdkCWaDpjIc/",
+   "author": "phox",
+   "title": "Creating Animated Roblox UIs in Figma with Framewisp",
+   "summary": "This video demonstrates how to create animated Roblox UI effects directly in Figma without writing code using layer naming tags. By applying tags like spin, gleam, fall, and jelly, designers can convert and import functional UI components directly into Roblox Studio using the Framewisp plugin.",
+   "transcript": "Today, I'll show you how to create these rich effects on your UI without writing a single line of code yourself. In Figma, add the spin tag to the image you want to spin. Select the text you want to make shimmer in white and give it the gleam tag. Now, select the background of the card, give it a fall tag, upload an image, and the image you uploaded will fall in the background. These are the tags needed for such a button. Now, the jelly tag makes your text or image sway back and forth. Now select the entire UI, click convert, copy the code, paste the code into Roblox Studio. Now you have a UI with effects without writing a single line of code. [On-screen text: FREE plugins: framewisp.com | Discord: framewisp.com/discord | without writing code yourself]",
+   "note": "Roblox UI ",
+   "saved": "2026-09-30",
+   "insights": [
+    "f3afe50d6c"
+   ],
+   "tools": [
+    "figma",
+    "framewisp",
+    "roblox-studio"
    ]
   },
   {

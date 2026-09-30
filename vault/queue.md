@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (12)
+## New (15)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -11,6 +11,8 @@
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
+| [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
+| [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 1 | A developer platform for version control and code hosting. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [Notion](tools/notion.md) | `dev-tools/productivity` | 1 | A connected workspace for note-taking, project management, and task tracking. |
@@ -18,3 +20,4 @@
 | [Omni Route](tools/omni-route.md) | `dev-tools/ai` | 1 | An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers. |
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 1 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
+| [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
