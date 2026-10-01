@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (18)
+## New (19)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -21,6 +21,7 @@
 | [Omni Route](tools/omni-route.md) | `dev-tools/ai` | 1 | An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers. |
 | [page-agent](tools/page-agent.md) | `dev-tools/ai` | 1 | An in-page AI GUI agent created by Alibaba that controls web interfaces via natural language. |
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 1 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
+| [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
