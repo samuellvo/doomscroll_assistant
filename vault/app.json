@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-09-30",
+ "generated": "2026-10-01",
  "stats": {
-  "reels": 5,
-  "insights": 15,
-  "tools": 15,
-  "ungrouped": 14
+  "reels": 6,
+  "insights": 18,
+  "tools": 18,
+  "ungrouped": 17
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 3,
-   "reelCount": 2,
-   "ungroupedCount": 3,
+   "insightCount": 6,
+   "reelCount": 3,
+   "ungroupedCount": 6,
    "groups": [
     {
      "name": null,
@@ -54,6 +54,42 @@
         "DdXLdluKNwi"
        ],
        "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "8c4da7b539",
+       "text": "Automated AI penetration testing agents can conduct application security audits overnight that would otherwise require expensive security agencies.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd3pfthsmAq"
+       ],
+       "created": "2026-10-01",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "8cfa855872",
+       "text": "Integrating an in-page AI GUI agent via a single script tag allows users to control web application features using natural language.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd3pfthsmAq"
+       ],
+       "created": "2026-10-01",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "c574dbb969",
+       "text": "Running AI assistants locally on client hardware provides meeting summarization while eliminating data leakage risks for regulated industries.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd3pfthsmAq"
+       ],
+       "created": "2026-10-01",
        "nuances": [],
        "conflicts": []
       }
@@ -464,6 +500,22 @@
    ]
   },
   {
+   "id": "meetily",
+   "name": "meetily",
+   "whatItIs": "A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/Zackriya-Solutions/meetily",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-01",
+   "mentions": [
+    {
+     "reel": "Dd3pfthsmAq",
+     "claim": "Recommended for privacy-sensitive industries needing automated meeting summaries without third-party cloud data exposure."
+    }
+   ]
+  },
+  {
    "id": "notion",
    "name": "Notion",
    "whatItIs": "A connected workspace for note-taking, project management, and task tracking.",
@@ -508,6 +560,22 @@
     {
      "reel": "DdXLdluKNwi",
      "claim": "Enables near-unlimited coding sessions by auto-switching models when rate limits are exceeded."
+    }
+   ]
+  },
+  {
+   "id": "page-agent",
+   "name": "page-agent",
+   "whatItIs": "An in-page AI GUI agent created by Alibaba that controls web interfaces via natural language.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/alibaba/page-agent",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-01",
+   "mentions": [
+    {
+     "reel": "Dd3pfthsmAq",
+     "claim": "Showcased for enabling natural language UI control across onboarding, form filling, and support flows with a single script tag."
     }
    ]
   },
@@ -558,9 +626,45 @@
      "claim": "Serves as the target game engine where the generated UI code and animations are imported."
     }
    ]
+  },
+  {
+   "id": "strix",
+   "name": "Strix",
+   "whatItIs": "An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/usestrix/strix",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-01",
+   "mentions": [
+    {
+     "reel": "Dd3pfthsmAq",
+     "claim": "Highlighted as an AI agent capable of running overnight security audits that usually cost thousands of dollars."
+    }
+   ]
   }
  ],
  "reels": [
+  {
+   "id": "Dd3pfthsmAq",
+   "url": "https://www.instagram.com/reel/Dd3pfthsmAq/",
+   "author": "Johann Sathianathen",
+   "title": "3 Trending Open-Source AI Repositories",
+   "summary": "This video highlights three rapidly growing open-source AI repositories on GitHub: Strix for automated penetration testing, Alibaba Page Agent for controlling web interfaces with natural language, and Meetily for local privacy-focused meeting transcripts. Each tool addresses security, UX automation, or data privacy concerns while offering potential commercial application opportunities.",
+   "transcript": "GitHub · 4 Jul 2026\n3 AI repos blowing up today\n\nThree AI repos are blowing up on GitHub today. And number two is basically a business in a box. First, Strix. It's an open-source AI penetration testing agent. Basically, it hacks your own app before someone else does. It finds vulnerabilities, then it helps fix them. This thing got 1,900 stars today alone. And here's why it matters: Agencies charge $5,000-plus for the kind of security audit this can run overnight. Second, Alibaba page-agent. This one is wild. You add one script tag to a website, and now users can control the interface with plain English. Think client onboarding, form filling, software demos, internal tools, customer support flows. That is not just a cool repo. That is a service you can sell tomorrow. Third, Meetily. It's an AI meeting assistant that runs fully on your own machine. No cloud, no random SaaS storing your calls, no sensitive meeting notes leaving your computer. This matters for law firms, banks, agencies, and any business that actually cares about privacy. It already has over 14,000 stars, and it's still climbing. Follow for tomorrow's 3. @johannships. I post the hottest AI repos every day. Follow so you don't miss tomorrow's.",
+   "note": "",
+   "saved": "2026-10-01",
+   "insights": [
+    "8c4da7b539",
+    "8cfa855872",
+    "c574dbb969"
+   ],
+   "tools": [
+    "meetily",
+    "page-agent",
+    "strix"
+   ]
+  },
   {
    "id": "Dd4_kY-StGS",
    "url": "https://www.instagram.com/reel/Dd4_kY-StGS/",
