@@ -2,19 +2,19 @@
  "schema": 1,
  "generated": "2026-10-01",
  "stats": {
-  "reels": 7,
-  "insights": 23,
-  "tools": 19,
-  "ungrouped": 22
+  "reels": 8,
+  "insights": 24,
+  "tools": 20,
+  "ungrouped": 23
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 6,
-   "reelCount": 3,
-   "ungroupedCount": 6,
+   "insightCount": 7,
+   "reelCount": 4,
+   "ungroupedCount": 7,
    "groups": [
     {
      "name": null,
@@ -88,6 +88,18 @@
        "count": 1,
        "sources": [
         "Dd3pfthsmAq"
+       ],
+       "created": "2026-10-01",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "73e187c0ec",
+       "text": "Mastering AI engineering effectively follows a sequential progression starting from math and machine learning fundamentals up through building custom LLMs and multi-agent autonomous systems.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DYvxUUvRv97"
        ],
        "created": "2026-10-01",
        "nuances": [],
@@ -449,6 +461,22 @@
    ]
   },
   {
+   "id": "ai-engineering-from-scratch",
+   "name": "AI Engineering From Scratch",
+   "whatItIs": "An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/rohitg00",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-01",
+   "mentions": [
+    {
+     "reel": "DYvxUUvRv97",
+     "claim": "Featured as a comprehensive 435-lesson viral open-source guide for learning end-to-end AI engineering and multi-agent development."
+    }
+   ]
+  },
+  {
    "id": "blender",
    "name": "Blender",
    "whatItIs": "An open-source 3D computer graphics software toolset.",
@@ -776,6 +804,22 @@
    ],
    "tools": [
     "roblox"
+   ]
+  },
+  {
+   "id": "DYvxUUvRv97",
+   "url": "https://www.instagram.com/reel/DYvxUUvRv97/",
+   "author": "Sohum Patel | Certified AI Demon",
+   "title": "AI Engineering From Scratch Open Source Curriculum",
+   "summary": "This video highlights an open-source learning roadmap and repository created by CNCF Ambassador Rohit Ghumare called 'AI Engineering from Scratch'. The curriculum features 435 lessons across 20 phases, progressing from math and ML fundamentals to building LLMs and autonomous multi-agent systems from scratch.",
+   "transcript": "Who the hell is this guy and why is his GitHub repo going viral? His name is Rohit and he's the ambassador at the biggest computing foundation in the world, and he created AI Engineering from Scratch directly within Claude Code. This repo has 435 lessons to help you build with AI end-to-end. This will help you set up tooling, math foundations, machine learning fundamentals, and deep learning core, deep dives in each section, how to build LLMs from scratch, building autonomous systems and multi-agents, as well as your own capstone project. So if I were you, I would trust this guy. If you want the full guide on this, just comment repo and I'll send it over.",
+   "note": "A",
+   "saved": "2026-10-01",
+   "insights": [
+    "73e187c0ec"
+   ],
+   "tools": [
+    "ai-engineering-from-scratch"
    ]
   },
   {
