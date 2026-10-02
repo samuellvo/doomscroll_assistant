@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (20)
+## New (21)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -11,6 +11,7 @@
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
+| [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |

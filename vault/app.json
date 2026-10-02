@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-10-01",
+ "generated": "2026-10-02",
  "stats": {
-  "reels": 8,
-  "insights": 24,
-  "tools": 20,
-  "ungrouped": 23
+  "reels": 9,
+  "insights": 26,
+  "tools": 21,
+  "ungrouped": 24
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 7,
-   "reelCount": 4,
-   "ungroupedCount": 7,
+   "insightCount": 9,
+   "reelCount": 5,
+   "ungroupedCount": 8,
    "groups": [
     {
      "name": null,
@@ -30,7 +30,12 @@
         "Db7Vx2Hhf9c"
        ],
        "created": "2026-09-30",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Backing an AI agent's virtual filesystem with an embedded database provides durable cross-session context without losing file state when sessions close.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       },
       {
@@ -102,6 +107,18 @@
         "DYvxUUvRv97"
        ],
        "created": "2026-10-01",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "e2e9a06bef",
+       "text": "Virtualizing common filesystem operations reduces the overhead of provisioning full Linux containers for simple commands like grepping or listing files.",
+       "kind": "tradeoff",
+       "count": 1,
+       "sources": [
+        "Db2FJERS0N_"
+       ],
+       "created": "2026-10-02",
        "nuances": [],
        "conflicts": []
       }
@@ -525,6 +542,22 @@
    ]
   },
   {
+   "id": "cloudflare-computer",
+   "name": "Cloudflare Computer",
+   "whatItIs": "A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/cloudflare/computer",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-02",
+   "mentions": [
+    {
+     "reel": "Db2FJERS0N_",
+     "claim": "It gives AI agents persistent file memory across sessions and minimizes the need to spin up Linux containers for basic file operations."
+    }
+   ]
+  },
+  {
    "id": "devmaxx",
    "name": "Devmaxx",
    "whatItIs": "A mobile learning application designed for daily system design practice and interview preparation.",
@@ -766,6 +799,23 @@
   }
  ],
  "reels": [
+  {
+   "id": "Db2FJERS0N_",
+   "url": "https://www.instagram.com/reel/Db2FJERS0N_/",
+   "author": "Angelo Trifanoff",
+   "title": "Cloudflare Computer: Persistent Filesystems for AI Agents",
+   "summary": "Cloudflare open-sourced Cloudflare Computer, a project designed to give AI agents durable context across sessions via an SQLite-backed virtual filesystem. Instead of repeatedly spinning up Linux containers for routine file operations like sorting or searching, it handles them natively and minimizes container usage. This allows agents to seamlessly retain file context between tasks without starting from scratch.",
+   "transcript": "This is insane. Cloudflare just open sourced a computer for your AI agents. It's called Cloudflare Computer. Fully free, fully open source. Already over 7,000 stars on GitHub. Now what this can do that Claude or ChatGPT can't do right now is it gives your AI agent a filesystem for durable context that doesn't get removed every time you start a new session. Normally when you have a session with AI, it writes some files and the session ends and you can't really access that context. Now what this repo does is it keeps those files in a database. It knows exactly where it left off, and it all happens automatically. Now here's the crazy part about it. Most of these agents actually spin up a Linux container for really simple commands like file sorting or grepping or ls-ing your files. This one doesn't have to and Cloudflare claims that it only needs to spin up a Linux container 10% of the time. Now this is brand new. They just dropped it in preview. If you want the link for this, comment REPO down below and I'll send you my list along with the GitHub link. Now make sure you follow me here, I'm going to teach you a lot more about Claude and AI agents.",
+   "note": "",
+   "saved": "2026-10-02",
+   "insights": [
+    "e2e9a06bef",
+    "fbd6d9b8e2"
+   ],
+   "tools": [
+    "cloudflare-computer"
+   ]
+  },
   {
    "id": "Dd3pfthsmAq",
    "url": "https://www.instagram.com/reel/Dd3pfthsmAq/",
