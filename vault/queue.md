@@ -2,12 +2,13 @@
 
 # Tool queue
 
-## New (21)
+## New (22)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
+| [ApiVault](tools/apivault.md) | `dev-tools/productivity` | 1 | A curated directory cataloging free public APIs categorized by domain. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |

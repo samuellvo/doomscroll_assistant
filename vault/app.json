@@ -2,9 +2,9 @@
  "schema": 1,
  "generated": "2026-10-02",
  "stats": {
-  "reels": 9,
+  "reels": 10,
   "insights": 26,
-  "tools": 21,
+  "tools": 22,
   "ungrouped": 24
  },
  "topics": [
@@ -494,6 +494,22 @@
    ]
   },
   {
+   "id": "apivault",
+   "name": "ApiVault",
+   "whatItIs": "A curated directory cataloging free public APIs categorized by domain.",
+   "category": "dev-tools/productivity",
+   "link": "https://apivault.dev",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-02",
+   "mentions": [
+    {
+     "reel": "DbCXqZ4Cgz3",
+     "claim": "Presented as a completely free resource to discover public APIs across numerous categories for coding projects."
+    }
+   ]
+  },
+  {
    "id": "blender",
    "name": "Blender",
    "whatItIs": "An open-source 3D computer graphics software toolset.",
@@ -816,6 +832,22 @@
    ],
    "tools": [
     "cloudflare-computer"
+   ]
+  },
+  {
+   "id": "DbCXqZ4Cgz3",
+   "url": "https://www.instagram.com/reel/DbCXqZ4Cgz3/",
+   "author": "Nick Amato",
+   "title": "Finding Free Public APIs with ApiVault",
+   "summary": "ApiVault is a free online directory that catalogs public APIs organized by category. Developers can browse various topics, such as anime or blockchain, to discover public endpoints for their projects.",
+   "transcript": "Did you know that to this URL here, you can find a ton of free public APIs grouped by category, and there are a lot of categories here that you can choose from. So for example, why don't I just click on the anime category, and here you can find tons of free public APIs related to anime. The best part is this resource is completely free. Make sure you drop a follow for more free coding resources.",
+   "note": "Free public APIs",
+   "saved": "2026-10-02",
+   "kind": "reel",
+   "items": 1,
+   "insights": [],
+   "tools": [
+    "apivault"
    ]
   },
   {
