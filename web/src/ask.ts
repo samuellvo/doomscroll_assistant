@@ -1,7 +1,7 @@
 // "Ask Claude" deep links: open claude.ai (or the Claude app) with a prefilled prompt that
 // carries the relevant vault context. Uses the viewer's own Claude plan; no API key involved.
 
-import type { Vault } from "./data";
+import { postNoun, type Vault } from "./data";
 import type { Insight, LocatedInsight, Reel, Tool, Topic } from "./types";
 
 const REPO = "https://github.com/samuellvo/doomscroll_assistant";
@@ -56,7 +56,7 @@ export function askAboutReel(vault: Vault, reel: Reel): string {
   const insights = reel.insights.map((id) => vault.insightsById.get(id)?.text).filter((t): t is string => !!t);
   const tools = reel.tools.map((id) => vault.toolsById.get(id)?.name).filter((t): t is string => !!t);
   const head = [
-    `I saved this Instagram reel to my knowledge vault (${REPO}/tree/main/vault): "${reel.title}" by ${reel.author}.`,
+    `I saved this Instagram ${reel.kind === "carousel" ? `carousel (${reel.items} slides)` : postNoun(reel)} to my knowledge vault (${REPO}/tree/main/vault): "${reel.title}" by ${reel.author}.`,
     ...(reel.note ? [`Why I saved it: ${reel.note}`] : []),
     `Summary: ${reel.summary}`,
     ...(insights.length ? ["Insights extracted:\n" + bullets(insights, 8)] : []),
@@ -65,7 +65,8 @@ export function askAboutReel(vault: Vault, reel: Reel): string {
   const tail = [
     "Help me go deeper: what's accurate, what's oversimplified or missing, and how would I actually apply this? Suggest a small hands-on exercise.",
   ];
-  return link(assemble(head, reel.transcript ? `Transcript:\n${reel.transcript}` : "", tail));
+  const label = reel.kind === "reel" ? "Transcript" : "Text from the post";
+  return link(assemble(head, reel.transcript ? `${label}:\n${reel.transcript}` : "", tail));
 }
 
 export function askAboutTool(vault: Vault, tool: Tool): string {

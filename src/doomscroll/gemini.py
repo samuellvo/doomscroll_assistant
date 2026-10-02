@@ -70,7 +70,7 @@ class ExtractedTool(BaseModel):
 class ReelAnalysis(BaseModel):
     title: str
     summary: str = Field(description="2-3 sentences.")
-    transcript: str = Field(description="Verbatim speech plus any important on-screen text.")
+    transcript: str = Field(description="Verbatim speech plus on-screen and slide text, in order. For carousels, prefix each slide's text with 'Slide N:'.")
     insights: list[ExtractedInsight]
     tools: list[ExtractedTool]
     confidence: float = Field(description="0-1: how confident you are in the topic/category choices.")
@@ -95,9 +95,11 @@ class GroupName(BaseModel):
 
 # ---------- calls ----------
 
-ANALYZE_PROMPT = """You are cataloguing short-form videos for a software engineer's knowledge base.
+ANALYZE_PROMPT = """You are cataloguing saved Instagram posts for a software engineer's knowledge base.
 
-Watch the video (frames and audio) and use the caption for context.
+This post is {kind_description}. Study every item in order (video frames and audio, images,
+and all text shown on slides) and use the caption for context. If the post isn't teaching
+anything, return no insights rather than inventing some.
 - Break the teaching content into atomic insights: one idea each, reworded neutrally so that
   the same tip from two creators would read almost identically. Skip filler and hype.
 - List every concrete tool, library, product, or service recommended or demoed.
@@ -116,20 +118,39 @@ Watch the video (frames and audio) and use the caption for context.
 """
 
 
-def analyze_video(video_path: Path, caption: str, taxonomy: str, feedback: str) -> ReelAnalysis:
+KIND_DESCRIPTIONS = {
+    "reel": "a short video (reel)",
+    "image": "a single image",
+    "carousel": "a carousel of {n} slides, given in order",
+}
+
+
+def _upload(path: Path):
     c = client()
-    f = c.files.upload(file=video_path)
+    f = c.files.upload(file=path)
     while f.state and f.state.name == "PROCESSING":
         time.sleep(2)
         f = c.files.get(name=f.name)
     if f.state and f.state.name == "FAILED":
-        raise RuntimeError(f"Gemini could not process {video_path.name}")
+        raise RuntimeError(f"Gemini could not process {path.name}")
+    return f
 
+
+def analyze_post(paths: list[Path], kind: str, caption: str, taxonomy: str, feedback: str) -> ReelAnalysis:
+    """Analyze a reel, image, or carousel. Every item is uploaded and passed in order."""
+    c = client()
+    uploaded = []
     try:
-        prompt = ANALYZE_PROMPT.format(taxonomy=taxonomy, feedback=feedback, caption=caption or "(none)")
-        return generate(config.ANALYSIS_MODELS, [f, prompt], ReelAnalysis)
+        for path in paths:
+            uploaded.append(_upload(path))
+        prompt = ANALYZE_PROMPT.format(
+            kind_description=KIND_DESCRIPTIONS[kind].format(n=len(paths)),
+            taxonomy=taxonomy, feedback=feedback, caption=caption or "(none)",
+        )
+        return generate(config.ANALYSIS_MODELS, [*uploaded, prompt], ReelAnalysis)
     finally:
-        c.files.delete(name=f.name)
+        for f in uploaded:
+            c.files.delete(name=f.name)
 
 
 def embed(texts: list[str]) -> np.ndarray:

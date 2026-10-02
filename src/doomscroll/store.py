@@ -60,6 +60,8 @@ class ReelRecord:
     caption: str
     confidence: float
     note: str = ""
+    kind: str = "reel"  # reel | image | carousel
+    items: int = 1  # slides in a carousel
     processed: str = field(default_factory=lambda: date.today().isoformat())
 
 
@@ -74,12 +76,14 @@ def slugify(name: str) -> str:
 def _read_jsonl(path: Path, cls):
     if not path.exists():
         return []
-    return [cls(**json.loads(line)) for line in path.read_text().splitlines() if line.strip()]
+    # Split on "\n" only: json.dumps escapes real newlines, but str.splitlines() would also split
+    # inside strings on characters like U+2028 that Instagram captions contain.
+    return [cls(**json.loads(line)) for line in path.read_text(encoding="utf-8").split("\n") if line.strip()]
 
 
 def _write_jsonl(path: Path, items) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("".join(json.dumps(asdict(i), ensure_ascii=False) + "\n" for i in items))
+    path.write_text("".join(json.dumps(asdict(i), ensure_ascii=False) + "\n" for i in items), encoding="utf-8")
 
 
 class Vault:

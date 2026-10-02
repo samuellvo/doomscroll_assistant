@@ -16,9 +16,9 @@ def shortcode(url: str) -> str | None:
     return m.group(1) if m else None
 
 
-def canonical_url(reel_id: str) -> str:
+def canonical_url(post_id: str, kind: str) -> str:
     # Share links carry tokens (igsh, stkn) that can identify the sharer; never store them.
-    return f"https://www.instagram.com/reel/{reel_id}/"
+    return f"https://www.instagram.com/{'reel' if kind == 'reel' else 'p'}/{post_id}/"
 
 
 def _read(path: Path) -> str:
@@ -36,8 +36,9 @@ def process(url: str, note: str = "") -> list[Outcome] | None:
         reel = fetch.download(url, Path(tmp))
         if reel.id in vault.reels:
             return None
-        analysis = gemini.analyze_video(
-            reel.video_path, reel.caption, _read(config.TAXONOMY_FILE), _read(config.FEEDBACK_FILE)
+        analysis = gemini.analyze_post(
+            [item.path for item in reel.items], reel.kind, reel.caption,
+            _read(config.TAXONOMY_FILE), _read(config.FEEDBACK_FILE),
         )
 
     candidates = [Candidate(i.text, i.kind.value, i.topic) for i in analysis.insights]
@@ -59,9 +60,9 @@ def process(url: str, note: str = "") -> list[Outcome] | None:
             )
 
     vault.reels[reel.id] = ReelRecord(
-        id=reel.id, url=canonical_url(reel.id), author=reel.author, title=analysis.title,
+        id=reel.id, url=canonical_url(reel.id, reel.kind), author=reel.author, title=analysis.title,
         summary=analysis.summary, transcript=analysis.transcript, caption=reel.caption,
-        confidence=analysis.confidence, note=note,
+        confidence=analysis.confidence, note=note, kind=reel.kind, items=len(reel.items),
     )
     vault.save()
     return outcomes

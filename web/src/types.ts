@@ -54,6 +54,8 @@ export interface Reel {
   transcript: string;
   note: string;
   saved: string;
+  kind: "reel" | "image" | "carousel";
+  items: number; // slides in a carousel
   insights: string[];
   tools: string[];
 }

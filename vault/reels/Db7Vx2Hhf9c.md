@@ -2,7 +2,7 @@
 
 # Fix These 20 Common AI Agent Mistakes
 
-**Source:** https://www.instagram.com/reel/Db7Vx2Hhf9c/ · **Author:** Cooper Simson | Actionable AI | Agents | AI Content · **Saved:** 2026-09-30
+**Source:** https://www.instagram.com/reel/Db7Vx2Hhf9c/ · **Type:** Reel · **Author:** Cooper Simson | Actionable AI | Agents | AI Content · **Saved:** 2026-09-30
 
 **Why I saved it:** AI workflow architecture tips 
 
@@ -10,7 +10,7 @@
 
 This video outlines a 20-step folder and file structure layout designed to maximize context retention, token efficiency, and security when working with AI agents. It covers key files like CLAUDE.md, memory folders, model routing, project context files, and secret isolation.
 
-## Transcript
+## Transcript and on-screen text
 
 [On-screen text: Fix These 20 Common AI Agent Mistakes (in 53 seconds)] Have one main folder that holds all your projects. A brain folder inside that with a CLAUDE.md at the top with all your rules and preferences. Set up model routing to save on tokens and have five main context files on your business, offer, customers, voice, and goals. Have a memory folder to keep track of all your sessions, an index file to keep track of where everything is, a Tools.md file with all your connected apps, project folders for each thing you're working on, a context file in each so it knows where everything stands. All of that connected to Obsidian, then link to GitHub for version control. Then set up a Now.md file for short-term memory, connected to Notion to organize open tasks for each project across sessions, and a rules file to organize everything so projects don't bleed together. Have all your skills in one folder, all your workflows in another, then a folder with scripts for repeat tests to save on token usage. Have your passwords and keys in one .env file and .gitignore so everything stays secure. And if you comment FILE, I'll send you the whole breakdown plus a guide with every prompt so you can build this yourself.
 

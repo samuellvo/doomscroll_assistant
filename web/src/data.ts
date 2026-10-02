@@ -93,6 +93,16 @@ export function titleCase(slug: string): string {
     .join(" ");
 }
 
+export function postLabel(reel: Reel): string {
+  if (reel.kind === "carousel") return `Carousel · ${plural(reel.items, "slide")}`;
+  return reel.kind === "image" ? "Image" : "Reel";
+}
+
+/** How the post is referred to in prose: "reel", "image post", "carousel". */
+export function postNoun(reel: Reel): string {
+  return reel.kind === "image" ? "image post" : (reel.kind ?? "reel");
+}
+
 export function categoryLabel(path: string): string {
   return path.split("/").map(titleCase).join(" · ");
 }

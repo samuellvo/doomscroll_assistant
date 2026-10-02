@@ -110,6 +110,8 @@ def build(vault: Vault) -> dict:
                 "transcript": r.transcript,
                 "note": r.note,
                 "saved": r.processed,
+                "kind": r.kind,
+                "items": r.items,
                 "insights": reel_insights.get(r.id, []),
                 "tools": reel_tools.get(r.id, []),
             }

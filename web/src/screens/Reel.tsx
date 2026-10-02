@@ -1,17 +1,17 @@
 import { askAboutReel } from "../ask";
 import { AskClaude, Empty, InsightItem, PageHeader, Section, ToolRow } from "../components";
-import { formatDate, type Vault } from "../data";
+import { formatDate, postLabel, postNoun, type Vault } from "../data";
 
 export function Reel({ vault, id }: { vault: Vault; id: string }) {
   const reel = vault.reelsById.get(id);
-  if (!reel) return <Empty>That reel isn't in the vault.</Empty>;
+  if (!reel) return <Empty>That post isn't in the vault.</Empty>;
   const insights = reel.insights.map((i) => vault.insightsById.get(i)).filter((i) => i !== undefined);
 
   return (
     <>
       <PageHeader
         title={reel.title}
-        subtitle={`${reel.author} · saved ${formatDate(reel.saved)}`}
+        subtitle={`${postLabel(reel)} · ${reel.author} · saved ${formatDate(reel.saved)}`}
         back={{ label: "Back" }}
       />
       {reel.note && (
@@ -22,7 +22,7 @@ export function Reel({ vault, id }: { vault: Vault; id: string }) {
       <a className="button" href={reel.url} target="_blank" rel="noreferrer">
         Open in Instagram
       </a>
-      <AskClaude href={askAboutReel(vault, reel)} label="Ask Claude about this reel" />
+      <AskClaude href={askAboutReel(vault, reel)} label={`Ask Claude about this ${postNoun(reel)}`} />
       <Section title="Summary">
         <p className="prose">{reel.summary}</p>
       </Section>
@@ -45,7 +45,7 @@ export function Reel({ vault, id }: { vault: Vault; id: string }) {
         </Section>
       )}
       <details className="transcript">
-        <summary>Transcript</summary>
+        <summary>{reel.kind === "reel" ? "Transcript" : "Text from the post"}</summary>
         <p className="prose">{reel.transcript}</p>
       </details>
     </>

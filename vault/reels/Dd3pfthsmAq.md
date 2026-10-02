@@ -2,13 +2,13 @@
 
 # 3 Trending Open-Source AI Repositories
 
-**Source:** https://www.instagram.com/reel/Dd3pfthsmAq/ · **Author:** Johann Sathianathen · **Saved:** 2026-10-01
+**Source:** https://www.instagram.com/reel/Dd3pfthsmAq/ · **Type:** Reel · **Author:** Johann Sathianathen · **Saved:** 2026-10-01
 
 ## Summary
 
 This video highlights three rapidly growing open-source AI repositories on GitHub: Strix for automated penetration testing, Alibaba Page Agent for controlling web interfaces with natural language, and Meetily for local privacy-focused meeting transcripts. Each tool addresses security, UX automation, or data privacy concerns while offering potential commercial application opportunities.
 
-## Transcript
+## Transcript and on-screen text
 
 GitHub · 4 Jul 2026
 3 AI repos blowing up today

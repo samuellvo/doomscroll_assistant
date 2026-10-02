@@ -1,5 +1,5 @@
 import { Empty, InsightItem, PageHeader, Section } from "../components";
-import { formatDate, plural, type Vault } from "../data";
+import { formatDate, plural, postLabel, type Vault } from "../data";
 import { href } from "../router";
 
 export function Today({ vault }: { vault: Vault }) {
@@ -21,7 +21,7 @@ export function Today({ vault }: { vault: Vault }) {
           <strong>{vault.stats.tools}</strong> tools
         </a>
         <span>
-          <strong>{vault.stats.reels}</strong> reels
+          <strong>{vault.stats.reels}</strong> posts
         </span>
       </div>
 
@@ -47,7 +47,7 @@ export function Today({ vault }: { vault: Vault }) {
 
       <Section title="Recently saved">
         {recent.length === 0 ? (
-          <Empty>No reels yet. Share one to the Save to Vault shortcut.</Empty>
+          <Empty>No reels yet. Share a reel, image, or carousel to the Save to Vault shortcut.</Empty>
         ) : (
           <div className="rows">
             {recent.map((r) => (
@@ -55,7 +55,7 @@ export function Today({ vault }: { vault: Vault }) {
                 <div className="row-main">
                   <span className="row-title">{r.title}</span>
                   <span className="row-sub">
-                    {r.author} · {formatDate(r.saved)}
+                    {postLabel(r)} · {r.author} · {formatDate(r.saved)}
                     {r.note && <> · “{r.note}”</>}
                   </span>
                 </div>

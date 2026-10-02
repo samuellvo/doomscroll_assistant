@@ -2,7 +2,7 @@
 
 # AI Engineering From Scratch Open Source Curriculum
 
-**Source:** https://www.instagram.com/reel/DYvxUUvRv97/ · **Author:** Sohum Patel | Certified AI Demon · **Saved:** 2026-10-01
+**Source:** https://www.instagram.com/reel/DYvxUUvRv97/ · **Type:** Reel · **Author:** Sohum Patel | Certified AI Demon · **Saved:** 2026-10-01
 
 **Why I saved it:** A
 
@@ -10,7 +10,7 @@
 
 This video highlights an open-source learning roadmap and repository created by CNCF Ambassador Rohit Ghumare called 'AI Engineering from Scratch'. The curriculum features 435 lessons across 20 phases, progressing from math and ML fundamentals to building LLMs and autonomous multi-agent systems from scratch.
 
-## Transcript
+## Transcript and on-screen text
 
 Who the hell is this guy and why is his GitHub repo going viral? His name is Rohit and he's the ambassador at the biggest computing foundation in the world, and he created AI Engineering from Scratch directly within Claude Code. This repo has 435 lessons to help you build with AI end-to-end. This will help you set up tooling, math foundations, machine learning fundamentals, and deep learning core, deep dives in each section, how to build LLMs from scratch, building autonomous systems and multi-agents, as well as your own capstone project. So if I were you, I would trust this guy. If you want the full guide on this, just comment repo and I'll send it over.
 

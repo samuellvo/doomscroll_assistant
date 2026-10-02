@@ -37,6 +37,12 @@ def title_case(slug: str) -> str:
     return " ".join(ACRONYMS.get(w, w.capitalize()) for w in slug.split("-"))
 
 
+def post_kind_label(reel) -> str:
+    if reel.kind == "carousel":
+        return f"Carousel · {plural(reel.items, 'slide')}"
+    return {"image": "Image", "reel": "Reel"}.get(reel.kind, reel.kind.title())
+
+
 def _reel_link(vault: Vault, reel_id: str, depth: int) -> str:
     return f"[{reel_id}]({'../' * depth}reels/{reel_id}.md)"
 
@@ -123,10 +129,11 @@ def render_tool(vault: Vault, tool) -> str:
 
 
 def render_reel(reel) -> str:
-    lines = [HEADER, f"# {reel.title}", "", f"**Source:** {reel.url} · **Author:** {reel.author} · **Saved:** {reel.processed}", ""]
+    lines = [HEADER, f"# {reel.title}", "",
+             f"**Source:** {reel.url} · **Type:** {post_kind_label(reel)} · **Author:** {reel.author} · **Saved:** {reel.processed}", ""]
     if reel.note:
         lines += [f"**Why I saved it:** {reel.note}", ""]
-    lines += ["## Summary", "", reel.summary, "", "## Transcript", "", reel.transcript, ""]
+    lines += ["## Summary", "", reel.summary, "", "## Transcript and on-screen text", "", reel.transcript, ""]
     if reel.caption:
         lines += ["## Caption", "", reel.caption, ""]
     return "\n".join(lines)

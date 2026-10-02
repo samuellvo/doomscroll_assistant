@@ -808,6 +808,8 @@
    "transcript": "This is insane. Cloudflare just open sourced a computer for your AI agents. It's called Cloudflare Computer. Fully free, fully open source. Already over 7,000 stars on GitHub. Now what this can do that Claude or ChatGPT can't do right now is it gives your AI agent a filesystem for durable context that doesn't get removed every time you start a new session. Normally when you have a session with AI, it writes some files and the session ends and you can't really access that context. Now what this repo does is it keeps those files in a database. It knows exactly where it left off, and it all happens automatically. Now here's the crazy part about it. Most of these agents actually spin up a Linux container for really simple commands like file sorting or grepping or ls-ing your files. This one doesn't have to and Cloudflare claims that it only needs to spin up a Linux container 10% of the time. Now this is brand new. They just dropped it in preview. If you want the link for this, comment REPO down below and I'll send you my list along with the GitHub link. Now make sure you follow me here, I'm going to teach you a lot more about Claude and AI agents.",
    "note": "",
    "saved": "2026-10-02",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "e2e9a06bef",
     "fbd6d9b8e2"
@@ -825,6 +827,8 @@
    "transcript": "GitHub · 4 Jul 2026\n3 AI repos blowing up today\n\nThree AI repos are blowing up on GitHub today. And number two is basically a business in a box. First, Strix. It's an open-source AI penetration testing agent. Basically, it hacks your own app before someone else does. It finds vulnerabilities, then it helps fix them. This thing got 1,900 stars today alone. And here's why it matters: Agencies charge $5,000-plus for the kind of security audit this can run overnight. Second, Alibaba page-agent. This one is wild. You add one script tag to a website, and now users can control the interface with plain English. Think client onboarding, form filling, software demos, internal tools, customer support flows. That is not just a cool repo. That is a service you can sell tomorrow. Third, Meetily. It's an AI meeting assistant that runs fully on your own machine. No cloud, no random SaaS storing your calls, no sensitive meeting notes leaving your computer. This matters for law firms, banks, agencies, and any business that actually cares about privacy. It already has over 14,000 stars, and it's still climbing. Follow for tomorrow's 3. @johannships. I post the hottest AI repos every day. Follow so you don't miss tomorrow's.",
    "note": "",
    "saved": "2026-10-01",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "8c4da7b539",
     "8cfa855872",
@@ -845,6 +849,8 @@
    "transcript": "5 things you need to do before you publish a Roblox game. Starting with number one: testing the first 5 minutes of your gameplay. Your onboarding within the first 5 minutes is extremely crucial. You want to make sure your player knows what they're supposed to do within the first 5 minutes, why they should keep playing, what they're working towards, and the progression as well. And then number two is testing your game on all platforms. This is something I'm guilty of. The first game I ever published, bro, mobile players struggled a lot. There were certain buttons they couldn't press because I had like a certain tween and then when you press it, it did the little animation. It's just stupid shit like that that really fucked up the process of my game. So make sure you test on console, make sure you test on mobile, PC, VR, anything, bro. Just do everything you can to make sure it's good on all platforms. Coming in at number three is make sure your visuals look really good before the player clicks on your game. This is extremely important. As a graphic designer, I work in the music industry. I work with a lot of rappers, a lot of artists, etc. In the term and the saying that we have is what you see before you hear. The same thing applies to Roblox: what you see before you play. Make sure your icon, your thumbnail, your description, your title is really appealing. And if you have the money or the budget to get a trailer made for your game, I highly recommend that. Like do that. You need to do a trailer for your game. Like it's really good. And at number four is build a really good progression loop. Make sure the core features of your game are really good. Players always need something that they continuously grind and chase within the game, bro, or else it'll be really fucking boring. There's six things and six steps I really follow when it comes to making a new game every single time: 1. Play, 2. Earn, 3. Upgrade, 4. Unlock, 5. Flex, 6. Repeat. Those six things should always be a core fundamental within your game. What that would essentially look like for a simulator, let's say a simulator, people would need better equipment. For a driving game, people want better and faster looking cars. For a fighting game, people want better equipment, better abilities, and better animations. Like y'all got emotes, it's really dope. There's always something for you guys to chase and some something for the players always have to fight... All right. Coming in at number five is break your game before your players do. And if you had a game where it was really vulnerable to exploits, people could duplicate cash, equipment, fly around, just overall just cheat the game, and it really pisses your players off. Hire a QA lead and get a team of 5 to 10 testers depending on how big your game is and how hard it is to find a bug, to go through and test the onboarding process, make sure everything is smooth, and make sure the gameplay is really good, make sure that there's little to no bugs on different platforms. Once you get all that done, they're going to send you a really, really enhanced and really good and detailed report of their findings. And from there, you can feed it to your AI, you can feed it to your programmer, whatever you want to do, you can fix it from there. Other than that, I really been seeing a lot of you guys post content on your Roblox game on my For You page and it genuinely makes me smile. Sometimes I drop a comment, trying to keep you guys going, and you guys reply being like, 'You're the GOAT,' 'You inspire me.' Shit like that really makes my day. This is why I keep doing this. I want you guys to be great. Hey, God is good, man. You guys take care. God bless. Y'all stay safe.",
    "note": "",
    "saved": "2026-10-01",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "fd5790f084",
     "b6a66c949d",
@@ -865,6 +871,8 @@
    "transcript": "Who the hell is this guy and why is his GitHub repo going viral? His name is Rohit and he's the ambassador at the biggest computing foundation in the world, and he created AI Engineering from Scratch directly within Claude Code. This repo has 435 lessons to help you build with AI end-to-end. This will help you set up tooling, math foundations, machine learning fundamentals, and deep learning core, deep dives in each section, how to build LLMs from scratch, building autonomous systems and multi-agents, as well as your own capstone project. So if I were you, I would trust this guy. If you want the full guide on this, just comment repo and I'll send it over.",
    "note": "A",
    "saved": "2026-10-01",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "73e187c0ec"
    ],
@@ -881,6 +889,8 @@
    "transcript": "Claude Opus 5.5 is genuinely insane at using Blender to make 3D models for your Roblox game. But chances are you're probably using it wrong, or you're just not using it as efficiently. But yeah, if you're looking around this map, everything in here—the terrain isn't loading, that's why it looks weird—but everything in here was made by Claude. It just used Blender, Opus 5.5. But basically, I didn't have to import any of this, like I literally didn't have to do anything, Claude just did it all for me. And so how you do this is, you know, instead of having to import something and then go through all the files, import every single one, and it takes so long time, literally what you can do, you just head over to Roblox. So here, I'm using an alt account, just like make it easier. But yeah, go over to Create. And so once you're on your Creator Dashboard, click All Tools here, and then go down to, here, this API Keys. And once you're here, you want to do Create API Key. If you're under a group, it's going to pop up Create Group Key. Do not do that one, just do the regular API Key. So once you're here, it'll ask for a name. You can just name it whatever, description if you want. But for access permissions, what you want to put, you want to do, this is right here, asset permissions and assets. And then you want to do read and write for assets and for asset permissions, write. And then if you want, you can also add Creator Store products, developer products, game passes, which basically just lets Claude make those as well for you. And then you can add some more security features if you want. But then when you make it, understand, and then just create the key. And basically it's just going to give you like a really long key. You want to make sure you copy that and store somewhere safe. You don't want to just paste it into your Claude, because that's like a security risk. You want to, you can look it up if you want, you want to do make an environment variable and store it there, so that way it's more secure. It takes like 2 seconds, you can literally like ask ChatGPT how to do it if you aren't sure. But yeah, once you do that, you can go over here and you can tell Claude where the key's at, how to access it, and then basically just tell it to import models from now on on its self, and you won't have to do anything. So yeah, hope this video helped you guys.",
    "note": "Roblox game dev",
    "saved": "2026-09-30",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "f51a04c21f",
     "ca1135720a"
@@ -900,6 +910,8 @@
    "transcript": "[On-screen text: Fix These 20 Common AI Agent Mistakes (in 53 seconds)] Have one main folder that holds all your projects. A brain folder inside that with a CLAUDE.md at the top with all your rules and preferences. Set up model routing to save on tokens and have five main context files on your business, offer, customers, voice, and goals. Have a memory folder to keep track of all your sessions, an index file to keep track of where everything is, a Tools.md file with all your connected apps, project folders for each thing you're working on, a context file in each so it knows where everything stands. All of that connected to Obsidian, then link to GitHub for version control. Then set up a Now.md file for short-term memory, connected to Notion to organize open tasks for each project across sessions, and a rules file to organize everything so projects don't bleed together. Have all your skills in one folder, all your workflows in another, then a folder with scripts for repeat tests to save on token usage. Have your passwords and keys in one .env file and .gitignore so everything stays secure. And if you comment FILE, I'll send you the whole breakdown plus a guide with every prompt so you can build this yourself.",
    "note": "AI workflow architecture tips ",
    "saved": "2026-09-30",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "91d3c2ceb1",
     "bf63ab512a",
@@ -920,6 +932,8 @@
    "transcript": "Don't start vibe coding with Claude Code unless you've installed these four plugins. The first is Ponytail, which optimizes Claude Code's output and cuts your token usage by over 50% without losing you any accuracy at all. The second is Omni Route, which gives Claude Code almost unlimited usage by connecting it to over 300 other free AI providers, so the moment that your usage limit runs out, it'll automatically switch you to the next best model and give you up to 1.6 billion free tokens every single month. The third is Graphify, which turns your entire codebase into a knowledge graph, so your agent doesn't have to waste tokens by rereading files again and again. And finally, there's Agent Skills, which is a pack of 24 skills that let you vibe code like a real senior engineer, built by the former AI engineering director at Google. It has dedicated skills for planning, coding, testing, and publishing, and it activates the right one at the specific stages of coding it needs, all on its own.",
    "note": "AI orchestration info",
    "saved": "2026-09-30",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "b34a21ed9f",
     "07123f63c1",
@@ -942,6 +956,8 @@
    "transcript": "Today, I'll show you how to create these rich effects on your UI without writing a single line of code yourself. In Figma, add the spin tag to the image you want to spin. Select the text you want to make shimmer in white and give it the gleam tag. Now, select the background of the card, give it a fall tag, upload an image, and the image you uploaded will fall in the background. These are the tags needed for such a button. Now, the jelly tag makes your text or image sway back and forth. Now select the entire UI, click convert, copy the code, paste the code into Roblox Studio. Now you have a UI with effects without writing a single line of code. [On-screen text: FREE plugins: framewisp.com | Discord: framewisp.com/discord | without writing code yourself]",
    "note": "Roblox UI ",
    "saved": "2026-09-30",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "f3afe50d6c"
    ],
@@ -960,6 +976,8 @@
    "transcript": "Something I wish I knew when I started learning system design is that most systems follow the same exact patterns. If you wanna scale reads, you can reach for caching, read replicas, or database indexing. If you wanna scale writes, you can reach for batching, sharding, or asynchronous writes. If you need real-time data, think WebSockets, server-sent events, or long polling. For long-running processes, you have message queues, worker pools, and workflow engines. For failures and reliability, you want retries with backoff, idempotency, circuit breakers, and self-healing. And if you need to separate reads and writes, you can apply a CQRS pattern. If you want to learn this stuff and practice every single day, you can do it on my app Devmaxx. Hiring for both interns and full-time roles is picking up right now, so it's the perfect time to get sharp on these skills. Comment dev for the link.",
    "note": "testing",
    "saved": "2026-09-28",
+   "kind": "reel",
+   "items": 1,
    "insights": [
     "83623bc9cc",
     "8187e7c84b",

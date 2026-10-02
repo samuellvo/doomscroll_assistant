@@ -2,7 +2,7 @@
 
 # Top 4 Plugins for Claude Code
 
-**Source:** https://www.instagram.com/reel/DdXLdluKNwi/ · **Author:** PeterCodeLab · **Saved:** 2026-09-30
+**Source:** https://www.instagram.com/reel/DdXLdluKNwi/ · **Type:** Reel · **Author:** PeterCodeLab · **Saved:** 2026-09-30
 
 **Why I saved it:** AI orchestration info
 
@@ -10,7 +10,7 @@
 
 Enhance Claude Code workflows using four essential plugins: Ponytail for token optimization, Omni Route for multi-provider fallback routing, Graphify for codebase knowledge graphs, and Agent Skills for structured engineering workflows. These extensions minimize token consumption and improve agent reliability.
 
-## Transcript
+## Transcript and on-screen text
 
 Don't start vibe coding with Claude Code unless you've installed these four plugins. The first is Ponytail, which optimizes Claude Code's output and cuts your token usage by over 50% without losing you any accuracy at all. The second is Omni Route, which gives Claude Code almost unlimited usage by connecting it to over 300 other free AI providers, so the moment that your usage limit runs out, it'll automatically switch you to the next best model and give you up to 1.6 billion free tokens every single month. The third is Graphify, which turns your entire codebase into a knowledge graph, so your agent doesn't have to waste tokens by rereading files again and again. And finally, there's Agent Skills, which is a pack of 24 skills that let you vibe code like a real senior engineer, built by the former AI engineering director at Google. It has dedicated skills for planning, coding, testing, and publishing, and it activates the right one at the specific stages of coding it needs, all on its own.
 

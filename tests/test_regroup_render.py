@@ -94,3 +94,20 @@ def test_export_app_json(tmp_vault):
     assert first["nuances"] == [{"text": "Breaks with many writers", "count": 1}]
     r1 = next(r for r in data["reels"] if r["id"] == "r1")
     assert set(r1["insights"]) == {"a", "c"} and r1["tools"] == ["bun"]
+
+
+def test_post_kinds_render_and_export(tmp_vault):
+    v = make_vault()
+    v.reels["r2"].kind, v.reels["r2"].items = "carousel", 5
+    render.render_all(v)
+    assert "**Type:** Carousel · 5 slides" in (tmp_vault / "reels/r2.md").read_text()
+    assert "**Type:** Reel" in (tmp_vault / "reels/r1.md").read_text()
+    data = json.loads((tmp_vault / "app.json").read_text())
+    r2 = next(r for r in data["reels"] if r["id"] == "r2")
+    assert (r2["kind"], r2["items"]) == ("carousel", 5)
+
+
+@pytest.mark.parametrize("kind,path", [("reel", "reel"), ("image", "p"), ("carousel", "p")])
+def test_canonical_url_matches_post_kind(kind, path):
+    from doomscroll.pipeline import canonical_url
+    assert canonical_url("ABC", kind) == f"https://www.instagram.com/{path}/ABC/"

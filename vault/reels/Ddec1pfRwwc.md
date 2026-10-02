@@ -2,7 +2,7 @@
 
 # System Design Architecture Patterns Cheat Sheet
 
-**Source:** https://www.instagram.com/reel/Ddec1pfRwwc/ · **Author:** Arjay McCandless · **Saved:** 2026-09-28
+**Source:** https://www.instagram.com/reel/Ddec1pfRwwc/ · **Type:** Reel · **Author:** Arjay McCandless · **Saved:** 2026-09-28
 
 **Why I saved it:** testing
 
@@ -10,7 +10,7 @@
 
 Most modern system architectures rely on standard design patterns categorized by specific scaling and reliability needs. Common architectural solutions are outlined for scaling reads, scaling writes, real-time data, long-running processes, fault tolerance, and separating read/write pipelines.
 
-## Transcript
+## Transcript and on-screen text
 
 Something I wish I knew when I started learning system design is that most systems follow the same exact patterns. If you wanna scale reads, you can reach for caching, read replicas, or database indexing. If you wanna scale writes, you can reach for batching, sharding, or asynchronous writes. If you need real-time data, think WebSockets, server-sent events, or long polling. For long-running processes, you have message queues, worker pools, and workflow engines. For failures and reliability, you want retries with backoff, idempotency, circuit breakers, and self-healing. And if you need to separate reads and writes, you can apply a CQRS pattern. If you want to learn this stuff and practice every single day, you can do it on my app Devmaxx. Hiring for both interns and full-time roles is picking up right now, so it's the perfect time to get sharp on these skills. Comment dev for the link.
 

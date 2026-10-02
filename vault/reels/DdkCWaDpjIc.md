@@ -2,7 +2,7 @@
 
 # Creating Animated Roblox UIs in Figma with Framewisp
 
-**Source:** https://www.instagram.com/reel/DdkCWaDpjIc/ · **Author:** phox · **Saved:** 2026-09-30
+**Source:** https://www.instagram.com/reel/DdkCWaDpjIc/ · **Type:** Reel · **Author:** phox · **Saved:** 2026-09-30
 
 **Why I saved it:** Roblox UI 
 
@@ -10,7 +10,7 @@
 
 This video demonstrates how to create animated Roblox UI effects directly in Figma without writing code using layer naming tags. By applying tags like spin, gleam, fall, and jelly, designers can convert and import functional UI components directly into Roblox Studio using the Framewisp plugin.
 
-## Transcript
+## Transcript and on-screen text
 
 Today, I'll show you how to create these rich effects on your UI without writing a single line of code yourself. In Figma, add the spin tag to the image you want to spin. Select the text you want to make shimmer in white and give it the gleam tag. Now, select the background of the card, give it a fall tag, upload an image, and the image you uploaded will fall in the background. These are the tags needed for such a button. Now, the jelly tag makes your text or image sway back and forth. Now select the entire UI, click convert, copy the code, paste the code into Roblox Studio. Now you have a UI with effects without writing a single line of code. [On-screen text: FREE plugins: framewisp.com | Discord: framewisp.com/discord | without writing code yourself]
 
