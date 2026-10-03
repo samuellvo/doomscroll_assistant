@@ -2,19 +2,19 @@
  "schema": 1,
  "generated": "2026-10-03",
  "stats": {
-  "reels": 11,
-  "insights": 27,
-  "tools": 23,
-  "ungrouped": 25
+  "reels": 12,
+  "insights": 28,
+  "tools": 24,
+  "ungrouped": 26
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 9,
-   "reelCount": 5,
-   "ungroupedCount": 8,
+   "insightCount": 10,
+   "reelCount": 6,
+   "ungroupedCount": 9,
    "groups": [
     {
      "name": null,
@@ -119,6 +119,18 @@
         "Db2FJERS0N_"
        ],
        "created": "2026-10-02",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "00dd2205bc",
+       "text": "Converting graphical interface controls into command-line interfaces enables LLM agents to reliably operate desktop software without relying on vision-based UI automation.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd9NdbFxJLo"
+       ],
+       "created": "2026-10-03",
        "nuances": [],
        "conflicts": []
       }
@@ -570,6 +582,22 @@
    ]
   },
   {
+   "id": "cli-anything",
+   "name": "CLI-Anything",
+   "whatItIs": "An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/HKUDS/CLI-Anything",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-03",
+   "mentions": [
+    {
+     "reel": "Dd9NdbFxJLo",
+     "claim": "Highlighted as a tool that converts desktop applications like Blender, OBS, and Obsidian into CLIs so Claude can control them directly."
+    }
+   ]
+  },
+  {
    "id": "cloudflare-computer",
    "name": "Cloudflare Computer",
    "whatItIs": "A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite.",
@@ -859,6 +887,24 @@
    ],
    "tools": [
     "e2e"
+   ]
+  },
+  {
+   "id": "Dd9NdbFxJLo",
+   "url": "https://www.instagram.com/reel/Dd9NdbFxJLo/",
+   "author": "Neeraj Chemburkar",
+   "title": "CLI-Anything: Turn Any Desktop App into an AI Agent CLI",
+   "summary": "CLI-Anything is an open-source framework that bridges AI agents and desktop applications by converting graphical interface controls into text-based command-line interfaces. Instead of relying on computer vision or mouse clicks, LLM agents can run CLI commands to execute actions across software like Blender, OBS, and Obsidian.",
+   "transcript": "Let Claude Use ANY software. CLI-Anything: Making ALL Software Agent-Native. [Audio] There's a repo that lets Claude use almost any software on your computer, just by asking. This repo just passed 50,000 stars, and here's the problem that it solves. Most software is built for people clicking buttons, so AI has a tough time using it like Claude. This repo, CLI-Anything, gives each app a text version of its controls. So basically it turns any software into a CLI. That's the thing that AI agents are really good at. And now here's the best part: there's already a hub with dozens of apps ready to go. OBS for recording YouTubes, Zoom, Obsidian, even Blender. Install one of these, and you just tell Claude what you want done. And if your app isn't there yet, you point the repo at the app's code, and it builds the CLI for you. This one is called CLI-Anything. Comment APPS down below, and I'll send you the repo.",
+   "note": "CLI Anything",
+   "saved": "2026-10-03",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "00dd2205bc"
+   ],
+   "tools": [
+    "cli-anything"
    ]
   },
   {

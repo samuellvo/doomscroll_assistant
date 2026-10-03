@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (23)
+## New (24)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -12,6 +12,7 @@
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude](tools/claude.md) | `dev-tools/ai` | 1 | An AI assistant and LLM family developed by Anthropic. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
+| [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
