@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-10-03",
  "stats": {
-  "reels": 12,
-  "insights": 28,
+  "reels": 13,
+  "insights": 31,
   "tools": 24,
-  "ungrouped": 26
+  "ungrouped": 29
  },
  "topics": [
   {
@@ -260,9 +260,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 4,
-   "reelCount": 4,
-   "ungroupedCount": 4,
+   "insightCount": 7,
+   "reelCount": 5,
+   "ungroupedCount": 7,
    "groups": [
     {
      "name": null,
@@ -312,6 +312,42 @@
        "count": 1,
        "sources": [
         "Dd_qig-AS8Y"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "e7745e557e",
+       "text": "Do not model SEO strategies after large enterprise brands, as high domain authority often masks poor practices like keyword stuffing that eventually suffer ranking drops.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "DagE_4PML7C"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "25a0fdf1dd",
+       "text": "Optimize target keyword placement by prioritizing the page title, URL slug, H1 heading, and the beginning of the first sentence.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DagE_4PML7C"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "51c2238565",
+       "text": "Build domain authority by acquiring backlinks that drive real referral traffic rather than relying solely on keyword volume.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DagE_4PML7C"
        ],
        "created": "2026-10-03",
        "nuances": [],
@@ -906,6 +942,24 @@
    "tools": [
     "cli-anything"
    ]
+  },
+  {
+   "id": "DagE_4PML7C",
+   "url": "https://www.instagram.com/reel/DagE_4PML7C/",
+   "author": "Edward Sturm",
+   "title": "Why You Shouldn't Copy Big Brand SEO and How to Beat Them",
+   "summary": "Big brands often rely on high domain authority rather than best-practice SEO, which can lead to traffic drops when violating spam guidelines like keyword stuffing. Instead of copying large sites, place keywords strategically in titles, URL slugs, H1s, and opening sentences while building authority through referral backlinks.",
+   "transcript": "Google has a section in their spam guidelines called Keyword Stuffing: \"It refers to the practice of filling a webpage with keywords in an attempt to manipulate rankings in Google, repeating the same words or phrases so often that it sounds unnatural.\" This is Chewy's dry dog food page. The term dry dog food is used 87 times. This one block paragraph has it used 19 times. The absolute most important places to have the keyword are in: The page title, The URL slug. Put your target keyword in the: Page title, URL slug, H1, Beginning of the first sentence. Chewy doesn't even have it in their URL slug. Chewy gets away with worse SEO because its authority is 78 out of 100. Their rankings, organic traffic spiked for a few days, but then it dropped down. In June 2025, they were at 98,000 clicks a month from Google. Now they are at 21,000 clicks a month. They don't show on page one of Google for dry dog food. A lot of people try to learn SEO from big brands, that is a mistake. If you want to beat the big brands, read over Google's spam policies, put your target keyword in these places, and invest in backlinks that pass referral traffic to build your authority. Keep in mind that most of the behemoths in your industry are easy to unseat.",
+   "note": "SEO tips",
+   "saved": "2026-10-03",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "e7745e557e",
+    "25a0fdf1dd",
+    "51c2238565"
+   ],
+   "tools": []
   },
   {
    "id": "Db2FJERS0N_",
