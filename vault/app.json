@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-02",
+ "generated": "2026-10-03",
  "stats": {
-  "reels": 10,
-  "insights": 26,
-  "tools": 22,
-  "ungrouped": 24
+  "reels": 11,
+  "insights": 27,
+  "tools": 23,
+  "ungrouped": 25
  },
  "topics": [
   {
@@ -248,9 +248,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 3,
-   "reelCount": 3,
-   "ungroupedCount": 3,
+   "insightCount": 4,
+   "reelCount": 4,
+   "ungroupedCount": 4,
    "groups": [
     {
      "name": null,
@@ -290,6 +290,18 @@
         "DdXLdluKNwi"
        ],
        "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "a8abd9ea2a",
+       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd_qig-AS8Y"
+       ],
+       "created": "2026-10-03",
        "nuances": [],
        "conflicts": []
       }
@@ -590,6 +602,22 @@
    ]
   },
   {
+   "id": "e2e",
+   "name": "e2e",
+   "whatItIs": "An open-source end-to-end testing framework for web and mobile applications powered by AI agents.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/tester-army/e2e",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-03",
+   "mentions": [
+    {
+     "reel": "Dd_qig-AS8Y",
+     "claim": "Presented as an alternative to brittle scripted end-to-end tests by using plain-English goals and cached replay paths."
+    }
+   ]
+  },
+  {
    "id": "figma",
    "name": "Figma",
    "whatItIs": "A collaborative web-based interface design tool.",
@@ -815,6 +843,24 @@
   }
  ],
  "reels": [
+  {
+   "id": "Dd_qig-AS8Y",
+   "url": "https://www.instagram.com/reel/Dd_qig-AS8Y/",
+   "author": "Github Signals",
+   "title": "AI-Driven End-to-End Testing with e2e",
+   "summary": "e2e is an open-source test framework that executes web and mobile tests using natural-language goals interpreted by an AI agent. The framework records discovered interaction paths so subsequent runs replay deterministically without incurring LLM API costs until the UI changes.",
+   "transcript": "GitHub - tester-army/e2e: Next-generation e2e testing framework. github.com/tester-army/e2e. e2e: Open Source AI Testing Framework. MADE BY TESTERARMY. e2e is an end-to-end testing framework for web and mobile apps. Describe a goal in natural language and an agent drives the app to reach it. Check the result with locators and assertions in the same test. Quick start: npx e2e init. e2e is the test framework that lets you drive apps with plain English. Usually writing tests means hard-coding every click, which breaks the moment the design changes. Here, you just tell an AI agent your goal, like upgrade the account, and it figures out the steps to get there. The coolest part is that it records the path it took, so the next run is instant and costs zero money until the app actually changes. It works on both websites and mobile phones, letting you verify complex flows without writing brittle code. If you want tests that think for themselves, this is a game changer. Follow for more open-source projects @GithubSignals",
+   "note": "",
+   "saved": "2026-10-03",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "a8abd9ea2a"
+   ],
+   "tools": [
+    "e2e"
+   ]
+  },
   {
    "id": "Db2FJERS0N_",
    "url": "https://www.instagram.com/reel/Db2FJERS0N_/",

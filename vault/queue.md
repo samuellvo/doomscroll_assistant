@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (22)
+## New (23)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -14,6 +14,7 @@
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
+| [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 1 | A developer platform for version control and code hosting. |
