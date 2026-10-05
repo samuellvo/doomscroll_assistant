@@ -3,9 +3,7 @@
 # Engineering
 _11 insights from 7 reels · `ai-ml/engineering`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Operational Efficiency and Interfaces
 
 - **Structuring an AI agent workspace with specialized memory, index, and rule files maintains context persistence across sessions and prevents project context bleeding.** · _pattern_ · [Db7Vx2Hhf9c](../../reels/Db7Vx2Hhf9c.md)
   - Nuance: Backing an AI agent's virtual filesystem with an embedded database provides durable cross-session context without losing file state when sessions close.

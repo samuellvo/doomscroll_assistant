@@ -8,13 +8,9 @@ Items for Claude (or you) to review. See CLAUDE.md → Feedback workflow.
 
 Grouped by the weekly regroup, or ask Claude to group them now.
 
-- [ai-ml/engineering](topics/ai-ml/engineering.md): 10
-- [game-dev/general](topics/game-dev/general.md): 2
-- [game-dev/roblox](topics/game-dev/roblox.md): 5
-- [software-engineering/practices](topics/software-engineering/practices.md): 7
+- [game-dev/roblox](topics/game-dev/roblox.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
 - [system-design/databases](topics/system-design/databases.md): 1
 - [system-design/real-time](topics/system-design/real-time.md): 1
 - [system-design/reliability](topics/system-design/reliability.md): 1
-- [system-design/scalability](topics/system-design/scalability.md): 2
 

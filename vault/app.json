@@ -5,7 +5,7 @@
   "reels": 14,
   "insights": 32,
   "tools": 24,
-  "ungrouped": 30
+  "ungrouped": 6
  },
  "topics": [
   {
@@ -14,10 +14,10 @@
    "area": "AI ML",
    "insightCount": 11,
    "reelCount": 7,
-   "ungroupedCount": 10,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Operational Efficiency and Interfaces",
      "pinned": false,
      "related": [],
      "insights": [
@@ -156,10 +156,10 @@
    "area": "Game Dev",
    "insightCount": 2,
    "reelCount": 1,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Player Engagement and Retention",
      "pinned": false,
      "related": [],
      "insights": [
@@ -197,37 +197,13 @@
    "area": "Game Dev",
    "insightCount": 5,
    "reelCount": 3,
-   "ungroupedCount": 5,
+   "ungroupedCount": 2,
    "groups": [
     {
-     "name": null,
+     "name": "Quality Assurance and Exploit Prevention",
      "pinned": false,
      "related": [],
      "insights": [
-      {
-       "id": "f51a04c21f",
-       "text": "Roblox 3D asset uploads can be automated by granting an AI agent access to a Roblox Open Cloud API key with read and write permissions for assets.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "Dd4_kY-StGS"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "f3afe50d6c",
-       "text": "UI layer names in design tools like Figma can be tagged with special suffixes to automatically generate interactive animations during platform import.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DdkCWaDpjIc"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
       {
        "id": "b6a66c949d",
        "text": "Test touch controls, UI tweening, and input schemes across PC, mobile, console, and VR to prevent platform-specific interaction bugs.",
@@ -265,26 +241,16 @@
        "conflicts": []
       }
      ]
-    }
-   ]
-  },
-  {
-   "path": "software-engineering/practices",
-   "title": "Practices",
-   "area": "Software Engineering",
-   "insightCount": 7,
-   "reelCount": 5,
-   "ungroupedCount": 7,
-   "groups": [
+    },
     {
      "name": null,
      "pinned": false,
      "related": [],
      "insights": [
       {
-       "id": "ca1135720a",
-       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
-       "kind": "principle",
+       "id": "f51a04c21f",
+       "text": "Roblox 3D asset uploads can be automated by granting an AI agent access to a Roblox Open Cloud API key with read and write permissions for assets.",
+       "kind": "pattern",
        "count": 1,
        "sources": [
         "Dd4_kY-StGS"
@@ -294,41 +260,37 @@
        "conflicts": []
       },
       {
-       "id": "5cb4776f2d",
-       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "Db7Vx2Hhf9c"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "b34a21ed9f",
-       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DdXLdluKNwi"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "a8abd9ea2a",
-       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
+       "id": "f3afe50d6c",
+       "text": "UI layer names in design tools like Figma can be tagged with special suffixes to automatically generate interactive animations during platform import.",
        "kind": "pattern",
        "count": 1,
        "sources": [
-        "Dd_qig-AS8Y"
+        "DdkCWaDpjIc"
        ],
-       "created": "2026-10-03",
+       "created": "2026-09-30",
        "nuances": [],
        "conflicts": []
-      },
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "software-engineering/practices",
+   "title": "Practices",
+   "area": "Software Engineering",
+   "insightCount": 7,
+   "reelCount": 5,
+   "ungroupedCount": 0,
+   "groups": [
+    {
+     "name": "Organic Search Growth",
+     "pinned": false,
+     "related": [
+      "Credential Protection Strategies",
+      "Autonomous Agent Workflows"
+     ],
+     "insights": [
       {
        "id": "e7745e557e",
        "text": "Do not model SEO strategies after large enterprise brands, as high domain authority often masks poor practices like keyword stuffing that eventually suffer ranking drops.",
@@ -360,6 +322,74 @@
        "count": 1,
        "sources": [
         "DagE_4PML7C"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": "Credential Protection Strategies",
+     "pinned": false,
+     "related": [
+      "Autonomous Agent Workflows",
+      "Organic Search Growth"
+     ],
+     "insights": [
+      {
+       "id": "ca1135720a",
+       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5cb4776f2d",
+       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": "Autonomous Agent Workflows",
+     "pinned": false,
+     "related": [
+      "Credential Protection Strategies",
+      "Organic Search Growth"
+     ],
+     "insights": [
+      {
+       "id": "b34a21ed9f",
+       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdXLdluKNwi"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "a8abd9ea2a",
+       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd_qig-AS8Y"
        ],
        "created": "2026-10-03",
        "nuances": [],
@@ -496,10 +526,10 @@
    "area": "System Design",
    "insightCount": 2,
    "reelCount": 1,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Workload Scaling Strategies",
      "pinned": false,
      "related": [],
      "insights": [

@@ -3,9 +3,7 @@
 # General
 _2 insights from 1 reel · `game-dev/general`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Player Engagement and Retention
 
 - **Optimize the first five minutes of gameplay so players immediately understand objectives, core mechanics, and long-term progression.** · _principle_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
 - **Sustain long-term player retention by structuring gameplay around a continuous loop of play, earn, upgrade, unlock, flex, and repeat.** · _pattern_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)

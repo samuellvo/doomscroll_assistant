@@ -3,12 +3,15 @@
 # Roblox
 _5 insights from 3 reels · `game-dev/roblox`_
 
+## Quality Assurance and Exploit Prevention
+
+- **Test touch controls, UI tweening, and input schemes across PC, mobile, console, and VR to prevent platform-specific interaction bugs.** · _pitfall_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
+- **Attract initial players by investing in polished storefront assets such as icons, thumbnails, descriptions, and video trailers.** · _pattern_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
+- **Assemble a dedicated QA testing team to actively exploit games for vulnerabilities like duplication glitches and game-breaking bugs prior to public release.** · _principle_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
+
 ## Ungrouped
 
 _New arrivals. Sorted into groups weekly, or when you ask Claude._
 
 - **Roblox 3D asset uploads can be automated by granting an AI agent access to a Roblox Open Cloud API key with read and write permissions for assets.** · _pattern_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)
 - **UI layer names in design tools like Figma can be tagged with special suffixes to automatically generate interactive animations during platform import.** · _pattern_ · [DdkCWaDpjIc](../../reels/DdkCWaDpjIc.md)
-- **Test touch controls, UI tweening, and input schemes across PC, mobile, console, and VR to prevent platform-specific interaction bugs.** · _pitfall_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
-- **Attract initial players by investing in polished storefront assets such as icons, thumbnails, descriptions, and video trailers.** · _pattern_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
-- **Assemble a dedicated QA testing team to actively exploit games for vulnerabilities like duplication glitches and game-breaking bugs prior to public release.** · _principle_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
