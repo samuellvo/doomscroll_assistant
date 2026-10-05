@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-10-03",
+ "generated": "2026-10-05",
  "stats": {
-  "reels": 13,
-  "insights": 31,
+  "reels": 14,
+  "insights": 32,
   "tools": 24,
-  "ungrouped": 29
+  "ungrouped": 30
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 10,
-   "reelCount": 6,
-   "ungroupedCount": 9,
+   "insightCount": 11,
+   "reelCount": 7,
+   "ungroupedCount": 10,
    "groups": [
     {
      "name": null,
@@ -131,6 +131,18 @@
         "Dd9NdbFxJLo"
        ],
        "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "616cc3447b",
+       "text": "Standardized open-source legal document templates can be supplied as prompt context to LLMs like Claude to generate custom legal agreements.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeFjXe4AboQ"
+       ],
+       "created": "2026-10-05",
        "nuances": [],
        "conflicts": []
       }
@@ -522,6 +534,46 @@
  ],
  "tools": [
   {
+   "id": "claude",
+   "name": "Claude",
+   "whatItIs": "An AI assistant and LLM family developed by Anthropic.",
+   "category": "dev-tools/ai",
+   "link": "https://claude.ai",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Dd4_kY-StGS",
+     "claim": "Used to generate 3D models with Blender and automatically import them into Roblox."
+    },
+    {
+     "reel": "DeFjXe4AboQ",
+     "claim": "Recommended as the AI model to ingest the legal templates and generate customized legal contracts."
+    }
+   ]
+  },
+  {
+   "id": "github",
+   "name": "GitHub",
+   "whatItIs": "A developer platform for version control and code hosting.",
+   "category": "dev-tools/infra",
+   "link": "https://github.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "Db7Vx2Hhf9c",
+     "claim": "Recommended for providing version control over the agent's file system."
+    },
+    {
+     "reel": "DeFjXe4AboQ",
+     "claim": "Used to host the open-source legal templates repository under a CC0 license."
+    }
+   ]
+  },
+  {
    "id": "agent-skills",
    "name": "Agent Skills",
    "whatItIs": "A collection of 24 modular software engineering workflow prompts and processes for AI agents.",
@@ -582,22 +634,6 @@
     {
      "reel": "Dd4_kY-StGS",
      "claim": "Used in conjunction with Claude to automate the generation of 3D models."
-    }
-   ]
-  },
-  {
-   "id": "claude",
-   "name": "Claude",
-   "whatItIs": "An AI assistant and LLM family developed by Anthropic.",
-   "category": "dev-tools/ai",
-   "link": "https://claude.ai",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-09-30",
-   "mentions": [
-    {
-     "reel": "Dd4_kY-StGS",
-     "claim": "Used to generate 3D models with Blender and automatically import them into Roblox."
     }
    ]
   },
@@ -710,22 +746,6 @@
     {
      "reel": "DdkCWaDpjIc",
      "claim": "Converts Figma layer tags directly into animated Roblox UI components without manual Luau scripting."
-    }
-   ]
-  },
-  {
-   "id": "github",
-   "name": "GitHub",
-   "whatItIs": "A developer platform for version control and code hosting.",
-   "category": "dev-tools/infra",
-   "link": "https://github.com",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-09-30",
-   "mentions": [
-    {
-     "reel": "Db7Vx2Hhf9c",
-     "claim": "Recommended for providing version control over the agent's file system."
     }
    ]
   },
@@ -907,6 +927,25 @@
   }
  ],
  "reels": [
+  {
+   "id": "DeFjXe4AboQ",
+   "url": "https://www.instagram.com/reel/DeFjXe4AboQ/",
+   "author": "Keeran Jagadesan",
+   "title": "Open Source Legal Templates on GitHub for AI",
+   "summary": "A law firm released its core legal document templates under a Creative Commons Zero license on GitHub. These structured templates, covering NDAs, privacy policies, and offer letters, can be supplied as context to AI models like Claude to generate custom legal documents.",
+   "transcript": "JP Mohler @jaypmo X.com: \"A lot of folks have asked me: 'why open source your core legal docs -isn't that your IP?' no. our exceptional lawyers are our IP. our massive deal flow is our IP. our precedent docs r like a programming language: underlying scaffolding to enable the work.\"\n\nSpeaker: This lawyer on Twitter just released all of his legal documents completely for free on GitHub. And you can give it to Claude to write any of your legal documents. They have NDAs, privacy policies, offer letters, and that already has 2,000 stars. Comment LEGAL, I'll send this right over.",
+   "note": "Legal",
+   "saved": "2026-10-05",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "616cc3447b"
+   ],
+   "tools": [
+    "claude",
+    "github"
+   ]
+  },
   {
    "id": "Dd_qig-AS8Y",
    "url": "https://www.instagram.com/reel/Dd_qig-AS8Y/",

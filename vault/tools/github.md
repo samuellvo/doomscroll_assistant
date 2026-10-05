@@ -5,7 +5,7 @@ name: GitHub
 category: dev-tools/infra
 status: new
 first_seen: 2026-09-30
-mentions: 1
+mentions: 2
 ---
 # GitHub
 
@@ -16,3 +16,4 @@ A developer platform for version control and code hosting.
 ## What creators claimed
 
 - Recommended for providing version control over the agent's file system. ([Db7Vx2Hhf9c](../reels/Db7Vx2Hhf9c.md))
+- Used to host the open-source legal templates repository under a CC0 license. ([DeFjXe4AboQ](../reels/DeFjXe4AboQ.md))
