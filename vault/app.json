@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-10-05",
  "stats": {
-  "reels": 14,
-  "insights": 32,
-  "tools": 24,
-  "ungrouped": 6
+  "reels": 15,
+  "insights": 35,
+  "tools": 28,
+  "ungrouped": 9
  },
  "topics": [
   {
@@ -141,6 +141,59 @@
        "count": 1,
        "sources": [
         "DeFjXe4AboQ"
+       ],
+       "created": "2026-10-05",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "career/interviews",
+   "title": "Interviews",
+   "area": "Career",
+   "insightCount": 3,
+   "reelCount": 1,
+   "ungroupedCount": 3,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "820487ad31",
+       "text": "Relying on topic-tagged roadmaps prevents candidates from developing the skill to independently recognize problem patterns on unseen questions.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "DdecbsEnSGo"
+       ],
+       "created": "2026-10-05",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b9baa0b0b2",
+       "text": "Mastering data structures and algorithms requires moving from tagged practice problems to untagged problems while documenting missed insights.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdecbsEnSGo"
+       ],
+       "created": "2026-10-05",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b4f0c02482",
+       "text": "Using platform difficulty ratings that provide fine-grained calibration keeps problem-solving practice at the edge of current competence.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdecbsEnSGo"
        ],
        "created": "2026-10-05",
        "nuances": [],
@@ -652,6 +705,22 @@
    ]
   },
   {
+   "id": "atcoder",
+   "name": "AtCoder",
+   "whatItIs": "A competitive programming platform featuring granular problem difficulty scores.",
+   "category": "dev-tools/productivity",
+   "link": "https://kenkoooo.com/atcoder/#/table/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Recommended for randomized, untagged practice near the boundary of solvable difficulty."
+    }
+   ]
+  },
+  {
    "id": "blender",
    "name": "Blender",
    "whatItIs": "An open-source 3D computer graphics software toolset.",
@@ -796,6 +865,22 @@
    ]
   },
   {
+   "id": "leetcode",
+   "name": "LeetCode",
+   "whatItIs": "A technical interview preparation platform featuring algorithm coding challenges.",
+   "category": "dev-tools/productivity",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Critiqued for broad difficulty categories and repetitiveness that discourage transferable problem-solving skills."
+    }
+   ]
+  },
+  {
    "id": "meetily",
    "name": "meetily",
    "whatItIs": "A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine.",
@@ -808,6 +893,22 @@
     {
      "reel": "Dd3pfthsmAq",
      "claim": "Recommended for privacy-sensitive industries needing automated meeting summaries without third-party cloud data exposure."
+    }
+   ]
+  },
+  {
+   "id": "neetcode",
+   "name": "NeetCode",
+   "whatItIs": "An interview preparation platform with problem roadmaps and video explanations.",
+   "category": "dev-tools/productivity",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Critiqued as a topic list that fails to build deep recognition skills needed for unseen interview questions."
     }
    ]
   },
@@ -954,6 +1055,22 @@
      "claim": "Highlighted as an AI agent capable of running overnight security audits that usually cost thousands of dollars."
     }
    ]
+  },
+  {
+   "id": "usaco-guide",
+   "name": "USACO Guide",
+   "whatItIs": "A free educational website offering structured tutorials and practice problems for competitive programming.",
+   "category": "dev-tools/productivity",
+   "link": "https://usaco.guide/bronze",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique."
+    }
+   ]
   }
  ],
  "reels": [
@@ -974,6 +1091,29 @@
    "tools": [
     "claude",
     "github"
+   ]
+  },
+  {
+   "id": "DdecbsEnSGo",
+   "url": "https://www.instagram.com/reel/DdecbsEnSGo/",
+   "author": "level5esper",
+   "title": "How to Relearn DSA from Zero",
+   "summary": "This video outlines a strategy for mastering Data Structures and Algorithms (DSA) that focuses on problem recognition and reasoning rather than relying on curated LeetCode or NeetCode lists. It recommends using the USACO Guide to build core algorithmic tools and AtCoder for granular, untagged practice.",
+   "transcript": "Maguri here. If I had to relearn DSA from zero, this is how I would do it. I would use two resources that very few people talk about. Let me explain. LeetCode and NeetCode are popular because they're convenient, but I wouldn't use either as my main way to learn. Easy, Medium, and Hard are coarse labels, so it's hard to track your actual level, and a roadmap tells you the topic before you have to recognize it. That ecosystem compounds the problem: repetitive questions with little transferable reasoning, AI-generated editorials written for engagement, and beginners teaching other beginners bad habits. Start with the USACO Guide. Bronze and core Silver teach reusable tools and techniques: prefix sums, binary search, two pointers, sorting, graph traversal, and why each one works. After each topic, close the guide and solve a few sample problems under that topic. Then gradually introduce untagged problems, and record the observation you missed, because that is what transfers. Then use AtCoder for randomized practice. Its granular difficulty estimates keep you near the boundary where the problems are difficult enough to teach you, but still solvable. You might be thinking, 'I only want to pass interviews. Why are you sending me to competitive programming sites?' Because interviews test whether you can solve unseen problems. USACO teaches the core ideas, and AtCoder tests whether you can apply them without being told the topic. A roadmap only lists the topics. Use it as your entire curriculum, and you miss the depth that makes those ideas transferable. Send this to a friend who swears by NeetCode 150, and follow me if you want to get cracked at DSA.",
+   "note": "DSA",
+   "saved": "2026-10-05",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "820487ad31",
+    "b9baa0b0b2",
+    "b4f0c02482"
+   ],
+   "tools": [
+    "atcoder",
+    "leetcode",
+    "neetcode",
+    "usaco-guide"
    ]
   },
   {
