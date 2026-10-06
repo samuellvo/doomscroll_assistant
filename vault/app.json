@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-05",
+ "generated": "2026-10-06",
  "stats": {
-  "reels": 15,
-  "insights": 35,
-  "tools": 28,
-  "ungrouped": 9
+  "reels": 16,
+  "insights": 38,
+  "tools": 29,
+  "ungrouped": 12
  },
  "topics": [
   {
@@ -154,9 +154,9 @@
    "path": "career/interviews",
    "title": "Interviews",
    "area": "Career",
-   "insightCount": 3,
-   "reelCount": 1,
-   "ungroupedCount": 3,
+   "insightCount": 6,
+   "reelCount": 2,
+   "ungroupedCount": 6,
    "groups": [
     {
      "name": null,
@@ -196,6 +196,42 @@
         "DdecbsEnSGo"
        ],
        "created": "2026-10-05",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "862d947b6a",
+       "text": "Studying written editorial solutions generally builds stronger algorithmic intuition than passively watching video explanations.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DeJKcDqE2q3"
+       ],
+       "created": "2026-10-06",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "500585c69b",
+       "text": "For software engineering interview preparation, mastering foundational competitive programming tiers (such as Bronze, Silver, and select DP/graph topics) offers more structured progression than unorganized problem grinding.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeJKcDqE2q3"
+       ],
+       "created": "2026-10-06",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "db775d064e",
+       "text": "Standard competitive programming benchmarks like the CSES problem set directly map to common technical interview patterns found on platforms like LeetCode.",
+       "kind": "example",
+       "count": 1,
+       "sources": [
+        "DeJKcDqE2q3"
+       ],
+       "created": "2026-10-06",
        "nuances": [],
        "conflicts": []
       }
@@ -657,6 +693,26 @@
    ]
   },
   {
+   "id": "usaco-guide",
+   "name": "USACO Guide",
+   "whatItIs": "A free educational website offering structured tutorials and practice problems for competitive programming.",
+   "category": "dev-tools/productivity",
+   "link": "https://usaco.guide/bronze",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique."
+    },
+    {
+     "reel": "DeJKcDqE2q3",
+     "claim": "Highlighted as a comprehensive, well-structured resource for learning DSA and coding interview topics."
+    }
+   ]
+  },
+  {
    "id": "agent-skills",
    "name": "Agent Skills",
    "whatItIs": "A collection of 24 modular software engineering workflow prompts and processes for AI agents.",
@@ -781,6 +837,22 @@
     {
      "reel": "Db2FJERS0N_",
      "claim": "It gives AI agents persistent file memory across sessions and minimizes the need to spin up Linux containers for basic file operations."
+    }
+   ]
+  },
+  {
+   "id": "cses-problem-set",
+   "name": "CSES Problem Set",
+   "whatItIs": "A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki.",
+   "category": "products/other",
+   "link": "https://cses.fi/problemset/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-06",
+   "mentions": [
+    {
+     "reel": "DeJKcDqE2q3",
+     "claim": "Recommended for practicing short, standardized dynamic programming and graph problems before tackling advanced topics."
     }
    ]
   },
@@ -1055,25 +1127,30 @@
      "claim": "Highlighted as an AI agent capable of running overnight security audits that usually cost thousands of dollars."
     }
    ]
-  },
-  {
-   "id": "usaco-guide",
-   "name": "USACO Guide",
-   "whatItIs": "A free educational website offering structured tutorials and practice problems for competitive programming.",
-   "category": "dev-tools/productivity",
-   "link": "https://usaco.guide/bronze",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-10-05",
-   "mentions": [
-    {
-     "reel": "DdecbsEnSGo",
-     "claim": "Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique."
-    }
-   ]
   }
  ],
  "reels": [
+  {
+   "id": "DeJKcDqE2q3",
+   "url": "https://www.instagram.com/reel/DeJKcDqE2q3/",
+   "author": "level5esper",
+   "title": "Using USACO Guide and CSES for DSA and Coding Interview Prep",
+   "summary": "USACO Guide is a free, structured platform for mastering data structures and algorithms originally created for competitive programming contestants. Its curriculum, along with standard problems from platforms like CSES, maps directly to common LeetCode patterns and offers an organized roadmap for technical interview preparation.",
+   "transcript": "What is USACO Guide? Do you know what USACO Guide is? It's a free site that teaches you DSA in order, and it explains each topic before you touch the problems. Introduction to Prefix Sums. Computing range sum queries in constant time over a fixed 1D array. It has high-quality written solutions, and again, reading an editorial has plenty of benefits over watching someone else think through a video solution. Our Mission: The USACO supports computing education in the USA and worldwide by identifying, motivating, and training high-school computing students at all levels. It's aimed at high schoolers doing USACO, so it's not meant to be hard. And if you think competitive programming doesn't help in interviews, well, a lot of the guide's problems are literally LeetCode problems with a different name: Counting Rooms is 200. Number of Islands, Minimizing Coins is 322. Coin Change, Static Range Sum Queries is 303. Range Sum Query - Immutable. USACO Guide is community-managed and written by top USACO contestants, including Benjamin Qi, who won the IOI twice and worked at Citadel Securities and now at Anthropic. There's also many strong contestants, like William Lin, who's pretty much LGM, perfect score in IOI, and had a couple famous YouTube videos. The topics are more granular. For example, backtracking is just one section of its Complete Search with Recursion module, right after subsets and permutations. Each module lists its prerequisites, and the ones you can skip say optional in the title, like Hashmaps in Gold. It follows USACO's four divisions. Bronze is the basics, like complete search, sorting, and your first graphs. Then Silver adds prefix sums, binary search, and graph traversal. Gold even gives dynamic programming separate modules, like knapsack, bitmasks, and trees, and Platinum is probably stuff you don't have to worry about. Every module explains the idea with code in C++, Java, and Python, and then gives you practice problems. And lots of them have a written solution that explains why it works. Do the starred problems first, because the guide recommends those. Feel free to skip hard problems, and I wouldn't worry about solving problems in order. For interviews, I'd do Bronze and Silver, then the dynamic programming and graph modules in Gold. If Gold is too hard, do the dynamic programming and graph sections on CSES first, since they're short standard problems like counting coin combinations. Send this to a friend who's still grinding a topic list, and follow me for more.",
+   "note": "DSA",
+   "saved": "2026-10-06",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "862d947b6a",
+    "500585c69b",
+    "db775d064e"
+   ],
+   "tools": [
+    "cses-problem-set",
+    "usaco-guide"
+   ]
+  },
   {
    "id": "DeFjXe4AboQ",
    "url": "https://www.instagram.com/reel/DeFjXe4AboQ/",

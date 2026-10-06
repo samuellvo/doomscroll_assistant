@@ -2,12 +2,13 @@
 
 # Tool queue
 
-## New (28)
+## New (29)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
 | [Claude](tools/claude.md) | `dev-tools/ai` | 2 | An AI assistant and LLM family developed by Anthropic. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 2 | A developer platform for version control and code hosting. |
+| [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 2 | A free educational website offering structured tutorials and practice problems for competitive programming. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
 | [ApiVault](tools/apivault.md) | `dev-tools/productivity` | 1 | A curated directory cataloging free public APIs categorized by domain. |
@@ -16,6 +17,7 @@
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
+| [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 1 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
@@ -33,4 +35,3 @@
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
-| [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 1 | A free educational website offering structured tutorials and practice problems for competitive programming. |

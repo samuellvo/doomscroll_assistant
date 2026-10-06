@@ -8,7 +8,7 @@ Items for Claude (or you) to review. See CLAUDE.md → Feedback workflow.
 
 Grouped by the weekly regroup, or ask Claude to group them now.
 
-- [career/interviews](topics/career/interviews.md): 3
+- [career/interviews](topics/career/interviews.md): 6
 - [game-dev/roblox](topics/game-dev/roblox.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
 - [system-design/databases](topics/system-design/databases.md): 1
