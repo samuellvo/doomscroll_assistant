@@ -20,6 +20,7 @@ Grouped by the weekly regroup, or ask Claude to group them now.
 - [software-engineering/practices](topics/software-engineering/practices.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
 - [system-design/databases](topics/system-design/databases.md): 1
+- [system-design/distributed-systems](topics/system-design/distributed-systems.md): 3
 - [system-design/real-time](topics/system-design/real-time.md): 1
 - [system-design/reliability](topics/system-design/reliability.md): 1
 
