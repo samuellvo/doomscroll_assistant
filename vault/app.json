@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-10-09",
  "stats": {
-  "reels": 20,
-  "insights": 47,
+  "reels": 21,
+  "insights": 50,
   "tools": 30,
-  "ungrouped": 21
+  "ungrouped": 24
  },
  "topics": [
   {
@@ -154,9 +154,9 @@
    "path": "career/interviews",
    "title": "Interviews",
    "area": "Career",
-   "insightCount": 6,
-   "reelCount": 2,
-   "ungroupedCount": 6,
+   "insightCount": 9,
+   "reelCount": 3,
+   "ungroupedCount": 9,
    "groups": [
     {
      "name": null,
@@ -232,6 +232,42 @@
         "DeJKcDqE2q3"
        ],
        "created": "2026-10-06",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "262453c0a5",
+       "text": "Asking an interviewer for advice based on their career success builds positive rapport and elicits insightful, enthusiastic responses.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "640d12727d",
+       "text": "Asking how to guarantee success in the specific timeframe of the role prompts the interviewer to subconsciously visualize you working on the team.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "289a366741",
+       "text": "Asking what traits top performers share provides specific criteria you can immediately emphasize in your remaining interview answers.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
        "nuances": [],
        "conflicts": []
       }
@@ -1334,6 +1370,24 @@
    "tools": [
     "devmaxx"
    ]
+  },
+  {
+   "id": "DeQe_FDtpxM",
+   "url": "https://www.instagram.com/reel/DeQe_FDtpxM/",
+   "author": "Ethan Do",
+   "title": "Effective Questions to Ask Interviewers in Behavioral Interviews",
+   "summary": "Asking strategic questions at the end of a behavioral interview helps establish rapport and frame the candidate as an ideal fit. Recommended questions include asking about the interviewer's career advice, how to guarantee success during the internship, and the common traits of top performers.",
+   "transcript": "Questions to ask your interviewer if you want to land the role. I've never failed a behavioral interview and here are some of the questions that I asked that interviewers always love, like they eat it up. First is: Given your success in the industry, what can a college student like myself do to be on the right path? This one always makes them feel good because you're like just straight up glazing them and letting them know that you want to be like them. Often times they give a really passionate and insightful answer, which I really appreciate. I feel like it makes them instantly like you a lot more. Next is: What are some things I can do during the X weeks to guarantee success as an intern on the team? This one's like low key manipulation, but you're placing yourself in the position where you're already on the team. In their head they're like subconsciously already imagining you in the role. Also depending on their answer, you can kind of use it to like formulate your responses during the interview. Lastly is: What are some of the most common traits amongst the best people you work with? Their response to this question is really important because you should use this to shape the narrative for the rest of your interview and like correlate yourself with that success.",
+   "note": "",
+   "saved": "2026-10-09",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "262453c0a5",
+    "640d12727d",
+    "289a366741"
+   ],
+   "tools": []
   },
   {
    "id": "DeNTHkQgb-a",
