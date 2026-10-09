@@ -5,7 +5,7 @@ name: Devmaxx
 category: products/other
 status: new
 first_seen: 2026-09-28
-mentions: 1
+mentions: 2
 ---
 # Devmaxx
 
@@ -14,3 +14,4 @@ A mobile learning application designed for daily system design practice and inte
 ## What creators claimed
 
 - Pitched by the creator as a tool to learn and practice system design concepts every day. ([Ddec1pfRwwc](../reels/Ddec1pfRwwc.md))
+- Mentioned as a platform to study consistent hashing and other system design concepts through interactive practice questions. ([Ddjy_ZEpJJ0](../reels/Ddjy_ZEpJJ0.md))

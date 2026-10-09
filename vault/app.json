@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "stats": {
-  "reels": 19,
-  "insights": 45,
+  "reels": 20,
+  "insights": 47,
   "tools": 30,
-  "ungrouped": 19
+  "ungrouped": 21
  },
  "topics": [
   {
@@ -590,6 +590,35 @@
    ]
   },
   {
+   "path": "system-design/caching",
+   "title": "Caching",
+   "area": "System Design",
+   "insightCount": 1,
+   "reelCount": 1,
+   "ungroupedCount": 1,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "b528122d4c",
+       "text": "Distributing cache keys using simple modulo hashing (hash(key) % N) causes the majority of keys to remap whenever node count changes, precipitating cache stampedes and database overload.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "Ddjy_ZEpJJ0"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
    "path": "system-design/databases",
    "title": "Databases",
    "area": "System Design",
@@ -622,9 +651,9 @@
    "path": "system-design/distributed-systems",
    "title": "Distributed Systems",
    "area": "System Design",
-   "insightCount": 3,
-   "reelCount": 1,
-   "ungroupedCount": 3,
+   "insightCount": 4,
+   "reelCount": 2,
+   "ungroupedCount": 4,
    "groups": [
     {
      "name": null,
@@ -664,6 +693,18 @@
         "DeNTHkQgb-a"
        ],
        "created": "2026-10-08",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b54d1bf14e",
+       "text": "Consistent hashing maps nodes and keys along a shared hash ring, ensuring that scaling nodes only relocates keys belonging to the immediate arc adjacent to the new node.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Ddjy_ZEpJJ0"
+       ],
+       "created": "2026-10-09",
        "nuances": [],
        "conflicts": []
       }
@@ -794,6 +835,26 @@
     {
      "reel": "DeFjXe4AboQ",
      "claim": "Recommended as the AI model to ingest the legal templates and generate customized legal contracts."
+    }
+   ]
+  },
+  {
+   "id": "devmaxx",
+   "name": "Devmaxx",
+   "whatItIs": "A mobile learning application designed for daily system design practice and interview preparation.",
+   "category": "products/other",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-28",
+   "mentions": [
+    {
+     "reel": "Ddec1pfRwwc",
+     "claim": "Pitched by the creator as a tool to learn and practice system design concepts every day."
+    },
+    {
+     "reel": "Ddjy_ZEpJJ0",
+     "claim": "Mentioned as a platform to study consistent hashing and other system design concepts through interactive practice questions."
     }
    ]
   },
@@ -978,22 +1039,6 @@
     {
      "reel": "DeJKcDqE2q3",
      "claim": "Recommended for practicing short, standardized dynamic programming and graph problems before tackling advanced topics."
-    }
-   ]
-  },
-  {
-   "id": "devmaxx",
-   "name": "Devmaxx",
-   "whatItIs": "A mobile learning application designed for daily system design practice and interview preparation.",
-   "category": "products/other",
-   "link": "",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-09-28",
-   "mentions": [
-    {
-     "reel": "Ddec1pfRwwc",
-     "claim": "Pitched by the creator as a tool to learn and practice system design concepts every day."
     }
    ]
   },
@@ -1271,6 +1316,25 @@
   }
  ],
  "reels": [
+  {
+   "id": "Ddjy_ZEpJJ0",
+   "url": "https://www.instagram.com/reel/Ddjy_ZEpJJ0/",
+   "author": "Arjay McCandless",
+   "title": "Why Simple Modulo Hashing Breaks Distributed Caches and How Consistent Hashing Solves It",
+   "summary": "Using simple modulo hashing to distribute cache keys across servers causes widespread key remapping when adding or removing nodes, leading to cache stampedes and database overload. Consistent hashing avoids this by mapping servers and keys to a ring topology, ensuring that scaling the cache cluster only relocates a small subset of keys. This technique preserves hit rates and protects downstream databases during horizontal scaling.",
+   "transcript": "Dude, this is really bad. I just added another cache server and our database is melting down. Okay, walk me through exactly what happened. We had three cache servers sitting in front of our database which were distributing the load fairly well. Cache utilization hit about 80%, so I figured we should add another cache server to reduce the load. Makes sense to me. What happened next? The second I added another cache server to help handle some of that load, our cache hit rate plummeted. It started sending all the requests straight to the database, and our database got overloaded. Wait, how were you deciding which cache server stores each key? We just take a hash of the key mod 4 to make sure the traffic is evenly distributed across all our cache servers. hash(key) % 4. There's your problem. Going from 3 to 4 servers can remap about 75% of your keys. Those requests will hit the wrong cache, miss, and then fall straight through to your database, causing the overload. Okay, that makes sense, but what should we do instead? You could fix this with consistent hashing. Instead of doing modulo by the number of servers, imagine every possible hash arranged around a ring. Then we hash each cache server onto that same ring. When a request comes in, we hash by its key, find that point on the ring, and then move clockwise until we hit a cache server, and that server owns that key. Then, when we add another server, we put that new server somewhere on the ring, and instead of redistributing almost every key, only the keys in that section of the ring move to the new server. The rest of the keys keep going to the same exact cache servers they were using before. How can I practice this stuff? You can study consistent hashing and other advanced system design concepts on my app, Devmaxx.",
+   "note": "",
+   "saved": "2026-10-09",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "b528122d4c",
+    "b54d1bf14e"
+   ],
+   "tools": [
+    "devmaxx"
+   ]
+  },
   {
    "id": "DeNTHkQgb-a",
    "url": "https://www.instagram.com/reel/DeNTHkQgb-a/",
