@@ -24,4 +24,5 @@ Grouped by the weekly regroup, or ask Claude to group them now.
 - [system-design/distributed-systems](topics/system-design/distributed-systems.md): 4
 - [system-design/real-time](topics/system-design/real-time.md): 1
 - [system-design/reliability](topics/system-design/reliability.md): 1
+- [system-design/scalability](topics/system-design/scalability.md): 1
 

@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "stats": {
-  "reels": 21,
-  "insights": 50,
-  "tools": 30,
-  "ungrouped": 24
+  "reels": 22,
+  "insights": 52,
+  "tools": 36,
+  "ungrouped": 25
  },
  "topics": [
   {
@@ -600,8 +600,8 @@
    "path": "system-design/async-processing",
    "title": "Async Processing",
    "area": "System Design",
-   "insightCount": 1,
-   "reelCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
    "ungroupedCount": 1,
    "groups": [
     {
@@ -618,7 +618,12 @@
         "Ddec1pfRwwc"
        ],
        "created": "2026-09-28",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Offloading long-running operations to background worker queues allows APIs to return immediate asynchronous responses to clients.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       }
      ]
@@ -815,9 +820,9 @@
    "path": "system-design/scalability",
    "title": "Scalability",
    "area": "System Design",
-   "insightCount": 2,
-   "reelCount": 1,
-   "ungroupedCount": 0,
+   "insightCount": 3,
+   "reelCount": 2,
+   "ungroupedCount": 1,
    "groups": [
     {
      "name": "Workload Scaling Strategies",
@@ -845,6 +850,25 @@
         "Ddec1pfRwwc"
        ],
        "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "dd3ea76d73",
+       "text": "Distributing static assets across global edge locations via CDNs reduces latency for geographically dispersed users.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeSfbOYJrMU"
+       ],
+       "created": "2026-10-10",
        "nuances": [],
        "conflicts": []
       }
@@ -967,6 +991,86 @@
    ]
   },
   {
+   "id": "amazon-cloudfront",
+   "name": "Amazon CloudFront",
+   "whatItIs": "A global content delivery network (CDN) service.",
+   "category": "dev-tools/infra",
+   "link": "https://aws.amazon.com/cloudfront/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used to cache and serve media files globally from edge locations."
+    }
+   ]
+  },
+  {
+   "id": "amazon-cognito",
+   "name": "Amazon Cognito",
+   "whatItIs": "An identity management service for user authentication and authorization.",
+   "category": "dev-tools/infra",
+   "link": "https://aws.amazon.com/cognito/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used to handle user signup, login, and JWT token authentication."
+    }
+   ]
+  },
+  {
+   "id": "amazon-dynamodb",
+   "name": "Amazon DynamoDB",
+   "whatItIs": "A fully managed NoSQL key-value and document database service.",
+   "category": "dev-tools/databases",
+   "link": "https://aws.amazon.com/dynamodb/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used as the persistent data store for the serverless backend."
+    }
+   ]
+  },
+  {
+   "id": "amazon-s3",
+   "name": "Amazon S3",
+   "whatItIs": "An object storage service built to store and retrieve any amount of data.",
+   "category": "dev-tools/infra",
+   "link": "https://aws.amazon.com/s3/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used to store user-uploaded files, images, and videos."
+    }
+   ]
+  },
+  {
+   "id": "amazon-sqs",
+   "name": "Amazon SQS",
+   "whatItIs": "A fully managed message queuing service.",
+   "category": "dev-tools/infra",
+   "link": "https://aws.amazon.com/sqs/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used to decouple slow background tasks from synchronous user requests."
+    }
+   ]
+  },
+  {
    "id": "apivault",
    "name": "ApiVault",
    "whatItIs": "A curated directory cataloging free public APIs categorized by domain.",
@@ -995,6 +1099,22 @@
     {
      "reel": "DdecbsEnSGo",
      "claim": "Recommended for randomized, untagged practice near the boundary of solvable difficulty."
+    }
+   ]
+  },
+  {
+   "id": "aws-lambda",
+   "name": "AWS Lambda",
+   "whatItIs": "A serverless compute service that runs code in response to events.",
+   "category": "dev-tools/infra",
+   "link": "https://aws.amazon.com/lambda/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-10",
+   "mentions": [
+    {
+     "reel": "DeSfbOYJrMU",
+     "claim": "Used to execute backend logic for serverless APIs and background job processing."
     }
    ]
   },
@@ -1352,6 +1472,30 @@
   }
  ],
  "reels": [
+  {
+   "id": "DeSfbOYJrMU",
+   "url": "https://www.instagram.com/reel/DeSfbOYJrMU/",
+   "author": "Arjay McCandless",
+   "title": "AWS System Design Basics",
+   "summary": "A step-by-step overview of how to compose AWS services to build a full-stack serverless web application architecture. It covers request handling, database storage, infrastructure as code, asset delivery, monitoring, authentication, asynchronous background processing, and custom domain routing.",
+   "transcript": "If you take API Gateway, Lambda, and DynamoDB, you can build a simple serverless API. If you add CloudFormation, you can deploy the entire thing using infrastructure as code. If you add S3, you can store files, images, and videos. And if you add CloudFront, you can serve those assets to users around the world. If you add CloudWatch, you can monitor your application and get alerted when something goes wrong. If you add Cognito, you can let users sign up, log in, and authenticate requests to your API. If you add SQS, you can move slow tasks to the background so users don't have to wait for them. If you add Route 53, you can connect everything to your own domain. Congrats, you just built a pretty solid AWS system. Next episode I'll give you a simple stack to do the same thing for free on your own computer. On-screen text: GET /items, 200 OK, template.yaml, photo.jpg, video.mp4, 600+ edge locations, ALARM: errors > 1%, Sign up - Log in, JWT, 202 Accepted, yourapp.com, ubuntu-vm, localhost, $0/mo, Docker, Kong, Node.js, PostgreSQL, MinIO, NGINX, Prometheus, Keycloak, RabbitMQ, Follow for part 2.",
+   "note": "",
+   "saved": "2026-10-10",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "dd3ea76d73",
+    "14b3cc376b"
+   ],
+   "tools": [
+    "amazon-cloudfront",
+    "amazon-cognito",
+    "amazon-dynamodb",
+    "amazon-s3",
+    "amazon-sqs",
+    "aws-lambda"
+   ]
+  },
   {
    "id": "Ddjy_ZEpJJ0",
    "url": "https://www.instagram.com/reel/Ddjy_ZEpJJ0/",

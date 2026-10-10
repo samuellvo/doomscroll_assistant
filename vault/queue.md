@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (30)
+## New (36)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -12,8 +12,14 @@
 | [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 2 | A free educational website offering structured tutorials and practice problems for competitive programming. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
+| [Amazon CloudFront](tools/amazon-cloudfront.md) | `dev-tools/infra` | 1 | A global content delivery network (CDN) service. |
+| [Amazon Cognito](tools/amazon-cognito.md) | `dev-tools/infra` | 1 | An identity management service for user authentication and authorization. |
+| [Amazon DynamoDB](tools/amazon-dynamodb.md) | `dev-tools/databases` | 1 | A fully managed NoSQL key-value and document database service. |
+| [Amazon S3](tools/amazon-s3.md) | `dev-tools/infra` | 1 | An object storage service built to store and retrieve any amount of data. |
+| [Amazon SQS](tools/amazon-sqs.md) | `dev-tools/infra` | 1 | A fully managed message queuing service. |
 | [ApiVault](tools/apivault.md) | `dev-tools/productivity` | 1 | A curated directory cataloging free public APIs categorized by domain. |
 | [AtCoder](tools/atcoder.md) | `dev-tools/productivity` | 1 | A competitive programming platform featuring granular problem difficulty scores. |
+| [AWS Lambda](tools/aws-lambda.md) | `dev-tools/infra` | 1 | A serverless compute service that runs code in response to events. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
