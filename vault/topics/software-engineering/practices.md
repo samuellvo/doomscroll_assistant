@@ -5,11 +5,21 @@ _10 insights from 7 reels · `software-engineering/practices`_
 
 ## Organic Search Growth
 
-_See also: Credential Protection Strategies, Autonomous Agent Workflows_
+_See also: Autonomous Agent Workflows, Credential Protection Strategies_
 
 - **Do not model SEO strategies after large enterprise brands, as high domain authority often masks poor practices like keyword stuffing that eventually suffer ranking drops.** · _pitfall_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
 - **Optimize target keyword placement by prioritizing the page title, URL slug, H1 heading, and the beginning of the first sentence.** · _pattern_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
 - **Build domain authority by acquiring backlinks that drive real referral traffic rather than relying solely on keyword volume.** · _principle_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
+- **De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.** · _principle_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
+- **Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.** · _pattern_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
+
+## Autonomous Agent Workflows
+
+_See also: Organic Search Growth, Credential Protection Strategies_
+
+- **Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.** · _principle_ · [DdXLdluKNwi](../../reels/DdXLdluKNwi.md)
+- **Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.** · _pattern_ · [Dd_qig-AS8Y](../../reels/Dd_qig-AS8Y.md)
+- **Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.** · _pattern_ · [DeHphfnxfZg](../../reels/DeHphfnxfZg.md)
 
 ## Credential Protection Strategies
 
@@ -17,18 +27,3 @@ _See also: Autonomous Agent Workflows, Organic Search Growth_
 
 - **API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.** · _principle_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)
 - **Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.** · _principle_ · [Db7Vx2Hhf9c](../../reels/Db7Vx2Hhf9c.md)
-
-## Autonomous Agent Workflows
-
-_See also: Credential Protection Strategies, Organic Search Growth_
-
-- **Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.** · _principle_ · [DdXLdluKNwi](../../reels/DdXLdluKNwi.md)
-- **Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.** · _pattern_ · [Dd_qig-AS8Y](../../reels/Dd_qig-AS8Y.md)
-
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
-
-- **De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.** · _principle_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
-- **Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.** · _pattern_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
-- **Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.** · _pattern_ · [DeHphfnxfZg](../../reels/DeHphfnxfZg.md)

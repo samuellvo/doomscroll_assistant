@@ -3,9 +3,9 @@
 # Interviews
 _9 insights from 3 reels · `career/interviews`_
 
-## Ungrouped
+## Algorithmic Problem Solving Strategies
 
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+_See also: Strategic Interview Questions_
 
 - **Relying on topic-tagged roadmaps prevents candidates from developing the skill to independently recognize problem patterns on unseen questions.** · _pitfall_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
 - **Mastering data structures and algorithms requires moving from tagged practice problems to untagged problems while documenting missed insights.** · _principle_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
@@ -13,6 +13,11 @@ _New arrivals. Sorted into groups weekly, or when you ask Claude._
 - **Studying written editorial solutions generally builds stronger algorithmic intuition than passively watching video explanations.** · _principle_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
 - **For software engineering interview preparation, mastering foundational competitive programming tiers (such as Bronze, Silver, and select DP/graph topics) offers more structured progression than unorganized problem grinding.** · _pattern_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
 - **Standard competitive programming benchmarks like the CSES problem set directly map to common technical interview patterns found on platforms like LeetCode.** · _example_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
+
+## Strategic Interview Questions
+
+_See also: Algorithmic Problem Solving Strategies_
+
 - **Asking an interviewer for advice based on their career success builds positive rapport and elicits insightful, enthusiastic responses.** · _pattern_ · [DeQe_FDtpxM](../../reels/DeQe_FDtpxM.md)
 - **Asking how to guarantee success in the specific timeframe of the role prompts the interviewer to subconsciously visualize you working on the team.** · _pattern_ · [DeQe_FDtpxM](../../reels/DeQe_FDtpxM.md)
 - **Asking what traits top performers share provides specific criteria you can immediately emphasize in your remaining interview answers.** · _pattern_ · [DeQe_FDtpxM](../../reels/DeQe_FDtpxM.md)

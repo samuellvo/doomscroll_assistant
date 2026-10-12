@@ -5,7 +5,7 @@
   "reels": 23,
   "insights": 55,
   "tools": 38,
-  "ungrouped": 28
+  "ungrouped": 8
  },
  "topics": [
   {
@@ -14,7 +14,7 @@
    "area": "AI ML",
    "insightCount": 13,
    "reelCount": 8,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Operational Efficiency and Interfaces",
@@ -145,14 +145,7 @@
        "created": "2026-10-05",
        "nuances": [],
        "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
+      },
       {
        "id": "3ddfd940e8",
        "text": "Automated bug-fixing workflows should require AI agents to isolate and reproduce the error in an execution environment before writing a patch.",
@@ -187,12 +180,14 @@
    "area": "Career",
    "insightCount": 9,
    "reelCount": 3,
-   "ungroupedCount": 9,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Algorithmic Problem Solving Strategies",
      "pinned": false,
-     "related": [],
+     "related": [
+      "Strategic Interview Questions"
+     ],
      "insights": [
       {
        "id": "820487ad31",
@@ -265,7 +260,16 @@
        "created": "2026-10-06",
        "nuances": [],
        "conflicts": []
-      },
+      }
+     ]
+    },
+    {
+     "name": "Strategic Interview Questions",
+     "pinned": false,
+     "related": [
+      "Algorithmic Problem Solving Strategies"
+     ],
+     "insights": [
       {
        "id": "262453c0a5",
        "text": "Asking an interviewer for advice based on their career success builds positive rapport and elicits insightful, enthusiastic responses.",
@@ -312,10 +316,10 @@
    "area": "Frontend",
    "insightCount": 2,
    "reelCount": 1,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Image Loading Optimization",
      "pinned": false,
      "related": [],
      "insights": [
@@ -478,14 +482,14 @@
    "area": "Software Engineering",
    "insightCount": 10,
    "reelCount": 7,
-   "ungroupedCount": 3,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Organic Search Growth",
      "pinned": false,
      "related": [
-      "Credential Protection Strategies",
-      "Autonomous Agent Workflows"
+      "Autonomous Agent Workflows",
+      "Credential Protection Strategies"
      ],
      "insights": [
       {
@@ -523,6 +527,76 @@
        "created": "2026-10-03",
        "nuances": [],
        "conflicts": []
+      },
+      {
+       "id": "ca518e760e",
+       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DeKAwyEsCVq"
+       ],
+       "created": "2026-10-07",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "9e27481add",
+       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeKAwyEsCVq"
+       ],
+       "created": "2026-10-07",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": "Autonomous Agent Workflows",
+     "pinned": false,
+     "related": [
+      "Organic Search Growth",
+      "Credential Protection Strategies"
+     ],
+     "insights": [
+      {
+       "id": "b34a21ed9f",
+       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdXLdluKNwi"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "a8abd9ea2a",
+       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd_qig-AS8Y"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "59fc34b8c3",
+       "text": "Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeHphfnxfZg"
+       ],
+       "created": "2026-10-12",
+       "nuances": [],
+       "conflicts": []
       }
      ]
     },
@@ -555,83 +629,6 @@
         "Db7Vx2Hhf9c"
        ],
        "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": "Autonomous Agent Workflows",
-     "pinned": false,
-     "related": [
-      "Credential Protection Strategies",
-      "Organic Search Growth"
-     ],
-     "insights": [
-      {
-       "id": "b34a21ed9f",
-       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DdXLdluKNwi"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "a8abd9ea2a",
-       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "Dd_qig-AS8Y"
-       ],
-       "created": "2026-10-03",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
-      {
-       "id": "ca518e760e",
-       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "9e27481add",
-       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "59fc34b8c3",
-       "text": "Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeHphfnxfZg"
-       ],
-       "created": "2026-10-12",
        "nuances": [],
        "conflicts": []
       }
@@ -737,10 +734,10 @@
    "area": "System Design",
    "insightCount": 4,
    "reelCount": 2,
-   "ungroupedCount": 4,
+   "ungroupedCount": 1,
    "groups": [
     {
-     "name": null,
+     "name": "Network Socket Optimization",
      "pinned": false,
      "related": [],
      "insights": [
@@ -779,7 +776,14 @@
        "created": "2026-10-08",
        "nuances": [],
        "conflicts": []
-      },
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
       {
        "id": "b54d1bf14e",
        "text": "Consistent hashing maps nodes and keys along a shared hash ring, ensuring that scaling nodes only relocates keys belonging to the immediate arc adjacent to the new node.",
@@ -865,7 +869,7 @@
    "area": "System Design",
    "insightCount": 3,
    "reelCount": 2,
-   "ungroupedCount": 1,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Workload Scaling Strategies",
@@ -895,14 +899,7 @@
        "created": "2026-09-28",
        "nuances": [],
        "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
+      },
       {
        "id": "dd3ea76d73",
        "text": "Distributing static assets across global edge locations via CDNs reduces latency for geographically dispersed users.",

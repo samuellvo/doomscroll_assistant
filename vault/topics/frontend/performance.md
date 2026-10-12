@@ -3,9 +3,7 @@
 # Performance
 _2 insights from 1 reel · `frontend/performance`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Image Loading Optimization
 
 - **Applying the native HTML loading="lazy" attribute to image tags defers offscreen asset requests until the user scrolls toward them, decreasing initial payload and boosting page performance.** · _pattern_ · [Dax66INgK3F](../../reels/Dax66INgK3F.md)
 - **Rendering large numbers of un-deferred images simultaneously triggers immediate concurrent network requests for offscreen assets, degrading initial page load time and Core Web Vitals.** · _pitfall_ · [Dax66INgK3F](../../reels/Dax66INgK3F.md)

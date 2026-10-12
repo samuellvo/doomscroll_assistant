@@ -3,11 +3,14 @@
 # Distributed Systems
 _4 insights from 2 reels · `system-design/distributed-systems`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Network Socket Optimization
 
 - **Splitting network payloads across multiple write operations causes a 40ms latency delay due to conflicts between client-side Nagle's algorithm and server-side TCP delayed ACK.** · _pitfall_ · [DeNTHkQgb-a](../../reels/DeNTHkQgb-a.md)
 - **Enabling TCP_NODELAY on TCP sockets disables Nagle's algorithm and prevents buffering delays on small consecutive socket writes.** · _pattern_ · [DeNTHkQgb-a](../../reels/DeNTHkQgb-a.md)
 - **Combining request headers and body into a single network write prevents TCP packet buffering without needing to change socket configuration options.** · _pattern_ · [DeNTHkQgb-a](../../reels/DeNTHkQgb-a.md)
+
+## Ungrouped
+
+_New arrivals. Sorted into groups weekly, or when you ask Claude._
+
 - **Consistent hashing maps nodes and keys along a shared hash ring, ensuring that scaling nodes only relocates keys belonging to the immediate arc adjacent to the new node.** · _pattern_ · [Ddjy_ZEpJJ0](../../reels/Ddjy_ZEpJJ0.md)
