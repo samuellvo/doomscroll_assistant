@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (36)
+## New (38)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -25,6 +25,7 @@
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |
+| [Cursor](tools/cursor.md) | `dev-tools/ai` | 1 | An AI-powered code editor with support for background and cloud coding agents. |
 | [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
@@ -38,6 +39,7 @@
 | [Omni Route](tools/omni-route.md) | `dev-tools/ai` | 1 | An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers. |
 | [page-agent](tools/page-agent.md) | `dev-tools/ai` | 1 | An in-page AI GUI agent created by Alibaba that controls web interfaces via natural language. |
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 1 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
+| [PostHog](tools/posthog.md) | `dev-tools/infra` | 1 | An open-source product analytics, error monitoring, and session recording platform. |
 | [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
