@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "stats": {
-  "reels": 23,
-  "insights": 55,
-  "tools": 38,
-  "ungrouped": 8
+  "reels": 24,
+  "insights": 59,
+  "tools": 43,
+  "ungrouped": 11
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 13,
-   "reelCount": 8,
-   "ungroupedCount": 0,
+   "insightCount": 17,
+   "reelCount": 9,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": "Operational Efficiency and Interfaces",
@@ -155,7 +155,12 @@
         "DeHphfnxfZg"
        ],
        "created": "2026-10-12",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Wiring browser automation tools into an iterative loop between coding and evaluator agents allows automated detection and self-healing of user-facing bugs before human review.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       },
       {
@@ -167,6 +172,49 @@
         "DeHphfnxfZg"
        ],
        "created": "2026-10-12",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "349d574f2b",
+       "text": "Drafting an explicit PRD through an interactive questioning skill clarifies architectural requirements for both the developer and coding agent before writing implementation code.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeZqqXvASHs"
+       ],
+       "created": "2026-10-13",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5b9e935657",
+       "text": "Evaluating code with an independent agent operating in a clean context window prevents contamination and ensures alignment with broader project architecture and standards.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DeZqqXvASHs"
+       ],
+       "created": "2026-10-13",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "dea58f67e5",
+       "text": "Subjecting agent-generated code to adversarial review agents helps simplify logic and strip unnecessary bloat.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeZqqXvASHs"
+       ],
+       "created": "2026-10-13",
        "nuances": [],
        "conflicts": []
       }
@@ -939,6 +987,26 @@
    ]
   },
   {
+   "id": "claude-code",
+   "name": "Claude Code",
+   "whatItIs": "An agentic command-line interface tool for automated coding and project editing.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "The primary platform discussed for vibe coding and hosting plugins."
+    },
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Used to spin up dynamic workflows and sub-agents to research bugs and repo conventions before generating code."
+    }
+   ]
+  },
+  {
    "id": "devmaxx",
    "name": "Devmaxx",
    "whatItIs": "A mobile learning application designed for daily system design practice and interview preparation.",
@@ -975,6 +1043,26 @@
     {
      "reel": "DeFjXe4AboQ",
      "claim": "Used to host the open-source legal templates repository under a CC0 license."
+    }
+   ]
+  },
+  {
+   "id": "ponytail",
+   "name": "Ponytail",
+   "whatItIs": "An optimization plugin designed to compress output and reduce token usage for coding agents.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-09-30",
+   "mentions": [
+    {
+     "reel": "DdXLdluKNwi",
+     "claim": "Claimed to cut Claude Code token usage by over 50% without sacrificing accuracy."
+    },
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Highlighted as an adversarial review tool to simplify and debloat code."
     }
    ]
   },
@@ -1175,22 +1263,6 @@
    ]
   },
   {
-   "id": "claude-code",
-   "name": "Claude Code",
-   "whatItIs": "An agentic command-line interface tool for automated coding and project editing.",
-   "category": "dev-tools/ai",
-   "link": "",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-09-30",
-   "mentions": [
-    {
-     "reel": "DdXLdluKNwi",
-     "claim": "The primary platform discussed for vibe coding and hosting plugins."
-    }
-   ]
-  },
-  {
    "id": "cli-anything",
    "name": "CLI-Anything",
    "whatItIs": "An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use.",
@@ -1335,6 +1407,22 @@
    ]
   },
   {
+   "id": "grill-me",
+   "name": "grill-me",
+   "whatItIs": "A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-13",
+   "mentions": [
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Recommended for nailing down architectural requirements and generating structured PRDs prior to code generation."
+    }
+   ]
+  },
+  {
    "id": "leetcode",
    "name": "LeetCode",
    "whatItIs": "A technical interview preparation platform featuring algorithm coding challenges.",
@@ -1379,6 +1467,22 @@
     {
      "reel": "DdecbsEnSGo",
      "claim": "Critiqued as a topic list that fails to build deep recognition skills needed for unseen interview questions."
+    }
+   ]
+  },
+  {
+   "id": "no-mistakes",
+   "name": "No Mistakes",
+   "whatItIs": "An agent skill by Kun Chen that applies adversarial checks to pull requests and changes.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-13",
+   "mentions": [
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Referenced as a tool to conduct adversarial code review and maintain high code quality."
     }
    ]
   },
@@ -1447,18 +1551,18 @@
    ]
   },
   {
-   "id": "ponytail",
-   "name": "Ponytail",
-   "whatItIs": "An optimization plugin designed to compress output and reduce token usage for coding agents.",
-   "category": "dev-tools/ai",
+   "id": "playwright",
+   "name": "Playwright",
+   "whatItIs": "A cross-browser end-to-end automation and testing framework.",
+   "category": "dev-tools/productivity",
    "link": "",
    "status": "new",
    "notes": "",
-   "firstSeen": "2026-09-30",
+   "firstSeen": "2026-10-13",
    "mentions": [
     {
-     "reel": "DdXLdluKNwi",
-     "claim": "Claimed to cut Claude Code token usage by over 50% without sacrificing accuracy."
+     "reel": "DeZqqXvASHs",
+     "claim": "Used within an agentic loop to verify user behavior end-to-end and trigger automated fixes on failure."
     }
    ]
   },
@@ -1475,6 +1579,38 @@
     {
      "reel": "DeHphfnxfZg",
      "claim": "Used as the error-capturing service that triggers the automated AI on-call repair bot."
+    }
+   ]
+  },
+  {
+   "id": "pstack",
+   "name": "pstack",
+   "whatItIs": "A developer agent skill suite for architectural evaluation and repository tasks.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-13",
+   "mentions": [
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Mentioned as an adversarial review skill to inspect and clean up AI-generated code."
+    }
+   ]
+  },
+  {
+   "id": "puppeteer",
+   "name": "Puppeteer",
+   "whatItIs": "A Node.js library providing a high-level API to control headless Chrome or Chromium.",
+   "category": "dev-tools/productivity",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-13",
+   "mentions": [
+    {
+     "reel": "DeZqqXvASHs",
+     "claim": "Used to test application UI and behavior automatically within the agent eval loop."
     }
    ]
   },
@@ -1544,6 +1680,33 @@
   }
  ],
  "reels": [
+  {
+   "id": "DeZqqXvASHs",
+   "url": "https://www.instagram.com/reel/DeZqqXvASHs/",
+   "author": "George Wang",
+   "title": "AI-Native Builder Workflow: 4-Step Process for High-Quality Code Generation",
+   "summary": "Former FAANG engineer George outlines a 4-step framework for using AI coding agents while maintaining high quality at scale. The process involves pre-implementation planning via PRDs, adversarial code reviews, rubric-based evaluation agents in isolated context windows, and automated end-to-end feedback loops using headless browsers.",
+   "transcript": "How to become a 10x AI-native builder. Day 1. These are the AI coding skills that I use that allow me to merge 200+ PRs per week while also keeping the code quality extremely high. GitHub contributions: 59 contributions on August 11th. Today is day 1 of me explaining how to be a 10x AI native builder. My name is George, and I've been a FAANG software engineer for over 5 years. Amazon. Georgia Tech. I have a Master's in AI, and I'm also a tech content creator, and I use AI to make all of my videos. One of the top questions that I get is how I keep my code quality extremely high without ever looking at the code. And the answer to this is a combination of skills and coding agents. But let me quickly explain to you my 4-step process. 01 Plan, 02 Review, 03 Define a rubric, 04 Test + repair. Number 1, if I'm planning to do a big architectural change, I always use Matt Pocock's PRD grill-me skill because it helps you create the initial architectural design in a PRD doc that's very easy to read for both you and the agent. Matt Pocock • grill-me. Define the target before asking for code: Question -> PRD -> Coding agent. Number 2, a lot of great engineers out there have made skills such as pstack, Ponytail, No Mistakes by Kun Chen. All of them more or less do an adverse code review of the code that you've made to make it simpler and debloat it. Now there are times where I'm looking for a specific bug, or I want to match the code quality of the repo that I'm already working in. And in scenarios like this, I typically spin up a dynamic workflow from Claude Code so that I spin up a bunch of sub-agents and it does a ton of research before it continues on with the code. Research first. Code with the project's context: Bug context + Repo conventions -> Coding agent. Number 3, for a lot of my big projects, I actually build specific adverse review eval agents for them. And the reason for this is I want it to have a specific vertical stack rubric that goes beyond just the initial code quality and also goes into the vision and philosophy of what the project is about. This is super helpful because it's a context window outside of your original coding agent. Coding agent -> Evaluator with fresh context. Rubric: Code quality, Project vision, Behavior. Finally, if this is a change for user behavior, I usually create a loop between my coding agent and my eval agent so that it is either using Puppeteer, Playwright, or computer use to test my app and make sure that the user behavior vertical stack works from end to end. Code -> Run app -> Evaluate -> Human review. If it finds any issues, that loop restarts, lets the coding agent fix that issue before I ever get involved with the manual testing. Fail -> Fix -> Retest loop. This has helped me catch the majority of UI bugs before I ever look into it manually. Comment SKILLS below and I will send you all the skills I use.",
+   "note": "",
+   "saved": "2026-10-13",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "349d574f2b",
+    "5b9e935657",
+    "dea58f67e5",
+    "043759af1f"
+   ],
+   "tools": [
+    "claude-code",
+    "grill-me",
+    "no-mistakes",
+    "playwright",
+    "ponytail",
+    "pstack",
+    "puppeteer"
+   ]
+  },
   {
    "id": "DeHphfnxfZg",
    "url": "https://www.instagram.com/reel/DeHphfnxfZg/",

@@ -2,13 +2,15 @@
 
 # Tool queue
 
-## New (38)
+## New (43)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
 | [Claude](tools/claude.md) | `dev-tools/ai` | 2 | An AI assistant and LLM family developed by Anthropic. |
+| [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 2 | An agentic command-line interface tool for automated coding and project editing. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 2 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 2 | A developer platform for version control and code hosting. |
+| [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 2 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
 | [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 2 | A free educational website offering structured tutorials and practice problems for competitive programming. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
@@ -21,7 +23,6 @@
 | [AtCoder](tools/atcoder.md) | `dev-tools/productivity` | 1 | A competitive programming platform featuring granular problem difficulty scores. |
 | [AWS Lambda](tools/aws-lambda.md) | `dev-tools/infra` | 1 | A serverless compute service that runs code in response to events. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
-| [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 1 | An agentic command-line interface tool for automated coding and project editing. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |
@@ -31,15 +32,19 @@
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
+| [grill-me](tools/grill-me.md) | `dev-tools/ai` | 1 | A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications. |
 | [LeetCode](tools/leetcode.md) | `dev-tools/productivity` | 1 | A technical interview preparation platform featuring algorithm coding challenges. |
 | [meetily](tools/meetily.md) | `dev-tools/ai` | 1 | A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine. |
 | [NeetCode](tools/neetcode.md) | `dev-tools/productivity` | 1 | An interview preparation platform with problem roadmaps and video explanations. |
+| [No Mistakes](tools/no-mistakes.md) | `dev-tools/ai` | 1 | An agent skill by Kun Chen that applies adversarial checks to pull requests and changes. |
 | [Notion](tools/notion.md) | `dev-tools/productivity` | 1 | A connected workspace for note-taking, project management, and task tracking. |
 | [Obsidian](tools/obsidian.md) | `dev-tools/productivity` | 1 | A markdown-based knowledge base and note-taking application. |
 | [Omni Route](tools/omni-route.md) | `dev-tools/ai` | 1 | An AI routing plugin that connects coding agents to hundreds of alternative free and low-cost model providers. |
 | [page-agent](tools/page-agent.md) | `dev-tools/ai` | 1 | An in-page AI GUI agent created by Alibaba that controls web interfaces via natural language. |
-| [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 1 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
+| [Playwright](tools/playwright.md) | `dev-tools/productivity` | 1 | A cross-browser end-to-end automation and testing framework. |
 | [PostHog](tools/posthog.md) | `dev-tools/infra` | 1 | An open-source product analytics, error monitoring, and session recording platform. |
+| [pstack](tools/pstack.md) | `dev-tools/ai` | 1 | A developer agent skill suite for architectural evaluation and repository tasks. |
+| [Puppeteer](tools/puppeteer.md) | `dev-tools/productivity` | 1 | A Node.js library providing a high-level API to control headless Chrome or Chromium. |
 | [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |

@@ -5,7 +5,7 @@ name: Ponytail
 category: dev-tools/ai
 status: new
 first_seen: 2026-09-30
-mentions: 1
+mentions: 2
 ---
 # Ponytail
 
@@ -14,3 +14,4 @@ An optimization plugin designed to compress output and reduce token usage for co
 ## What creators claimed
 
 - Claimed to cut Claude Code token usage by over 50% without sacrificing accuracy. ([DdXLdluKNwi](../reels/DdXLdluKNwi.md))
+- Highlighted as an adversarial review tool to simplify and debloat code. ([DeZqqXvASHs](../reels/DeZqqXvASHs.md))

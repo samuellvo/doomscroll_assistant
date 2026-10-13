@@ -5,7 +5,7 @@ name: Claude Code
 category: dev-tools/ai
 status: new
 first_seen: 2026-09-30
-mentions: 1
+mentions: 2
 ---
 # Claude Code
 
@@ -14,3 +14,4 @@ An agentic command-line interface tool for automated coding and project editing.
 ## What creators claimed
 
 - The primary platform discussed for vibe coding and hosting plugins. ([DdXLdluKNwi](../reels/DdXLdluKNwi.md))
+- Used to spin up dynamic workflows and sub-agents to research bugs and repo conventions before generating code. ([DeZqqXvASHs](../reels/DeZqqXvASHs.md))
