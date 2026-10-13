@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (43)
+## New (44)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -48,4 +48,5 @@
 | [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
+| [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
