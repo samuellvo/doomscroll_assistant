@@ -2,7 +2,7 @@
  "schema": 1,
  "generated": "2026-10-17",
  "stats": {
-  "reels": 26,
+  "reels": 27,
   "insights": 62,
   "tools": 47,
   "ungrouped": 13
@@ -1012,6 +1012,10 @@
     {
      "reel": "DeFjXe4AboQ",
      "claim": "Recommended as the AI model to ingest the legal templates and generate customized legal contracts."
+    },
+    {
+     "reel": "Dei6rLOvQKO",
+     "claim": "Highlighted as a tool capable of generating code for 20 distinct creative animation and simulation styles."
     }
    ]
   },
@@ -1792,6 +1796,22 @@
     "fortran",
     "gnu-libmicrohttpd",
     "sqlite"
+   ]
+  },
+  {
+   "id": "Dei6rLOvQKO",
+   "url": "https://www.instagram.com/reel/Dei6rLOvQKO/",
+   "author": "Byron",
+   "title": "20 More Animation Styles You Can Ask Claude For",
+   "summary": "A visual showcase of 20 creative animation and visual effect styles that can be generated in code using Claude prompts. Examples range from Matrix rain and starfield warp to complex procedural simulations like boids flocking and slime mold.",
+   "transcript": "On-screen: 20 more animation styles you can ask Claude for (Screenshot this)\n\n1. Aurora gradient\n2. Matrix rain\n3. Starfield warp\n4. Chrome metal\n5. Low poly 3D\n6. Fireworks\n7. Wireframe terrain\n8. Origami fold\n9. Isometric city\n10. Water ripples\n11. Infinite tunnel\n12. Stained glass\n13. Ink in water\n14. Kaleidoscope\n15. Spirograph\n16. Voronoi cells\n17. Smoke simulation\n18. Boids flocking\n19. Reaction diffusion\n20. Slime mold\n\nSpeaker: Aurora gradient. Matrix rain. Starfield warp. Chrome metal. Low poly 3D. Fireworks. Wireframe terrain. Origami fold. Isometric city. Water ripples. Infinite tunnel. Stained glass. Ink in water. Kaleidoscope. Spirograph. Voronoi cells. Smoke simulation. Boids flocking. Reaction diffusion. Slime mold.",
+   "note": "",
+   "saved": "2026-10-17",
+   "kind": "reel",
+   "items": 1,
+   "insights": [],
+   "tools": [
+    "claude"
    ]
   },
   {

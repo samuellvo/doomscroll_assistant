@@ -6,7 +6,7 @@
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
-| [Claude](tools/claude.md) | `dev-tools/ai` | 2 | An AI assistant and LLM family developed by Anthropic. |
+| [Claude](tools/claude.md) | `dev-tools/ai` | 3 | An AI assistant and LLM family developed by Anthropic. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 2 | An agentic command-line interface tool for automated coding and project editing. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 2 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 2 | A developer platform for version control and code hosting. |

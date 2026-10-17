@@ -5,7 +5,7 @@ name: Claude
 category: dev-tools/ai
 status: new
 first_seen: 2026-09-30
-mentions: 2
+mentions: 3
 ---
 # Claude
 
@@ -17,3 +17,4 @@ An AI assistant and LLM family developed by Anthropic.
 
 - Used to generate 3D models with Blender and automatically import them into Roblox. ([Dd4_kY-StGS](../reels/Dd4_kY-StGS.md))
 - Recommended as the AI model to ingest the legal templates and generate customized legal contracts. ([DeFjXe4AboQ](../reels/DeFjXe4AboQ.md))
+- Highlighted as a tool capable of generating code for 20 distinct creative animation and simulation styles. ([Dei6rLOvQKO](../reels/Dei6rLOvQKO.md))
