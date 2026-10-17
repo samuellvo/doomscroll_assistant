@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-13",
+ "generated": "2026-10-17",
  "stats": {
-  "reels": 25,
-  "insights": 60,
-  "tools": 44,
-  "ungrouped": 12
+  "reels": 26,
+  "insights": 62,
+  "tools": 47,
+  "ungrouped": 13
  },
  "topics": [
   {
@@ -763,9 +763,9 @@
    "path": "system-design/databases",
    "title": "Databases",
    "area": "System Design",
-   "insightCount": 1,
-   "reelCount": 1,
-   "ungroupedCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": null,
@@ -781,6 +781,18 @@
         "Ddec1pfRwwc"
        ],
        "created": "2026-09-28",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5cd8733f35",
+       "text": "Using an embedded database's native JSON query functions can serve as a substitute for an in-memory JSON parsing library in languages that lack native JSON support.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DekgklLJ94l"
+       ],
+       "created": "2026-10-17",
        "nuances": [],
        "conflicts": []
       }
@@ -927,8 +939,8 @@
    "path": "system-design/scalability",
    "title": "Scalability",
    "area": "System Design",
-   "insightCount": 3,
-   "reelCount": 2,
+   "insightCount": 4,
+   "reelCount": 3,
    "ungroupedCount": 0,
    "groups": [
     {
@@ -957,7 +969,12 @@
         "Ddec1pfRwwc"
        ],
        "created": "2026-09-28",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Batching incoming write operations into a single database commit per event loop iteration significantly amortizes commit overhead and boosts concurrent throughput.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       },
       {
@@ -1371,6 +1388,22 @@
    ]
   },
   {
+   "id": "fortran",
+   "name": "Fortran",
+   "whatItIs": "A compiled imperative programming language historically used for scientific and numerical computing.",
+   "category": "dev-tools/runtimes-and-languages",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-17",
+   "mentions": [
+    {
+     "reel": "DekgklLJ94l",
+     "claim": "Used to write the core routing, database logic, and response generation for a web API benchmark entry that held 38,000 concurrent users."
+    }
+   ]
+  },
+  {
    "id": "framewisp",
    "name": "Framewisp",
    "whatItIs": "A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts.",
@@ -1383,6 +1416,22 @@
     {
      "reel": "DdkCWaDpjIc",
      "claim": "Converts Figma layer tags directly into animated Roblox UI components without manual Luau scripting."
+    }
+   ]
+  },
+  {
+   "id": "gnu-libmicrohttpd",
+   "name": "GNU libmicrohttpd",
+   "whatItIs": "A small C library designed to embed an HTTP server into other applications.",
+   "category": "dev-tools/infra",
+   "link": "https://www.gnu.org/software/libmicrohttpd/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-17",
+   "mentions": [
+    {
+     "reel": "DekgklLJ94l",
+     "claim": "Used as the underlying high-performance HTTP server bridged to the Fortran application logic."
     }
    ]
   },
@@ -1691,6 +1740,22 @@
    ]
   },
   {
+   "id": "sqlite",
+   "name": "SQLite",
+   "whatItIs": "A lightweight, in-process, serverless relational database engine.",
+   "category": "dev-tools/databases",
+   "link": "https://www.sqlite.org",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-17",
+   "mentions": [
+    {
+     "reel": "DekgklLJ94l",
+     "claim": "Employed both as the application's database and as its JSON parser using built-in JSON extraction functions."
+    }
+   ]
+  },
+  {
    "id": "strix",
    "name": "Strix",
    "whatItIs": "An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities.",
@@ -1708,6 +1773,27 @@
   }
  ],
  "reels": [
+  {
+   "id": "DekgklLJ94l",
+   "url": "https://www.instagram.com/reel/DekgklLJ94l/",
+   "author": "Arjay McCandless",
+   "title": "Building a High-Performance Web Server in Fortran",
+   "summary": "In a benchmark challenge to optimize web server throughput on a $12 single-vCPU server, a Fortran submission supported 38,000 concurrent users, outperforming Python, Go, and C#. The architecture relied on GNU libmicrohttpd via a C bridge, delegated JSON parsing to SQLite, and batched database writes per event loop pass.",
+   "transcript": "I challenged developers to build the fastest app possible on a twelve-dollar server. Somebody did it in Fortran, and it held twice as many users as our best Python submission. For context, Fortran came out in 1957. It's almost 70 years old. It's mostly used for scientific computing, think weather forecasting and fluid dynamics, never web APIs. This person built this using a trick that a lot of the most performant submissions used. The HTTP server isn't actually written in Fortran. It's handled by libmicrohttpd, a web server library from GNU written in C, plus a small C bridge. This is kind of cheating, but again, I asked for the best implementation possible, not pure Fortran. The routing, database logic, and JSON generation are all still in Fortran. Fortran also has no built-in JSON support. So instead of pulling in a third-party JSON library, they used SQLite as their JSON parser. Checking a login token is just one SQL query. They also batched their writes. Every write that came in during a single pass of the event loop shared one database commit. Then everybody got their responses at once. This approach let them support 38,000 concurrent users on the twelve-dollar server, beating Python, Go, and C# implementations that I received. If you want to see the submission, comment Fortran and I'll send the link.",
+   "note": "",
+   "saved": "2026-10-17",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "5cd8733f35",
+    "9e444f16f7"
+   ],
+   "tools": [
+    "fortran",
+    "gnu-libmicrohttpd",
+    "sqlite"
+   ]
+  },
   {
    "id": "DeZqqXvASHs",
    "url": "https://www.instagram.com/reel/DeZqqXvASHs/",

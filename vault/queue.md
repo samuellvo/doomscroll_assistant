@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (44)
+## New (47)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -29,7 +29,9 @@
 | [Cursor](tools/cursor.md) | `dev-tools/ai` | 1 | An AI-powered code editor with support for background and cloud coding agents. |
 | [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
+| [Fortran](tools/fortran.md) | `dev-tools/runtimes-and-languages` | 1 | A compiled imperative programming language historically used for scientific and numerical computing. |
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
+| [GNU libmicrohttpd](tools/gnu-libmicrohttpd.md) | `dev-tools/infra` | 1 | A small C library designed to embed an HTTP server into other applications. |
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [grill-me](tools/grill-me.md) | `dev-tools/ai` | 1 | A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications. |
@@ -49,4 +51,5 @@
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
 | [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
+| [SQLite](tools/sqlite.md) | `dev-tools/databases` | 1 | A lightweight, in-process, serverless relational database engine. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
