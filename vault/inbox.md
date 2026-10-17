@@ -15,6 +15,7 @@ Approve (add to taxonomy.md) or remap them.
 Grouped by the weekly regroup, or ask Claude to group them now.
 
 - [ai-ml/engineering](topics/ai-ml/engineering.md): 4
+- [career/interviews](topics/career/interviews.md): 4
 - [game-dev/roblox](topics/game-dev/roblox.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
 - [system-design/caching](topics/system-design/caching.md): 1
