@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-17",
+ "generated": "2026-10-19",
  "stats": {
-  "reels": 28,
-  "insights": 66,
+  "reels": 29,
+  "insights": 69,
   "tools": 47,
-  "ungrouped": 17
+  "ungrouped": 20
  },
  "topics": [
   {
@@ -752,6 +752,47 @@
    ]
   },
   {
+   "path": "system-design/api-design",
+   "title": "API Design",
+   "area": "System Design",
+   "insightCount": 2,
+   "reelCount": 1,
+   "ungroupedCount": 2,
+   "groups": [
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "fb0d081932",
+       "text": "An HTTPS web request executes in a strict layer sequence: DNS resolves the IP address, TCP completes a three-way handshake for transport reliability, TLS negotiates encryption, and HTTP transmits the application data.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DengedCymAE"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "876281915b",
+       "text": "The TLS handshake validates the server certificate and establishes symmetric encryption keys without transmitting the private keys over the network.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DengedCymAE"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    }
+   ]
+  },
+  {
    "path": "system-design/async-processing",
    "title": "Async Processing",
    "area": "System Design",
@@ -960,9 +1001,9 @@
    "path": "system-design/reliability",
    "title": "Reliability",
    "area": "System Design",
-   "insightCount": 2,
-   "reelCount": 2,
-   "ungroupedCount": 1,
+   "insightCount": 3,
+   "reelCount": 3,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": null,
@@ -984,6 +1025,18 @@
          "count": 1
         }
        ],
+       "conflicts": []
+      },
+      {
+       "id": "18dbefe2b3",
+       "text": "TCP guarantees reliable, ordered packet delivery using retransmissions and sequence numbers, but lacks encryption and requires an additional security layer like TLS.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DengedCymAE"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
        "conflicts": []
       }
      ]
@@ -1832,6 +1885,24 @@
   }
  ],
  "reels": [
+  {
+   "id": "DengedCymAE",
+   "url": "https://www.instagram.com/reel/DengedCymAE/",
+   "author": "KodeKloud | DevOps Learning Platform",
+   "title": "How TCP, TLS, and HTTP Work Together",
+   "summary": "Loading an HTTPS website involves a coordinated sequence across several networking layers: DNS resolves the target IP, TCP establishes a reliable connection via a three-way handshake, TLS secures that channel with encryption, and HTTP sends the application payload. On request transmission, TLS encrypts the HTTP request, TCP segments and numbers the packets for ordered delivery, and the server reverses the entire stack upon receipt.",
+   "transcript": "A lot of people understand that TCP is to make a connection with the server, and then HTTP is to get the data from the server. But when I ask people how TCP and HTTP work together, and what is the sequence, then they usually get confused. Let's make this clear. You open Chrome and type google.com. Even though you never typed http or https, Chrome normally chooses https, which uses port 443. Now, the browser needs Google's IP address before it can connect. So the browser first checks whether it already knows the address, and if not, it performs a DNS lookup to get the IP address. Once the browser has the IP address, it can establish a connection with Google's server. Now, to connect to the server, TCP is the default choice of the browser and the internet. So, let's follow a connection that uses TCP. The browser sends a small packet called SYN to Google's server. Google replies with SYN-ACK, and the browser responds with ACK. This is called the TCP three-way handshake. But what exactly did we achieve? We have established a reliable connection. If some data packets get lost during the travel, TCP can resend them. And TCP makes sure the receiving application gets the bytes in the correct order. However, there is still a big problem. TCP itself does not encrypt the connection. So before we send our HTTP request to the server, we have to secure this connection. And to do that, we have TLS. Let's see what happens. In TLS, your browser sends a message called Client Hello, telling Google which encryption methods it supports, along with some public key information. Google replies with its own public key information and a certificate. The browser checks that the certificate is valid for google.com, and the certificate comes from a trusted authority. Both the browser and server use the exchanged information to calculate encryption keys without ever sending those keys directly over the network. This process is called the TLS handshake. And this is the first step of HTTPS request. Now, let's follow the actual request. The browser creates an HTTP GET request for Google. First, TLS encrypts this request with those encryption keys. Then, TCP takes those encrypted bytes and divides them into smaller pieces. TCP keeps track of the bytes using sequence numbers, so the receiving server can arrange everything back in the correct order. Then, IP adds the source and destination IP addresses, and routers forward these packets toward Google's server. When these packets reach Google's server, the complete process happens in reverse. Data packets can reach Google in wrong order, so TCP puts the received bytes back in the correct order, then TLS decrypts the data, and finally, Google can read the original HTTP GET request that the browser sent. Google then prepares an HTTP response containing the HTML for the homepage. This response goes through TLS, TCP, and IP again, and travels back to your browser. So remember: for a new HTTPS connection over TCP, DNS finds the server's IP address, TCP makes a reliable connection, TLS secures that connection, and HTTP sends the actual request. If this video helped, hit subscribe and follow.",
+   "note": "",
+   "saved": "2026-10-19",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "fb0d081932",
+    "18dbefe2b3",
+    "876281915b"
+   ],
+   "tools": []
+  },
   {
    "id": "DekgklLJ94l",
    "url": "https://www.instagram.com/reel/DekgklLJ94l/",
