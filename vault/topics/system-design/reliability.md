@@ -3,11 +3,14 @@
 # Reliability
 _4 insights from 4 reels · `system-design/reliability`_
 
+## Automated Failure Recovery Mechanisms
+
+- **System reliability and fault tolerance rely on retries with backoff, idempotency, circuit breakers, and automated self-healing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
+  - Nuance: Automated multi-provider model routing provides fallback mechanisms to bypass token rate limits and maintain coding session continuity.
+- **Periodic health checks allow load balancers to detect unresponsive nodes and automatically remove them from rotation until recovery.** · _pattern_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)
+
 ## Ungrouped
 
 _New arrivals. Sorted into groups weekly, or when you ask Claude._
 
-- **System reliability and fault tolerance rely on retries with backoff, idempotency, circuit breakers, and automated self-healing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
-  - Nuance: Automated multi-provider model routing provides fallback mechanisms to bypass token rate limits and maintain coding session continuity.
 - **TCP guarantees reliable, ordered packet delivery using retransmissions and sequence numbers, but lacks encryption and requires an additional security layer like TLS.** · _principle_ · [DengedCymAE](../../reels/DengedCymAE.md)
-- **Periodic health checks allow load balancers to detect unresponsive nodes and automatically remove them from rotation until recovery.** · _pattern_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)

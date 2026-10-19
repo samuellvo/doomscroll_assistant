@@ -3,9 +3,7 @@
 # Caching
 _2 insights from 2 reels · `system-design/caching`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Node Count and Hashing Strategies
 
 - **Distributing cache keys using simple modulo hashing (hash(key) % N) causes the majority of keys to remap whenever node count changes, precipitating cache stampedes and database overload.** · _pitfall_ · [Ddjy_ZEpJJ0](../../reels/Ddjy_ZEpJJ0.md)
 - **Hashing user identifiers or client IP addresses ensures sticky sessions to maximize server-side in-memory cache reuse.** · _pattern_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)

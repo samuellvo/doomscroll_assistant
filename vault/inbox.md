@@ -14,15 +14,10 @@ Approve (add to taxonomy.md) or remap them.
 
 Grouped by the weekly regroup, or ask Claude to group them now.
 
-- [ai-ml/engineering](topics/ai-ml/engineering.md): 4
-- [career/interviews](topics/career/interviews.md): 4
 - [game-dev/roblox](topics/game-dev/roblox.md): 2
-- [system-design/api-design](topics/system-design/api-design.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
-- [system-design/caching](topics/system-design/caching.md): 2
 - [system-design/databases](topics/system-design/databases.md): 2
 - [system-design/distributed-systems](topics/system-design/distributed-systems.md): 1
 - [system-design/real-time](topics/system-design/real-time.md): 1
-- [system-design/reliability](topics/system-design/reliability.md): 3
-- [system-design/scalability](topics/system-design/scalability.md): 3
+- [system-design/reliability](topics/system-design/reliability.md): 1
 

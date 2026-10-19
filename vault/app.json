@@ -5,7 +5,7 @@
   "reels": 30,
   "insights": 74,
   "tools": 47,
-  "ungrouped": 25
+  "ungrouped": 8
  },
  "topics": [
   {
@@ -14,7 +14,7 @@
    "area": "AI ML",
    "insightCount": 18,
    "reelCount": 10,
-   "ungroupedCount": 4,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Operational Efficiency and Interfaces",
@@ -174,14 +174,7 @@
        "created": "2026-10-12",
        "nuances": [],
        "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
+      },
       {
        "id": "349d574f2b",
        "text": "Drafting an explicit PRD through an interactive questioning skill clarifies architectural requirements for both the developer and coding agent before writing implementation code.",
@@ -240,8 +233,101 @@
    "area": "Career",
    "insightCount": 13,
    "reelCount": 4,
-   "ungroupedCount": 4,
+   "ungroupedCount": 0,
    "groups": [
+    {
+     "name": "Strategic Interview Questions",
+     "pinned": false,
+     "related": [
+      "Algorithmic Problem Solving Strategies"
+     ],
+     "insights": [
+      {
+       "id": "262453c0a5",
+       "text": "Asking an interviewer for advice based on their career success builds positive rapport and elicits insightful, enthusiastic responses.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "640d12727d",
+       "text": "Asking how to guarantee success in the specific timeframe of the role prompts the interviewer to subconsciously visualize you working on the team.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "289a366741",
+       "text": "Asking what traits top performers share provides specific criteria you can immediately emphasize in your remaining interview answers.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeQe_FDtpxM"
+       ],
+       "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "0edaa25666",
+       "text": "Structure the 'tell me about yourself' interview answer into three sections: a thesis statement, grouped experiences with key learnings, and why the current role is the logical next step.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdPPpmgBVS-"
+       ],
+       "created": "2026-10-17",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b970fe51bf",
+       "text": "Begin an interview introduction with a concise one-sentence thesis summarizing total years of experience, industries, and an overarching career theme.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdPPpmgBVS-"
+       ],
+       "created": "2026-10-17",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "ada2990382",
+       "text": "Group past roles into thematic chapters and emphasize key learnings and realizations rather than reading through resume bullet points.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdPPpmgBVS-"
+       ],
+       "created": "2026-10-17",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "28cf1d6229",
+       "text": "Conclude the introductory response by connecting your prior career trajectory directly to why the specific role and company are the logical next step.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DdPPpmgBVS-"
+       ],
+       "created": "2026-10-17",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
     {
      "name": "Algorithmic Problem Solving Strategies",
      "pinned": false,
@@ -318,106 +404,6 @@
         "DeJKcDqE2q3"
        ],
        "created": "2026-10-06",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": "Strategic Interview Questions",
-     "pinned": false,
-     "related": [
-      "Algorithmic Problem Solving Strategies"
-     ],
-     "insights": [
-      {
-       "id": "262453c0a5",
-       "text": "Asking an interviewer for advice based on their career success builds positive rapport and elicits insightful, enthusiastic responses.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeQe_FDtpxM"
-       ],
-       "created": "2026-10-09",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "640d12727d",
-       "text": "Asking how to guarantee success in the specific timeframe of the role prompts the interviewer to subconsciously visualize you working on the team.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeQe_FDtpxM"
-       ],
-       "created": "2026-10-09",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "289a366741",
-       "text": "Asking what traits top performers share provides specific criteria you can immediately emphasize in your remaining interview answers.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeQe_FDtpxM"
-       ],
-       "created": "2026-10-09",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
-      {
-       "id": "0edaa25666",
-       "text": "Structure the 'tell me about yourself' interview answer into three sections: a thesis statement, grouped experiences with key learnings, and why the current role is the logical next step.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DdPPpmgBVS-"
-       ],
-       "created": "2026-10-17",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "b970fe51bf",
-       "text": "Begin an interview introduction with a concise one-sentence thesis summarizing total years of experience, industries, and an overarching career theme.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DdPPpmgBVS-"
-       ],
-       "created": "2026-10-17",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "ada2990382",
-       "text": "Group past roles into thematic chapters and emphasize key learnings and realizations rather than reading through resume bullet points.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DdPPpmgBVS-"
-       ],
-       "created": "2026-10-17",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "28cf1d6229",
-       "text": "Conclude the introductory response by connecting your prior career trajectory directly to why the specific role and company are the logical next step.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DdPPpmgBVS-"
-       ],
-       "created": "2026-10-17",
        "nuances": [],
        "conflicts": []
       }
@@ -600,13 +586,36 @@
    "ungroupedCount": 0,
    "groups": [
     {
-     "name": "Organic Search Growth",
+     "name": "Credential Protection Strategies",
      "pinned": false,
      "related": [
-      "Autonomous Agent Workflows",
-      "Credential Protection Strategies"
+      "Autonomous Agent Workflows"
      ],
      "insights": [
+      {
+       "id": "ca1135720a",
+       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5cb4776f2d",
+       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
       {
        "id": "e7745e557e",
        "text": "Do not model SEO strategies after large enterprise brands, as high domain authority often masks poor practices like keyword stuffing that eventually suffer ranking drops.",
@@ -642,30 +651,6 @@
        "created": "2026-10-03",
        "nuances": [],
        "conflicts": []
-      },
-      {
-       "id": "ca518e760e",
-       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "9e27481add",
-       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
       }
      ]
     },
@@ -673,7 +658,6 @@
      "name": "Autonomous Agent Workflows",
      "pinned": false,
      "related": [
-      "Organic Search Growth",
       "Credential Protection Strategies"
      ],
      "insights": [
@@ -702,6 +686,30 @@
        "conflicts": []
       },
       {
+       "id": "ca518e760e",
+       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DeKAwyEsCVq"
+       ],
+       "created": "2026-10-07",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "9e27481add",
+       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeKAwyEsCVq"
+       ],
+       "created": "2026-10-07",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
        "id": "59fc34b8c3",
        "text": "Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.",
        "kind": "pattern",
@@ -710,40 +718,6 @@
         "DeHphfnxfZg"
        ],
        "created": "2026-10-12",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": "Credential Protection Strategies",
-     "pinned": false,
-     "related": [
-      "Autonomous Agent Workflows",
-      "Organic Search Growth"
-     ],
-     "insights": [
-      {
-       "id": "ca1135720a",
-       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "Dd4_kY-StGS"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "5cb4776f2d",
-       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "Db7Vx2Hhf9c"
-       ],
-       "created": "2026-09-30",
        "nuances": [],
        "conflicts": []
       }
@@ -757,10 +731,10 @@
    "area": "System Design",
    "insightCount": 2,
    "reelCount": 1,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Network Transport Security",
      "pinned": false,
      "related": [],
      "insights": [
@@ -832,10 +806,10 @@
    "area": "System Design",
    "insightCount": 2,
    "reelCount": 2,
-   "ungroupedCount": 2,
+   "ungroupedCount": 0,
    "groups": [
     {
-     "name": null,
+     "name": "Node Count and Hashing Strategies",
      "pinned": false,
      "related": [],
      "insights": [
@@ -1015,10 +989,10 @@
    "area": "System Design",
    "insightCount": 4,
    "reelCount": 4,
-   "ungroupedCount": 3,
+   "ungroupedCount": 1,
    "groups": [
     {
-     "name": null,
+     "name": "Automated Failure Recovery Mechanisms",
      "pinned": false,
      "related": [],
      "insights": [
@@ -1040,24 +1014,31 @@
        "conflicts": []
       },
       {
-       "id": "18dbefe2b3",
-       "text": "TCP guarantees reliable, ordered packet delivery using retransmissions and sequence numbers, but lacks encryption and requires an additional security layer like TLS.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DengedCymAE"
-       ],
-       "created": "2026-10-19",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
        "id": "67a231187b",
        "text": "Periodic health checks allow load balancers to detect unresponsive nodes and automatically remove them from rotation until recovery.",
        "kind": "pattern",
        "count": 1,
        "sources": [
         "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "18dbefe2b3",
+       "text": "TCP guarantees reliable, ordered packet delivery using retransmissions and sequence numbers, but lacks encryption and requires an additional security layer like TLS.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DengedCymAE"
        ],
        "created": "2026-10-19",
        "nuances": [],
@@ -1073,7 +1054,7 @@
    "area": "System Design",
    "insightCount": 7,
    "reelCount": 4,
-   "ungroupedCount": 3,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Workload Scaling Strategies",
@@ -1120,14 +1101,7 @@
        "created": "2026-10-10",
        "nuances": [],
        "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
+      },
       {
        "id": "680db55f26",
        "text": "Round-robin load balancing assumes uniform request execution times and can cause requests to pile up if an individual backend node degrades.",

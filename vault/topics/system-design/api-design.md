@@ -3,9 +3,7 @@
 # API Design
 _2 insights from 1 reel · `system-design/api-design`_
 
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+## Network Transport Security
 
 - **An HTTPS web request executes in a strict layer sequence: DNS resolves the IP address, TCP completes a three-way handshake for transport reliability, TLS negotiates encryption, and HTTP transmits the application data.** · _pattern_ · [DengedCymAE](../../reels/DengedCymAE.md)
 - **The TLS handshake validates the server certificate and establishes symmetric encryption keys without transmitting the private keys over the network.** · _principle_ · [DengedCymAE](../../reels/DengedCymAE.md)
