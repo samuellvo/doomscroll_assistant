@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-10-19",
  "stats": {
-  "reels": 29,
-  "insights": 69,
+  "reels": 30,
+  "insights": 74,
   "tools": 47,
-  "ungrouped": 20
+  "ungrouped": 25
  },
  "topics": [
   {
@@ -830,9 +830,9 @@
    "path": "system-design/caching",
    "title": "Caching",
    "area": "System Design",
-   "insightCount": 1,
-   "reelCount": 1,
-   "ungroupedCount": 1,
+   "insightCount": 2,
+   "reelCount": 2,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": null,
@@ -848,6 +848,18 @@
         "Ddjy_ZEpJJ0"
        ],
        "created": "2026-10-09",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "7e70feea7f",
+       "text": "Hashing user identifiers or client IP addresses ensures sticky sessions to maximize server-side in-memory cache reuse.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
        "nuances": [],
        "conflicts": []
       }
@@ -1001,9 +1013,9 @@
    "path": "system-design/reliability",
    "title": "Reliability",
    "area": "System Design",
-   "insightCount": 3,
-   "reelCount": 3,
-   "ungroupedCount": 2,
+   "insightCount": 4,
+   "reelCount": 4,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": null,
@@ -1038,6 +1050,18 @@
        "created": "2026-10-19",
        "nuances": [],
        "conflicts": []
+      },
+      {
+       "id": "67a231187b",
+       "text": "Periodic health checks allow load balancers to detect unresponsive nodes and automatically remove them from rotation until recovery.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
       }
      ]
     }
@@ -1047,9 +1071,9 @@
    "path": "system-design/scalability",
    "title": "Scalability",
    "area": "System Design",
-   "insightCount": 4,
-   "reelCount": 3,
-   "ungroupedCount": 0,
+   "insightCount": 7,
+   "reelCount": 4,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": "Workload Scaling Strategies",
@@ -1094,6 +1118,49 @@
         "DeSfbOYJrMU"
        ],
        "created": "2026-10-10",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "680db55f26",
+       "text": "Round-robin load balancing assumes uniform request execution times and can cause requests to pile up if an individual backend node degrades.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "9df80f6284",
+       "text": "Least connections routing routes incoming traffic to the server with the fewest open requests, naturally throttling traffic to degraded or slow nodes.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "a41e8fc8ed",
+       "text": "Layer 4 load balancers route traffic based on transport-layer IP and port information, whereas Layer 7 load balancers inspect application-layer HTTP payloads to route to specialized backend pools.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Deq2G1sgANK"
+       ],
+       "created": "2026-10-19",
        "nuances": [],
        "conflicts": []
       }
@@ -1900,6 +1967,26 @@
     "fb0d081932",
     "18dbefe2b3",
     "876281915b"
+   ],
+   "tools": []
+  },
+  {
+   "id": "Deq2G1sgANK",
+   "url": "https://www.instagram.com/reel/Deq2G1sgANK/",
+   "author": "Kamran Ahmed",
+   "title": "Load Balancing Strategies and Handling Slow Servers",
+   "summary": "This video breaks down core load balancing strategies and how to handle degraded backends in system design. It contrasts round robin with least connections for handling uneven server performance, explains IP/user hashing for cache locality, and highlights health checks and Layer 4 vs. Layer 7 balancing.",
+   "transcript": "interview question. users -> load balancer -> server 1, server 2, server 3. Here's a classic interview question. You have three servers behind a load balancer and one of them is slow. How do you stop it from dragging everything down? When one server can't handle all your traffic, you run several. A load balancer sits in front of them. Every request hits it first and it decides which server handles it. The simplest strategy is round robin. Server 1, 2, 3, then back to 1. same cost, same share. Every server gets the same share. That works when every request costs about the same. But our third server is slow. It still gets a third of all requests, it can't finish them in time, and work piles up there. A better strategy is least connections. The balancer sends each new request to the server with the fewest requests still open. The slow server has more open, so it automatically gets fewer new ones. Sometimes a user should always land on the same server to reuse what it has cached. Hashing the user's ID or IP address picks the same server every time. hash(user ID) -> same server. And if a server stops responding entirely, the balancer should notice. Every few seconds, it calls each server's health check. GET /health. A server that fails is taken out of rotation until it recovers. Balancers also work at different layers. A layer 4 balancer only sees IP addresses and ports. A layer 7 balancer reads the HTTP request so it can send /api to one group of servers and images to another. The key idea: round robin for even traffic, least connections for uneven work, hashing when users must stick, and health checks always.",
+   "note": "",
+   "saved": "2026-10-19",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "680db55f26",
+    "9df80f6284",
+    "7e70feea7f",
+    "67a231187b",
+    "a41e8fc8ed"
    ],
    "tools": []
   },
