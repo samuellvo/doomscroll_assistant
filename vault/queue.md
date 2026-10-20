@@ -7,11 +7,13 @@
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
 | [Claude](tools/claude.md) | `dev-tools/ai` | 3 | An AI assistant and LLM family developed by Anthropic. |
+| [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 3 | A free educational website offering structured tutorials and practice problems for competitive programming. |
+| [AtCoder](tools/atcoder.md) | `dev-tools/productivity` | 2 | A competitive programming platform featuring granular problem difficulty scores. |
 | [Claude Code](tools/claude-code.md) | `dev-tools/ai` | 2 | An agentic command-line interface tool for automated coding and project editing. |
 | [Devmaxx](tools/devmaxx.md) | `products/other` | 2 | A mobile learning application designed for daily system design practice and interview preparation. |
 | [GitHub](tools/github.md) | `dev-tools/infra` | 2 | A developer platform for version control and code hosting. |
+| [LeetCode](tools/leetcode.md) | `dev-tools/productivity` | 2 | A technical interview preparation platform featuring algorithm coding challenges. |
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 2 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
-| [USACO Guide](tools/usaco-guide.md) | `dev-tools/productivity` | 2 | A free educational website offering structured tutorials and practice problems for competitive programming. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
 | [Amazon CloudFront](tools/amazon-cloudfront.md) | `dev-tools/infra` | 1 | A global content delivery network (CDN) service. |
@@ -20,7 +22,6 @@
 | [Amazon S3](tools/amazon-s3.md) | `dev-tools/infra` | 1 | An object storage service built to store and retrieve any amount of data. |
 | [Amazon SQS](tools/amazon-sqs.md) | `dev-tools/infra` | 1 | A fully managed message queuing service. |
 | [ApiVault](tools/apivault.md) | `dev-tools/productivity` | 1 | A curated directory cataloging free public APIs categorized by domain. |
-| [AtCoder](tools/atcoder.md) | `dev-tools/productivity` | 1 | A competitive programming platform featuring granular problem difficulty scores. |
 | [AWS Lambda](tools/aws-lambda.md) | `dev-tools/infra` | 1 | A serverless compute service that runs code in response to events. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
@@ -35,7 +36,6 @@
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [grill-me](tools/grill-me.md) | `dev-tools/ai` | 1 | A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications. |
-| [LeetCode](tools/leetcode.md) | `dev-tools/productivity` | 1 | A technical interview preparation platform featuring algorithm coding challenges. |
 | [meetily](tools/meetily.md) | `dev-tools/ai` | 1 | A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine. |
 | [NeetCode](tools/neetcode.md) | `dev-tools/productivity` | 1 | An interview preparation platform with problem roadmaps and video explanations. |
 | [No Mistakes](tools/no-mistakes.md) | `dev-tools/ai` | 1 | An agent skill by Kun Chen that applies adversarial checks to pull requests and changes. |

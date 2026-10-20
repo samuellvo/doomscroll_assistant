@@ -5,7 +5,7 @@ name: AtCoder
 category: dev-tools/productivity
 status: new
 first_seen: 2026-10-05
-mentions: 1
+mentions: 2
 ---
 # AtCoder
 
@@ -16,3 +16,4 @@ A competitive programming platform featuring granular problem difficulty scores.
 ## What creators claimed
 
 - Recommended for randomized, untagged practice near the boundary of solvable difficulty. ([DdecbsEnSGo](../reels/DdecbsEnSGo.md))
+- Showcased as an example platform for upsolving missed contest problems using editorials. ([Der3XLgjh4R](../reels/Der3XLgjh4R.md))

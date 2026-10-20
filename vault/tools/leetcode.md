@@ -5,12 +5,15 @@ name: LeetCode
 category: dev-tools/productivity
 status: new
 first_seen: 2026-10-05
-mentions: 1
+mentions: 2
 ---
 # LeetCode
 
 A technical interview preparation platform featuring algorithm coding challenges.
 
+**Link:** https://leetcode.com/problems/maximum-subarray/
+
 ## What creators claimed
 
 - Critiqued for broad difficulty categories and repetitiveness that discourage transferable problem-solving skills. ([DdecbsEnSGo](../reels/DdecbsEnSGo.md))
+- Used as the example interface displaying problem 53 (Maximum Subarray) to demonstrate hand-solving small inputs. ([Der3XLgjh4R](../reels/Der3XLgjh4R.md))

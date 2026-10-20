@@ -5,7 +5,7 @@ name: USACO Guide
 category: dev-tools/productivity
 status: new
 first_seen: 2026-10-05
-mentions: 2
+mentions: 3
 ---
 # USACO Guide
 
@@ -17,3 +17,4 @@ A free educational website offering structured tutorials and practice problems f
 
 - Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique. ([DdecbsEnSGo](../reels/DdecbsEnSGo.md))
 - Highlighted as a comprehensive, well-structured resource for learning DSA and coding interview topics. ([DeJKcDqE2q3](../reels/DeJKcDqE2q3.md))
+- Referenced for its complexity guide mapping input sizes (n) to permissible time complexities. ([Der3XLgjh4R](../reels/Der3XLgjh4R.md))

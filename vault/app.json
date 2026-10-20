@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-19",
+ "generated": "2026-10-20",
  "stats": {
-  "reels": 30,
-  "insights": 74,
+  "reels": 31,
+  "insights": 79,
   "tools": 47,
-  "ungrouped": 8
+  "ungrouped": 13
  },
  "topics": [
   {
@@ -231,9 +231,9 @@
    "path": "career/interviews",
    "title": "Interviews",
    "area": "Career",
-   "insightCount": 13,
-   "reelCount": 4,
-   "ungroupedCount": 0,
+   "insightCount": 17,
+   "reelCount": 5,
+   "ungroupedCount": 4,
    "groups": [
     {
      "name": "Strategic Interview Questions",
@@ -404,6 +404,61 @@
         "DeJKcDqE2q3"
        ],
        "created": "2026-10-06",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "50d03f1f89",
+       "text": "Solve small input examples step-by-step by hand to uncover algorithm mechanics before attempting to generalize to larger inputs.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Der3XLgjh4R"
+       ],
+       "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "95edea1ed9",
+       "text": "Use problem input constraints to identify feasible time complexities rather than arbitrarily guessing algorithmic patterns based on problem wording.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Der3XLgjh4R"
+       ],
+       "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "ef8c880124",
+       "text": "When upsolving problems missed during contests, analyze the trigger that should have prompted the missing insight instead of merely labeling the pattern used.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Der3XLgjh4R"
+       ],
+       "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "28bfd61810",
+       "text": "Give difficult problems incubation time across multiple hours or days rather than looking up the editorial immediately upon getting stuck.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Der3XLgjh4R"
+       ],
+       "created": "2026-10-20",
        "nuances": [],
        "conflicts": []
       }
@@ -581,9 +636,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 10,
-   "reelCount": 7,
-   "ungroupedCount": 0,
+   "insightCount": 11,
+   "reelCount": 8,
+   "ungroupedCount": 1,
    "groups": [
     {
      "name": "Credential Protection Strategies",
@@ -718,6 +773,25 @@
         "DeHphfnxfZg"
        ],
        "created": "2026-10-12",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "a333b23102",
+       "text": "Stress test optimized solutions against a naive, guaranteed-correct brute-force implementation using randomized inputs to catch subtle edge-case bugs.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Der3XLgjh4R"
+       ],
+       "created": "2026-10-20",
        "nuances": [],
        "conflicts": []
       }
@@ -1169,6 +1243,50 @@
    ]
   },
   {
+   "id": "usaco-guide",
+   "name": "USACO Guide",
+   "whatItIs": "A free educational website offering structured tutorials and practice problems for competitive programming.",
+   "category": "dev-tools/productivity",
+   "link": "https://usaco.guide/bronze",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique."
+    },
+    {
+     "reel": "DeJKcDqE2q3",
+     "claim": "Highlighted as a comprehensive, well-structured resource for learning DSA and coding interview topics."
+    },
+    {
+     "reel": "Der3XLgjh4R",
+     "claim": "Referenced for its complexity guide mapping input sizes (n) to permissible time complexities."
+    }
+   ]
+  },
+  {
+   "id": "atcoder",
+   "name": "AtCoder",
+   "whatItIs": "A competitive programming platform featuring granular problem difficulty scores.",
+   "category": "dev-tools/productivity",
+   "link": "https://kenkoooo.com/atcoder/#/table/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Recommended for randomized, untagged practice near the boundary of solvable difficulty."
+    },
+    {
+     "reel": "Der3XLgjh4R",
+     "claim": "Showcased as an example platform for upsolving missed contest problems using editorials."
+    }
+   ]
+  },
+  {
    "id": "claude-code",
    "name": "Claude Code",
    "whatItIs": "An agentic command-line interface tool for automated coding and project editing.",
@@ -1229,6 +1347,26 @@
    ]
   },
   {
+   "id": "leetcode",
+   "name": "LeetCode",
+   "whatItIs": "A technical interview preparation platform featuring algorithm coding challenges.",
+   "category": "dev-tools/productivity",
+   "link": "https://leetcode.com/problems/maximum-subarray/",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-05",
+   "mentions": [
+    {
+     "reel": "DdecbsEnSGo",
+     "claim": "Critiqued for broad difficulty categories and repetitiveness that discourage transferable problem-solving skills."
+    },
+    {
+     "reel": "Der3XLgjh4R",
+     "claim": "Used as the example interface displaying problem 53 (Maximum Subarray) to demonstrate hand-solving small inputs."
+    }
+   ]
+  },
+  {
    "id": "ponytail",
    "name": "Ponytail",
    "whatItIs": "An optimization plugin designed to compress output and reduce token usage for coding agents.",
@@ -1245,26 +1383,6 @@
     {
      "reel": "DeZqqXvASHs",
      "claim": "Highlighted as an adversarial review tool to simplify and debloat code."
-    }
-   ]
-  },
-  {
-   "id": "usaco-guide",
-   "name": "USACO Guide",
-   "whatItIs": "A free educational website offering structured tutorials and practice problems for competitive programming.",
-   "category": "dev-tools/productivity",
-   "link": "https://usaco.guide/bronze",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-10-05",
-   "mentions": [
-    {
-     "reel": "DdecbsEnSGo",
-     "claim": "Recommended for building a strong foundation in core algorithms and learning the reasoning behind each technique."
-    },
-    {
-     "reel": "DeJKcDqE2q3",
-     "claim": "Highlighted as a comprehensive, well-structured resource for learning DSA and coding interview topics."
     }
    ]
   },
@@ -1393,22 +1511,6 @@
     {
      "reel": "DbCXqZ4Cgz3",
      "claim": "Presented as a completely free resource to discover public APIs across numerous categories for coding projects."
-    }
-   ]
-  },
-  {
-   "id": "atcoder",
-   "name": "AtCoder",
-   "whatItIs": "A competitive programming platform featuring granular problem difficulty scores.",
-   "category": "dev-tools/productivity",
-   "link": "https://kenkoooo.com/atcoder/#/table/",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-10-05",
-   "mentions": [
-    {
-     "reel": "DdecbsEnSGo",
-     "claim": "Recommended for randomized, untagged practice near the boundary of solvable difficulty."
     }
    ]
   },
@@ -1633,22 +1735,6 @@
     {
      "reel": "DeZqqXvASHs",
      "claim": "Recommended for nailing down architectural requirements and generating structured PRDs prior to code generation."
-    }
-   ]
-  },
-  {
-   "id": "leetcode",
-   "name": "LeetCode",
-   "whatItIs": "A technical interview preparation platform featuring algorithm coding challenges.",
-   "category": "dev-tools/productivity",
-   "link": "",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-10-05",
-   "mentions": [
-    {
-     "reel": "DdecbsEnSGo",
-     "claim": "Critiqued for broad difficulty categories and repetitiveness that discourage transferable problem-solving skills."
     }
    ]
   },
@@ -1926,6 +2012,30 @@
   }
  ],
  "reels": [
+  {
+   "id": "Der3XLgjh4R",
+   "url": "https://www.instagram.com/reel/Der3XLgjh4R/",
+   "author": "level5esper",
+   "title": "5 Practical Strategies for Practicing DSA Problems",
+   "summary": "Tackling challenging data structures and algorithms problems effectively requires systematic problem-solving strategies rather than immediately looking at solutions. Working out small examples by hand, checking constraints to infer time complexity, stress testing against a brute-force implementation, upsolving missed problems, and allowing ideas time to marinate help build lasting algorithmic intuition.",
+   "transcript": "5 WAYS TO PRACTICE DSA. 5 ways to practice DSA: 1. work small examples by hand, 2. read the constraints first, 3. brute force, then stress test, 4. upsolve what you missed, 5. let ideas marinate. Here are 5 concrete ways you can try on your next DSA problem to improve your studying when you are stuck. Most people don't do the last one. most people skip this. First, make examples small enough to solve by hand. 53. Maximum Subarray. Medium. Constraints: 1 <= nums.length <= 10^5, -10^4 <= nums[i] <= 10^4. 10^5 values. If the statement uses a hundred thousand values, start with four. n = 4, by hand: [-2, 1, -3, 4], answer: 4. Write out the answer and the steps you used to get it. Example 1: Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4], Output: 6, Explanation: The subarray [4, -1, 2, 1] has the largest sum 6. does the idea from n = 4 still give 6 here? Try to use small examples to confirm your idea or generalize it to big inputs. Second, read the constraints before choosing an algorithm. Constraints: 1 <= nums.length <= 10^5, -10^4 <= nums[i] <= 10^4. \"it feels like a...\" sliding window? two pointers? DP? Don't force a \"pattern\" because the problem feels like it. \"find the subarray with the largest sum\" -> \"for each index, what's the best sum that ends here?\" Whatever pattern you use should feel intuitive once you've rephrased or reduced the problem to something simple. USACO Guide: what each n allows. An input size of 20 means you could consider an exponential solution, 2^n is fine, but it doesn't mean it has to be one. Third, write the simplest correct solution you can think of. brute force: every subarray. best = nums[0]; for i in range(n): s = 0; for j in range(i, n): s += nums[j]; best = max(best, s). For a range problem, that might mean checking every subarray. You can also run this correct solution against your fast one on random inputs and compare their outputs. random input: [3, -1, 2], brute: 4, fast: 4; [-5, -2, -1, 3], brute: 4, fast: 4; [-2, -3], brute: -2, fast: 0, outputs differ: bug found. why: best starts at 0, best = 0 # the bug. This is called stress testing. Number four, upsolving. A - ABC400 Party, B - Sum of Geometric Series. It's impossible to know every idea upfront. Upsolving just means going back and solving the problems you couldn't, maybe from a contest or somewhere else. why did I miss it? I never tried small cases. next time: write out n = 4 by hand first. pattern: Kadane. Ask yourself why you missed a particular idea, and what would help you spot it next time. Don't just write down what the \"pattern\" is. Fifth, letting ideas marinate. day 1: stuck, close the tab. People tend to be very impatient with DSA practice, and they want to know the solution instantly. day 2: thinking about it in the shower. However, it's actually beneficial to keep problems in the back of your mind, maybe for hours or even days. day 3: the idea pops up. Many times, a new idea just suddenly pops up after a while. Beginners might not have many ideas yet. Try it anyway. This is called \"mind solving\". Save this for your next practice session, comment below how many of these you've done before, and follow me for more DSA tips.",
+   "note": "",
+   "saved": "2026-10-20",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "50d03f1f89",
+    "95edea1ed9",
+    "a333b23102",
+    "ef8c880124",
+    "28bfd61810"
+   ],
+   "tools": [
+    "atcoder",
+    "leetcode",
+    "usaco-guide"
+   ]
+  },
   {
    "id": "DengedCymAE",
    "url": "https://www.instagram.com/reel/DengedCymAE/",
