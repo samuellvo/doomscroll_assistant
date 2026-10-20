@@ -2,10 +2,10 @@
  "schema": 1,
  "generated": "2026-10-20",
  "stats": {
-  "reels": 31,
-  "insights": 79,
-  "tools": 47,
-  "ungrouped": 13
+  "reels": 32,
+  "insights": 81,
+  "tools": 50,
+  "ungrouped": 15
  },
  "topics": [
   {
@@ -511,9 +511,9 @@
    "path": "game-dev/general",
    "title": "General",
    "area": "Game Dev",
-   "insightCount": 2,
-   "reelCount": 1,
-   "ungroupedCount": 0,
+   "insightCount": 3,
+   "reelCount": 2,
+   "ungroupedCount": 1,
    "groups": [
     {
      "name": "Player Engagement and Retention",
@@ -545,6 +545,25 @@
        "conflicts": []
       }
      ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "d933c1fe67",
+       "text": "Curated independent platforms like itch.io and Kenney provide high-quality free 2D and 3D asset packs across multiple genres that can be imported directly into game engines.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Derd99tTw_j"
+       ],
+       "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
     }
    ]
   },
@@ -552,9 +571,9 @@
    "path": "game-dev/roblox",
    "title": "Roblox",
    "area": "Game Dev",
-   "insightCount": 5,
-   "reelCount": 3,
-   "ungroupedCount": 2,
+   "insightCount": 6,
+   "reelCount": 4,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": "Quality Assurance and Exploit Prevention",
@@ -625,6 +644,18 @@
         "DdkCWaDpjIc"
        ],
        "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "f2307cc529",
+       "text": "While the built-in Roblox Toolbox guarantees asset compatibility within Roblox Studio, finding high-quality, reliable models often requires manual curation.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "Derd99tTw_j"
+       ],
+       "created": "2026-10-20",
        "nuances": [],
        "conflicts": []
       }
@@ -1739,6 +1770,38 @@
    ]
   },
   {
+   "id": "itch-io",
+   "name": "itch.io",
+   "whatItIs": "An open marketplace for indie digital creators and game developers featuring games and game assets.",
+   "category": "dev-tools/game-dev",
+   "link": "https://itch.io/game-assets",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-20",
+   "mentions": [
+    {
+     "reel": "Derd99tTw_j",
+     "claim": "Referred to as the 'holy grail' for game assets with contributions from thousands of creators."
+    }
+   ]
+  },
+  {
+   "id": "kenney",
+   "name": "Kenney",
+   "whatItIs": "A game development asset repository offering thousands of public domain 2D, 3D, and audio assets.",
+   "category": "dev-tools/game-dev",
+   "link": "https://kenney.nl",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-20",
+   "mentions": [
+    {
+     "reel": "Derd99tTw_j",
+     "claim": "Described as a gold mine offering thousands of high-quality sci-fi, fantasy, and low-poly asset packs."
+    }
+   ]
+  },
+  {
    "id": "meetily",
    "name": "meetily",
    "whatItIs": "A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine.",
@@ -1963,6 +2026,22 @@
    ]
   },
   {
+   "id": "roblox-toolbox",
+   "name": "Roblox Toolbox",
+   "whatItIs": "Roblox Studio's integrated marketplace for models, audio, meshes, and plugins.",
+   "category": "dev-tools/game-dev",
+   "link": "https://create.roblox.com/store",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-20",
+   "mentions": [
+    {
+     "reel": "Derd99tTw_j",
+     "claim": "Mentioned as a convenient built-in resource where all assets function in-engine, though quality varies."
+    }
+   ]
+  },
+  {
    "id": "screenpipe",
    "name": "Screenpipe",
    "whatItIs": "An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows.",
@@ -2034,6 +2113,27 @@
     "atcoder",
     "leetcode",
     "usaco-guide"
+   ]
+  },
+  {
+   "id": "Derd99tTw_j",
+   "url": "https://www.instagram.com/reel/Derd99tTw_j/",
+   "author": "Waterfail",
+   "title": "Top Three Sources for Free Game Assets",
+   "summary": "This video highlights three primary platforms for sourcing free 3D models and game assets for Roblox and indie game development. It reviews Kenney, the Roblox Toolbox, and itch.io as key resources to avoid paying for commercial assets.",
+   "transcript": "FREE ASSETS FOR [Roblox logo] Want millions of free assets for your Roblox game? Here are 3 gold mines and the last one is insane! Number 1: Kenney. This guy is a legend. Thousands of high quality asset packs, sci-fi, fantasy, low poly, you name it. His website is a gold mine. Number 2- Roblox Toolbox. Classic move, everything works in game, but finding quality stuff? Mmm, good luck. That's why I dropped 2 free packs. 60+ models each. Link in bio. Like this video before I show you the best one. 3. itch.io. This is the holy grail. Thousands of creators, insane quality, completely free. You'll find everything you need here. Send this to a person who's still paying for assets.",
+   "note": "",
+   "saved": "2026-10-20",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "d933c1fe67",
+    "f2307cc529"
+   ],
+   "tools": [
+    "itch-io",
+    "kenney",
+    "roblox-toolbox"
    ]
   },
   {

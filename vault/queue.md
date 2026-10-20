@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (47)
+## New (50)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -36,6 +36,8 @@
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [grill-me](tools/grill-me.md) | `dev-tools/ai` | 1 | A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications. |
+| [itch.io](tools/itch-io.md) | `dev-tools/game-dev` | 1 | An open marketplace for indie digital creators and game developers featuring games and game assets. |
+| [Kenney](tools/kenney.md) | `dev-tools/game-dev` | 1 | A game development asset repository offering thousands of public domain 2D, 3D, and audio assets. |
 | [meetily](tools/meetily.md) | `dev-tools/ai` | 1 | A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine. |
 | [NeetCode](tools/neetcode.md) | `dev-tools/productivity` | 1 | An interview preparation platform with problem roadmaps and video explanations. |
 | [No Mistakes](tools/no-mistakes.md) | `dev-tools/ai` | 1 | An agent skill by Kun Chen that applies adversarial checks to pull requests and changes. |
@@ -50,6 +52,7 @@
 | [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
+| [Roblox Toolbox](tools/roblox-toolbox.md) | `dev-tools/game-dev` | 1 | Roblox Studio's integrated marketplace for models, audio, meshes, and plugins. |
 | [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
 | [SQLite](tools/sqlite.md) | `dev-tools/databases` | 1 | A lightweight, in-process, serverless relational database engine. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
