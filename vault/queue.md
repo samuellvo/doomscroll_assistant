@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (50)
+## New (51)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -24,6 +24,7 @@
 | [ApiVault](tools/apivault.md) | `dev-tools/productivity` | 1 | A curated directory cataloging free public APIs categorized by domain. |
 | [AWS Lambda](tools/aws-lambda.md) | `dev-tools/infra` | 1 | A serverless compute service that runs code in response to events. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
+| [ChatGPT](tools/chatgpt.md) | `dev-tools/ai` | 1 | A conversational AI platform developed by OpenAI capable of generating text and visual diagrams. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |

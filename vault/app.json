@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-10-20",
+ "generated": "2026-10-22",
  "stats": {
-  "reels": 32,
-  "insights": 81,
-  "tools": 50,
-  "ungrouped": 15
+  "reels": 33,
+  "insights": 82,
+  "tools": 51,
+  "ungrouped": 16
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 18,
-   "reelCount": 10,
-   "ungroupedCount": 0,
+   "insightCount": 19,
+   "reelCount": 11,
+   "ungroupedCount": 1,
    "groups": [
     {
      "name": "Operational Efficiency and Interfaces",
@@ -220,6 +220,25 @@
         "DcJehy0zzAE"
        ],
        "created": "2026-10-13",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "d42b0c6eed",
+       "text": "Prompting generative AI models with specialized structural formats—such as exploded views, cutaways, and phase timelines—yields clear technical breakdowns for complex topics.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeMprilyH37"
+       ],
+       "created": "2026-10-22",
        "nuances": [],
        "conflicts": []
       }
@@ -1578,6 +1597,22 @@
    ]
   },
   {
+   "id": "chatgpt",
+   "name": "ChatGPT",
+   "whatItIs": "A conversational AI platform developed by OpenAI capable of generating text and visual diagrams.",
+   "category": "dev-tools/ai",
+   "link": "https://chatgpt.com",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-22",
+   "mentions": [
+    {
+     "reel": "DeMprilyH37",
+     "claim": "Demonstrated as the platform executing visual learning prompts to produce diagrams like timelines, exploded views, and cross-sections."
+    }
+   ]
+  },
+  {
    "id": "cli-anything",
    "name": "CLI-Anything",
    "whatItIs": "An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use.",
@@ -2091,6 +2126,24 @@
   }
  ],
  "reels": [
+  {
+   "id": "DeMprilyH37",
+   "url": "https://www.instagram.com/reel/DeMprilyH37/",
+   "author": "Learn AI | Tools & Tips",
+   "title": "Visual Learning Prompts in ChatGPT",
+   "summary": "The creator demonstrates four prompt shortcuts used in ChatGPT to generate detailed visual diagrams for faster learning. These commands produce structured infographics including historical timelines, exploded views, anatomical diagrams, and cross-sections. Each format helps break down complex objects and concepts into labeled visual components.",
+   "transcript": "These four codes will help you learn anything faster with visual explanations. The first one is timeline. Enter timeline and then a topic and it will come back to you with a phase by phase chart. I use AI as the topic. Next is explode view plus the name of an object. This gives you a page showing the components arranged according to their actual position. I used a TV remote as the subject. The next one is anatomy. Enter anatomy followed by a body part and you will get an anatomical illustration of that body part. I used foot as the body part. The last one is cross section. ChatGPT will show you a cutaway diagram of what's actually inside an object. I used a cruise liner as the object. For full sized images along with their prompts, comment codes and I'll send you a PDF. Oh, and hit follow and save this video for later. Comment CODES. Follow & Save.",
+   "note": "",
+   "saved": "2026-10-22",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "d42b0c6eed"
+   ],
+   "tools": [
+    "chatgpt"
+   ]
+  },
   {
    "id": "Der3XLgjh4R",
    "url": "https://www.instagram.com/reel/Der3XLgjh4R/",
