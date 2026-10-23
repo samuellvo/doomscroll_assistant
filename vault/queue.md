@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (51)
+## New (52)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -14,6 +14,7 @@
 | [GitHub](tools/github.md) | `dev-tools/infra` | 2 | A developer platform for version control and code hosting. |
 | [LeetCode](tools/leetcode.md) | `dev-tools/productivity` | 2 | A technical interview preparation platform featuring algorithm coding challenges. |
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 2 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
+| [SQLite](tools/sqlite.md) | `dev-tools/databases` | 2 | A lightweight, in-process, serverless relational database engine. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
 | [Amazon CloudFront](tools/amazon-cloudfront.md) | `dev-tools/infra` | 1 | A global content delivery network (CDN) service. |
@@ -37,6 +38,7 @@
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
 | [grill-me](tools/grill-me.md) | `dev-tools/ai` | 1 | A prompting skill created by Matt Pocock that conducts an interview to refine plans and technical specifications. |
+| [io_uring](tools/io-uring.md) | `dev-tools/infra` | 1 | A Linux kernel interface for asynchronous I/O operations. |
 | [itch.io](tools/itch-io.md) | `dev-tools/game-dev` | 1 | An open marketplace for indie digital creators and game developers featuring games and game assets. |
 | [Kenney](tools/kenney.md) | `dev-tools/game-dev` | 1 | A game development asset repository offering thousands of public domain 2D, 3D, and audio assets. |
 | [meetily](tools/meetily.md) | `dev-tools/ai` | 1 | A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine. |
@@ -55,5 +57,4 @@
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
 | [Roblox Toolbox](tools/roblox-toolbox.md) | `dev-tools/game-dev` | 1 | Roblox Studio's integrated marketplace for models, audio, meshes, and plugins. |
 | [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
-| [SQLite](tools/sqlite.md) | `dev-tools/databases` | 1 | A lightweight, in-process, serverless relational database engine. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |

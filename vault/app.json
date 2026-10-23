@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-22",
+ "generated": "2026-10-23",
  "stats": {
-  "reels": 33,
-  "insights": 82,
-  "tools": 51,
-  "ungrouped": 16
+  "reels": 34,
+  "insights": 84,
+  "tools": 52,
+  "ungrouped": 18
  },
  "topics": [
   {
@@ -1176,9 +1176,9 @@
    "path": "system-design/scalability",
    "title": "Scalability",
    "area": "System Design",
-   "insightCount": 7,
-   "reelCount": 4,
-   "ungroupedCount": 0,
+   "insightCount": 9,
+   "reelCount": 5,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": "Workload Scaling Strategies",
@@ -1209,7 +1209,7 @@
        "nuances": [
         {
          "text": "Batching incoming write operations into a single database commit per event loop iteration significantly amortizes commit overhead and boosts concurrent throughput.",
-         "count": 1
+         "count": 2
         }
        ],
        "conflicts": []
@@ -1259,6 +1259,37 @@
         "Deq2G1sgANK"
        ],
        "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "5bc915ddab",
+       "text": "Using io_uring reduces kernel context switches by batching asynchronous I/O operations between user space and the kernel.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "De0L0-wN7P8"
+       ],
+       "created": "2026-10-23",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "1ba8426e58",
+       "text": "Sharing a common pool of network buffers across active requests reduces memory consumption compared to allocating dedicated buffers for idle connections.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "De0L0-wN7P8"
+       ],
+       "created": "2026-10-23",
        "nuances": [],
        "conflicts": []
       }
@@ -1433,6 +1464,26 @@
     {
      "reel": "DeZqqXvASHs",
      "claim": "Highlighted as an adversarial review tool to simplify and debloat code."
+    }
+   ]
+  },
+  {
+   "id": "sqlite",
+   "name": "SQLite",
+   "whatItIs": "A lightweight, in-process, serverless relational database engine.",
+   "category": "dev-tools/databases",
+   "link": "https://www.sqlite.org",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-17",
+   "mentions": [
+    {
+     "reel": "DekgklLJ94l",
+     "claim": "Employed both as the application's database and as its JSON parser using built-in JSON extraction functions."
+    },
+    {
+     "reel": "De0L0-wN7P8",
+     "claim": "Used as the underlying data store for the high-performance Assembly API implementation."
     }
    ]
   },
@@ -1805,6 +1856,22 @@
    ]
   },
   {
+   "id": "io-uring",
+   "name": "io_uring",
+   "whatItIs": "A Linux kernel interface for asynchronous I/O operations.",
+   "category": "dev-tools/infra",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-23",
+   "mentions": [
+    {
+     "reel": "De0L0-wN7P8",
+     "claim": "Used to submit and collect syscalls in batches to reduce user-to-kernel context switching overhead."
+    }
+   ]
+  },
+  {
    "id": "itch-io",
    "name": "itch.io",
    "whatItIs": "An open marketplace for indie digital creators and game developers featuring games and game assets.",
@@ -2093,22 +2160,6 @@
    ]
   },
   {
-   "id": "sqlite",
-   "name": "SQLite",
-   "whatItIs": "A lightweight, in-process, serverless relational database engine.",
-   "category": "dev-tools/databases",
-   "link": "https://www.sqlite.org",
-   "status": "new",
-   "notes": "",
-   "firstSeen": "2026-10-17",
-   "mentions": [
-    {
-     "reel": "DekgklLJ94l",
-     "claim": "Employed both as the application's database and as its JSON parser using built-in JSON extraction functions."
-    }
-   ]
-  },
-  {
    "id": "strix",
    "name": "Strix",
    "whatItIs": "An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities.",
@@ -2126,6 +2177,27 @@
   }
  ],
  "reels": [
+  {
+   "id": "De0L0-wN7P8",
+   "url": "https://www.instagram.com/reel/De0L0-wN7P8/",
+   "author": "Arjay McCandless",
+   "title": "High-Performance Assembly API on a $12 Server",
+   "summary": "A developer implemented a social media API written in Assembly for a $12/month server challenge, achieving over 17,000 requests per second. The server optimized system performance using Linux io_uring for batched system calls, shared network buffer pools for idle connections, and batched SQLite database transactions.",
+   "transcript": "I asked developers to write their best code to max out a $12 server and somebody did it in Assembly. The results were insane. For context, the server has one vCPU and 2 gigs of RAM, and it's running a small social media API. I provided the specs for this API. Here's how they implemented it. First, they wrote their own HTTP server, JSON handling, and login verification in Assembly. They used SQLite, which is still written in C. Then they used a Linux interface called io_uring to submit and collect operations in batches. This significantly reduces trips between the application and the operating system, which saves you a ton of speed when you have this many operations going on. Several of our fastest implementations across multiple languages use this same trick. Now, they also optimize around something that you might not think about. Most users spend their time doing nothing. When you're reading something like a long post, your connection is idle. This implementation shares a pool of network buffers, so every single user who may be sitting idle doesn't need their own dedicated buffer at the same time. It also batches database work into transactions, grouping multiple writes together and waiting for the response before sending results out. This implementation was able to support 171,000 simultaneous users, or roughly 17,000 requests per second. Under this load, 99% of requests still finished in under 142 milliseconds, and there was zero errors. Yet, somehow, this was still the second best implementation I got. You can check out all the implementations and detailed breakdowns in my YouTube video tomorrow.",
+   "note": "",
+   "saved": "2026-10-23",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "9e444f16f7",
+    "5bc915ddab",
+    "1ba8426e58"
+   ],
+   "tools": [
+    "io-uring",
+    "sqlite"
+   ]
+  },
   {
    "id": "DeMprilyH37",
    "url": "https://www.instagram.com/reel/DeMprilyH37/",

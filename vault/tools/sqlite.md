@@ -5,7 +5,7 @@ name: SQLite
 category: dev-tools/databases
 status: new
 first_seen: 2026-10-17
-mentions: 1
+mentions: 2
 ---
 # SQLite
 
@@ -16,3 +16,4 @@ A lightweight, in-process, serverless relational database engine.
 ## What creators claimed
 
 - Employed both as the application's database and as its JSON parser using built-in JSON extraction functions. ([DekgklLJ94l](../reels/DekgklLJ94l.md))
+- Used as the underlying data store for the high-performance Assembly API implementation. ([De0L0-wN7P8](../reels/De0L0-wN7P8.md))
