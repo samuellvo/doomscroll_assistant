@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-10-23",
+ "generated": "2026-10-25",
  "stats": {
-  "reels": 34,
-  "insights": 84,
+  "reels": 35,
+  "insights": 87,
   "tools": 52,
-  "ungrouped": 18
+  "ungrouped": 20
  },
  "topics": [
   {
@@ -250,9 +250,9 @@
    "path": "career/interviews",
    "title": "Interviews",
    "area": "Career",
-   "insightCount": 17,
-   "reelCount": 5,
-   "ungroupedCount": 4,
+   "insightCount": 20,
+   "reelCount": 6,
+   "ungroupedCount": 6,
    "groups": [
     {
      "name": "Strategic Interview Questions",
@@ -270,7 +270,12 @@
         "DeQe_FDtpxM"
        ],
        "created": "2026-10-09",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Ask interviewers about their career journey and favorite aspects of their role to build rapport by encouraging them to speak about themselves.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       },
       {
@@ -478,6 +483,30 @@
         "Der3XLgjh4R"
        ],
        "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "76b90ee949",
+       "text": "Reference company news or recent articles in interview questions to demonstrate thorough research.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dcz3tE5AnPu"
+       ],
+       "created": "2026-10-25",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "fdd668f324",
+       "text": "Ask how to make a lasting impression on peers and management to signal strong ambition and a desire to excel.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dcz3tE5AnPu"
+       ],
+       "created": "2026-10-25",
        "nuances": [],
        "conflicts": []
       }
@@ -2177,6 +2206,24 @@
   }
  ],
  "reels": [
+  {
+   "id": "Dcz3tE5AnPu",
+   "url": "https://www.instagram.com/reel/Dcz3tE5AnPu/",
+   "author": "zachtalksalot_",
+   "title": "3 Essential Questions to Ask in Every Job Interview",
+   "summary": "Asking structured questions during job interviews helps demonstrate prep work, build rapport, and project ambition. Incorporating personal questions, article references, and performance-focused inquiries can set a candidate apart.",
+   "transcript": "3 interview questions everyone should ask\n\nHere are the three questions that I ask after every single one of my interviews that have landed me positions at very successful companies. For context, I'm just 21 years old and I've had four different internships, one of those a Fortune 500, one of those a Fortune 100, and one of those the biggest financial institution in America. And make sure to save this for later because I literally ask these three questions word for word. Number one is very simple: 'What is your favorite part about what you do and how did you get to where you are today?' This is the best first question because as humans we naturally want to talk about ourselves, so if you ask a recruiter and they start talking, that's going to go a long way. I like to call the second one the sleeper pick because I don't hear many people talk about it, but it's including something from an online article within your question. For example, you can ask, 'I read in an article [blank], how do you think [blank] affected the company?' Asking a question like that shows that you did your research before you came in for the interview. And to end off your questions with a mic drop style question, it's best to ask the high performer question. Something along the lines of 'How do I become a high performer for the role?' It is a very common question, so I always reword it and ask, 'How do I make a long-lasting impression with peers and management?' or something that shows that you want those challenges. Asking the recruiter something like this shows that you're willing to go above and beyond for the job, you're very ambitious. And of course, I have to give credit where it's due, shoutout to Higher Up Wellness because I remember watching a TikTok literally like three years ago and I used it ever since on every single one of my interviews and have yet to fail with that question. Anyways, good luck interviewing. Peace.",
+   "note": "",
+   "saved": "2026-10-25",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "76b90ee949",
+    "fdd668f324",
+    "9509e354a9"
+   ],
+   "tools": []
+  },
   {
    "id": "De0L0-wN7P8",
    "url": "https://www.instagram.com/reel/De0L0-wN7P8/",
