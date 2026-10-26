@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (52)
+## New (56)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -26,6 +26,7 @@
 | [AWS Lambda](tools/aws-lambda.md) | `dev-tools/infra` | 1 | A serverless compute service that runs code in response to events. |
 | [Blender](tools/blender.md) | `dev-tools/game-dev` | 1 | An open-source 3D computer graphics software toolset. |
 | [ChatGPT](tools/chatgpt.md) | `dev-tools/ai` | 1 | A conversational AI platform developed by OpenAI capable of generating text and visual diagrams. |
+| [Chroma](tools/chroma.md) | `dev-tools/databases` | 1 | An open-source vector database used for local embedding generation and nearest-neighbor search. |
 | [CLI-Anything](tools/cli-anything.md) | `dev-tools/ai` | 1 | An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use. |
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |
@@ -34,6 +35,7 @@
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
 | [Fortran](tools/fortran.md) | `dev-tools/runtimes-and-languages` | 1 | A compiled imperative programming language historically used for scientific and numerical computing. |
 | [Framewisp](tools/framewisp.md) | `dev-tools/game-dev` | 1 | A plugin for converting Figma UI layouts into Roblox Studio UI components and scripts. |
+| [Gemini API](tools/gemini-api.md) | `dev-tools/ai` | 1 | Google's developer API for interacting with Gemini multimodal language models. |
 | [GNU libmicrohttpd](tools/gnu-libmicrohttpd.md) | `dev-tools/infra` | 1 | A small C library designed to embed an HTTP server into other applications. |
 | [Go](tools/go.md) | `dev-tools/runtimes-and-languages` | 1 | An open-source programming language developed by Google. |
 | [Graphify](tools/graphify.md) | `dev-tools/ai` | 1 | A code analysis tool that builds a queryable knowledge graph out of an existing codebase. |
@@ -41,6 +43,7 @@
 | [io_uring](tools/io-uring.md) | `dev-tools/infra` | 1 | A Linux kernel interface for asynchronous I/O operations. |
 | [itch.io](tools/itch-io.md) | `dev-tools/game-dev` | 1 | An open marketplace for indie digital creators and game developers featuring games and game assets. |
 | [Kenney](tools/kenney.md) | `dev-tools/game-dev` | 1 | A game development asset repository offering thousands of public domain 2D, 3D, and audio assets. |
+| [matplotlib](tools/matplotlib.md) | `dev-tools/productivity` | 1 | A comprehensive Python data visualization library. |
 | [meetily](tools/meetily.md) | `dev-tools/ai` | 1 | A privacy-first AI meeting assistant that processes and stores meeting data completely on the local machine. |
 | [NeetCode](tools/neetcode.md) | `dev-tools/productivity` | 1 | An interview preparation platform with problem roadmaps and video explanations. |
 | [No Mistakes](tools/no-mistakes.md) | `dev-tools/ai` | 1 | An agent skill by Kun Chen that applies adversarial checks to pull requests and changes. |
@@ -58,3 +61,4 @@
 | [Roblox Toolbox](tools/roblox-toolbox.md) | `dev-tools/game-dev` | 1 | Roblox Studio's integrated marketplace for models, audio, meshes, and plugins. |
 | [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
+| [uv](tools/uv.md) | `dev-tools/runtimes-and-languages` | 1 | A fast Python package and project manager written in Rust. |

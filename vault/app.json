@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-10-25",
+ "generated": "2026-10-26",
  "stats": {
-  "reels": 35,
-  "insights": 87,
-  "tools": 52,
-  "ungrouped": 20
+  "reels": 36,
+  "insights": 92,
+  "tools": 56,
+  "ungrouped": 25
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 19,
-   "reelCount": 11,
-   "ungroupedCount": 1,
+   "insightCount": 20,
+   "reelCount": 12,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": "Operational Efficiency and Interfaces",
@@ -239,6 +239,18 @@
         "DeMprilyH37"
        ],
        "created": "2026-10-22",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "d1f22e9d2e",
+       "text": "Reusing a single local embedding model instance and disabling input padding speeds up embedding inference by orders of magnitude compared to reloading models on every query.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "DeVz6IUmNBq"
+       ],
+       "created": "2026-10-26",
        "nuances": [],
        "conflicts": []
       }
@@ -957,9 +969,9 @@
    "path": "system-design/caching",
    "title": "Caching",
    "area": "System Design",
-   "insightCount": 2,
-   "reelCount": 2,
-   "ungroupedCount": 0,
+   "insightCount": 6,
+   "reelCount": 3,
+   "ungroupedCount": 4,
    "groups": [
     {
      "name": "Node Count and Hashing Strategies",
@@ -987,6 +999,61 @@
         "Deq2G1sgANK"
        ],
        "created": "2026-10-19",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "d0ba52c099",
+       "text": "A semantic cache sits in front of an LLM by embedding incoming queries and serving stored answers when query cosine similarity meets or exceeds a target threshold.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeVz6IUmNBq"
+       ],
+       "created": "2026-10-26",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b8b15edb2e",
+       "text": "Semantic cache thresholds should be chosen empirically by replaying intent-labeled historical queries and setting the cutoff immediately above the highest similarity score observed between queries of differing intents.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DeVz6IUmNBq"
+       ],
+       "created": "2026-10-26",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "cef7158d78",
+       "text": "Semantic caching should only be applied to shared, non-personalized knowledge queries, as caching user-specific queries risks data leakage across customers.",
+       "kind": "tradeoff",
+       "count": 1,
+       "sources": [
+        "DeVz6IUmNBq"
+       ],
+       "created": "2026-10-26",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "cd2e09e62e",
+       "text": "Semantic caches require multiple invalidation strategies, including lazy TTL expiration, policy version filtering, and targeted semantic deletion using query embeddings for updated facts.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeVz6IUmNBq"
+       ],
+       "created": "2026-10-26",
        "nuances": [],
        "conflicts": []
       }
@@ -1693,6 +1760,22 @@
    ]
   },
   {
+   "id": "chroma",
+   "name": "Chroma",
+   "whatItIs": "An open-source vector database used for local embedding generation and nearest-neighbor search.",
+   "category": "dev-tools/databases",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-26",
+   "mentions": [
+    {
+     "reel": "DeVz6IUmNBq",
+     "claim": "Used as the core storage engine and local embedding provider (via bundled all-MiniLM-L6-v2) to implement the semantic cache."
+    }
+   ]
+  },
+  {
    "id": "cli-anything",
    "name": "CLI-Anything",
    "whatItIs": "An open-source harness that automatically generates command-line interfaces for GUI applications to enable AI agent tool use.",
@@ -1821,6 +1904,22 @@
    ]
   },
   {
+   "id": "gemini-api",
+   "name": "Gemini API",
+   "whatItIs": "Google's developer API for interacting with Gemini multimodal language models.",
+   "category": "dev-tools/ai",
+   "link": "https://aistudio.google.com/apikey",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-26",
+   "mentions": [
+    {
+     "reel": "DeVz6IUmNBq",
+     "claim": "Used as the target LLM (gemini-3.5-flash-lite) to generate support agent replies on cache misses."
+    }
+   ]
+  },
+  {
    "id": "gnu-libmicrohttpd",
    "name": "GNU libmicrohttpd",
    "whatItIs": "A small C library designed to embed an HTTP server into other applications.",
@@ -1929,6 +2028,22 @@
     {
      "reel": "Derd99tTw_j",
      "claim": "Described as a gold mine offering thousands of high-quality sci-fi, fantasy, and low-poly asset packs."
+    }
+   ]
+  },
+  {
+   "id": "matplotlib",
+   "name": "matplotlib",
+   "whatItIs": "A comprehensive Python data visualization library.",
+   "category": "dev-tools/productivity",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-26",
+   "mentions": [
+    {
+     "reel": "DeVz6IUmNBq",
+     "claim": "Used to generate visual comparison plots of cumulative API costs and latency distributions."
     }
    ]
   },
@@ -2203,9 +2318,50 @@
      "claim": "Highlighted as an AI agent capable of running overnight security audits that usually cost thousands of dollars."
     }
    ]
+  },
+  {
+   "id": "uv",
+   "name": "uv",
+   "whatItIs": "A fast Python package and project manager written in Rust.",
+   "category": "dev-tools/runtimes-and-languages",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-10-26",
+   "mentions": [
+    {
+     "reel": "DeVz6IUmNBq",
+     "claim": "Recommended for project initialization and dependency management in the setup section."
+    }
+   ]
   }
  ],
  "reels": [
+  {
+   "id": "DeVz6IUmNBq",
+   "url": "https://www.instagram.com/p/DeVz6IUmNBq/",
+   "author": "Deepak Jose | Data Science & Gen AI",
+   "title": "Build a Semantic Cache to Cut LLM Costs",
+   "summary": "Semantic caching reduces LLM API costs and latency by embedding incoming queries and serving previously generated answers when similarity crosses a defined threshold. Setting the threshold empirically by evaluating historical intents avoids false cache hits while maximizing cache coverage. Stale responses can be invalidated through TTL expiration, version tagging, or targeted semantic invalidation.",
+   "transcript": "Slide 1: @datasciencebrain. BUILD A SEMANTIC CACHE THAT CUT AN AGENT'S LLM BILL BY 53% - IN 50 MINUTES. SWIPE TO KNOW MORE.\nSlide 2: Build a Semantic Cache That Cut an Agent's LLM Bill by 53% - in 50 Minutes. Created by https://www.instagram.com/datasciencebrain/. Semantic Cache. Same meaning, same answer. Pay for the LLM only once. Architecture diagram showing Question -> Embed (MiniLM, local) -> Cache lookup (nearest past question) -> similarity >= 0.82 -> Cached answer (6 ms, $0); miss or stale -> Call LLM (~900 ms, paid) -> Store (question + answer) -> Answer. Invalidation box: TTL, version bump, targeted delete. 60 questions: 53% cheaper, 32 of 60 from cache, 0 wrong answers. Verified 2026-10-10 - chromadb==1.5.9, google-genai==2.29.0, matplotlib==3.11.2, python-dotenv==1.2.4, Python 3.12, Gemini gemini-3.5-flash-lite. Table of Contents: 1. What You're Building, 2. Architecture Overview, 3. Prerequisites & Setup, 4. Config, 5. The Store Policy and a Day of Questions, 6. One Gemini Call, With a Price Tag, 7. The Semantic Cache, 8. The Agent: Cache First, LLM on a Miss, 9. Choosing the Threshold From Data, 10. The Report and the Chart, 11. The Command Line, 12. Run It End-to-End, 13. Common Errors & Fixes, 14. What to Build Next. 1. What You're Building.\nSlide 3: Support bots answer the same questions all day. 'What's the return window?' comes in fifty times, worded ten different ways, and every one of them is a paid LLM call that produces the same answer. A semantic cache sits in front of the LLM. It turns each question into an embedding, a list of numbers that captures what the question means, and checks whether an earlier question meant the same thing. If it did, the old answer goes straight back. No tokens are spent, and the reply takes 6 ms instead of about 900 ms. You'll build one for a support agent at Kumkum Home, a made-up Indian home-decor store. Then you'll replay 60 customer questions with and without the cache and measure the difference. On that traffic, the cache cut cost by 53%: 28 LLM calls instead of 60, $0.0045 instead of $0.0095. You'll also see why the number is 53% and not the 70-90% you see in blog posts, and how to pick the threshold and clear stale answers. 2. Architecture Overview. Customer question -> Embed with MiniLM locally -> Look up nearest cached question in Chroma -> similarity at or above 0.82 and fresh -> Return cached answer -> Answer; below 0.82 or stale -> Call Gemini -> Store question and answer -> Answer. Every question is embedded on your machine by all-MiniLM-L6-v2, a small model that ships with Chroma. Chroma then finds the closest question already in the cache and reports how similar the two are, from 0 (unrelated) to 1 (identical). If the similarity clears the threshold (0.82 here) and the entry isn't stale, the cached answer goes back. Otherwise Gemini answers, and the new question and answer are stored for next time. 'Stale' has three meanings in this project. An entry can be too old (TTL), it can belong to an old policy version, or it can be deleted on purpose when one fact changes. Section 7 builds all three. 3. Prerequisites & Setup. You need Python 3.12 or newer, uv, and a free Gemini API key from aistudio.google.com/apikey. No credit card is needed. Terminal: uv init semantic-cache --python 3.12, cd semantic-cache, uv add chromadb==1.5.9 google-genai==2.29.0 matplotlib==3.11.2 python-dotenv==1.2.4, mkdir src. Delete main.py that uv init creates, because your code lives in src/. Chroma brings its own embedding model, an ONNX build of all-MiniLM-L6-v2, so there's no PyTorch download. The first run fetches it (about 80 MB) into ~/.cache/chroma/. Create .env: GEMINI_API_KEY=your_key_here. And .gitignore: .env, .venv/, __pycache__/, *.pyc, .cache/, *.png.\nSlide 4: Every command in this guide starts with PYTHONPATH=. so that from src.cache import ... resolves. In PowerShell, run $env:PYTHONPATH=\".\" once per terminal and drop the prefix. 4. Config. All the settings live in one file. Three of them matter most. THRESHOLD is the minimum similarity for a cached answer to count. TTL_SECONDS is how long an entry stays valid. MIN_INTERVAL_S spaces out Gemini calls, because the free tier for gemini-3.5-flash-lite allows 15 requests a minute, one every 4 seconds. The free tier costs nothing, so the cost figures use the paid-tier price: $0.30 per million input tokens and $2.50 per million output tokens. That shows what the same traffic would cost once you pay for it. Save as src/config.py: import os, import sys, from pathlib import Path, from dotenv import load_dotenv, ROOT = Path(__file__).resolve().parent.parent, load_dotenv(ROOT / '.env'), sys.stdout.reconfigure(encoding='utf-8'), GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', ''), MODEL = 'gemini-3.5-flash-lite', MIN_INTERVAL_S = 4.2. PRICE_IN_PER_M = 0.30, PRICE_OUT_PER_M = 2.50, THRESHOLD = 0.82, TTL_SECONDS = 24 * 60 * 60.\nSlide 5: CACHE_DIR = ROOT / '.cache', COLLECTION = 'answers'. Where 0.82 comes from is the subject of section 9. For now, treat it as a placeholder. 5. The Store Policy and a Day of Questions. The agent answers from a short policy document, so every LLM call sends about 340 input tokens. Those are the tokens a cache hit saves. {version} and {return_days} are placeholders. The invalidation demo in section 12 changes the return window from 7 to 10 days, and these let it do that without a second copy of the policy. Save as src/traffic.py: POLICY = \"\"\"Kumkum Home - customer support policy (version {version})\nReturns: unused items can be returned within {return_days} days of delivery. Custom-stitched items cannot be returned. Refunds: prepaid orders are refunded to the original payment method within 5-7 working days of the return reaching our warehouse. COD orders are refunded by bank transfer (NEFT) within 7-10 working days, after you share your bank details. Cancellation: an order can be cancelled free of charge until it is dispatched. After dispatch, refuse the parcel at the door instead. Subscriptions: the monthly candle box subscription can be cancelled anytime from My Account > Subscriptions; the current month's box still ships. Cash on delivery: available for orders up to Rs 5,000. A Rs 49 COD fee applies. Delivery: metro cities in 2-4 days, other locations in 5-7 days. Free shipping above Rs 999. Warranty: brass and copper items carry a 1-year warranty against manufacturing defects. Exchange: size or colour exchange is free, once per order, within the return window. Damaged items: report damage within 48 hours of delivery with a photo of the parcel. Gift wrap: available for Rs 50 per item at checkout. Contact: support@kumkumhome.in, 10am-7pm IST, Monday to Saturday.\"\"\"\nNext come 60 questions in the order they arrive. Each one is tagged with its intent, the thing it's really asking. There are 15 intents, so 45 of the 60 questions repeat something already asked. That's the most a cache could ever save on this traffic: 75%. Some pairs are traps. 'Can I cancel my order?' and 'Can I cancel my subscription?' sound almost the same and need different answers. So do the prepaid and COD refund questions, and the COD-limit and COD-fee questions. The agent never sees the intent tags. They exist so you can tell a correct cache hit from a wrong one without asking another LLM to judge. Add the first half to the same file: TRAFFIC: list[tuple[str, str]] = [ ... ]\nSlide 6: Trailing traffic intents list: TRAFFIC list definition continues with questions mapped to intents like 'returns_window', 'exchange', 'delivery_time', 'cod_fee', etc. Check the counts: PYTHONPATH=. uv run python -c \"from src.traffic import TRAFFIC; print(len(TRAFFIC), len({i for _, i in TRAFFIC}))\" -> 60 15. 6. One Gemini Call, With a Price Tag. To prove the cache saves money, you need to know what each call costs. Gemini reports the tokens it used in response.usage_metadata, and the price per token is in config.py, so each call can return its own cost. The client is only built when a key exists. genai.Client(api_key=\"\") raises at construction time, which would crash the program on import before you get a readable message. Save as src/llm.py: import asyncio, import time, from dataclasses import dataclass, from google import genai, from google.genai import errors, types, from src.config import GEMINI_API_KEY, MIN_INTERVAL_S, MODEL, PRICE_IN_PER_M, PRICE_OUT_PER_M. _client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None. INSTRUCTIONS = ('You are the support agent for Kumkum Home. Answer the customer in one or two short sentences, using only the policy below.\\n\\n')\nSlide 7: An Answer carries everything the report needs later. price turns token counts into dollars: @dataclass class Answer: text: str, in_tokens: int, out_tokens: int, cost: float, latency_ms: float. def price(in_tokens: int, out_tokens: int) -> float: return (in_tokens * PRICE_IN_PER_M + out_tokens * PRICE_OUT_PER_M) / 1_000_000. Pacing mechanism for free tier rate limits (15 requests per minute): async def _pace() -> None. async def _generate(question: str, policy: str) -> tuple[types.GenerateContentResponse, float]: Send one request; retry on 429/503. Uses thinking_config=types.ThinkingConfig(thinking_level=\"MINIMAL\").\nSlide 8: async def answer(question: str, policy: str) -> Answer. Measures tokens, cost, and latency. Thinking tokens are billed at the output price, so they are added to output tokens. Execution test: Answer(text='Unused items can be returned within 7 days of delivery...', in_tokens=339, out_tokens=23, cost=0.0001592, latency_ms=1244.11). Across 100,000 questions it comes to about $16, and the cache's job is to cut that. 7. The Semantic Cache. This file is the core of the project. It stores each question with its answer, and it looks up new questions by meaning instead of exact text. Chroma does the embedding and the nearest-neighbour search. Each cache entry is one Chroma record: document is question, metadata holds answer, policy version, creation time. 7.1 The embedder.\nSlide 9: Pay attention to these lines. You could skip them and the cache would still work, but each lookup would take 0.2 to 1.6 seconds instead of 6 ms. There are two reasons: 1. Chroma's default embedding function reloads the model on every call. Instantiating ONNXMiniLM_L6_V2 once prevents this. 2. The tokenizer pads every input to 256 tokens. Disabling padding (EMBEDDER.tokenizer.no_padding()) makes it ~10x faster because mean pooling ignores padding anyway. Save as src/cache.py: EMBEDDER = ONNXMiniLM_L6_V2(), EMBEDDER.tokenizer.no_padding(). 7.2 Opening the cache. PersistentClient saves the cache to .cache/ on disk. Distance metric is cosine (\"hnsw\": {\"space\": \"cosine\"}), similarity is 1 - distance. @dataclass class Hit: answer: str, question: str, similarity: float, age_s: float.\nSlide 10: class SemanticCache: def __init__(self, threshold: float = THRESHOLD, ttl_s: float = TTL_SECONDS). 7.3 Lookup. The lookup asks Chroma for the single closest question. The where filter checks policy_version. Two checks decide hit or miss: TTL (if age_s > self.ttl_s, lazy eviction occurs) and Threshold (if similarity < self.threshold, it's a miss). 7.4 Store, targeted invalidation, clear. def store(...). def invalidate_similar(self, topic: str, min_similarity: float = 0.5) -> list[str]: targeted invalidation deletes entries whose question is close to a changed topic description.\nSlide 11: Implementation of def clear(self). Testing the cache with rewording vs traps without LLM calls: 'Can I cancel my order?' vs 'How do I cancel my order?' yields 0.895 similarity. 'Can I cancel my subscription?' yields 0.693 similarity. 'How do I stop my subscription?' yields 0.413 similarity. A threshold of 0.82 cleanly separates paraphrases from traps.\nSlide 12: 8. The Agent: Cache First, LLM on a Miss. The agent checks the semantic cache first; if hit, returns answer at zero cost; if miss, calls Gemini, stores the result, and returns it. Passing cache=None disables caching for baseline measurements. A miss includes both cache lookup latency and model call latency. Save as src/agent.py: @dataclass class Record: question: str, answer: str, hit: bool, cost: float, latency_ms: float, similarity: float = 0.0, matched: str = \"\".\nSlide 13: async def ask(question: str, policy: str, version: int, cache: SemanticCache | None) -> Record. Trade-off: semantic caching is only safe for universal questions, not personalized ones like 'Where is my order?'. 9. Choosing the Threshold From Data. The threshold is the single most important parameter. Set too low, customers get incorrect answers. Set too high, rewordings miss and incur LLM costs. Sweep traffic offline through cache logic across multiple thresholds. Save as src/sweep.py: @dataclass class SweepPoint: threshold: float, hits: int, false_hits: int, example: str = \"\".\nSlide 14: def similarity_matrix(questions: list[str]) -> np.ndarray. def replay(sims: np.ndarray, threshold: float) -> SweepPoint. def closest_wrong_pair(sims: np.ndarray) -> tuple[float, str, str]: finds closest pair of questions with different intents to establish real safety margin. Sweep output shows: 0.50 -> 45 hits (75%), 9 false hits; 0.80 -> 35 hits (58%), 0 false hits, but closest wrong pair is at 0.819; 0.82 -> 32 hits (53%), 0 false hits.\nSlide 15: Interpretation of sweep data: setting threshold at 0.82 sits right above the closest wrong pair (0.819: 'Is there any extra charge for cash on delivery?' vs 'Is cash on delivery available?'). Rule: set threshold just above the closest wrong pair observed. Section 10. The Report and the Chart. Generates totals table, cumulative cost chart, and log-scale latency chart using matplotlib. Save as src/report.py.\nSlide 16: Code for src/report.py: def totals(records: list[Record]) -> dict (calculates LLM calls, cost, p50_ms, hit_p50_ms). def print_totals(plain: list[Record], cached: list[Record]) -> float (prints cost comparison and percent saved). def _style(...), def plot_cost(...).\nSlide 17: def plot_latency(...), def save_chart(...). Section 11. The Command Line. Connects functionality into commands: ask, replay, sweep, invalidate-demo, clear. Save as src/main.py.\nSlide 18: Code for src/main.py: async def run_traffic(...), async def cmd_replay(...), def cmd_sweep(...).\nSlide 19: Want Complete Version? All Notes are shared as PDF with Exclusive Instagram Subscribers With 1000+ Other Resources. How to get them: Go to our bio and subscribe to our page & join our exclusive subscribers channel.",
+   "note": "",
+   "saved": "2026-10-26",
+   "kind": "carousel",
+   "items": 20,
+   "insights": [
+    "d0ba52c099",
+    "d1f22e9d2e",
+    "b8b15edb2e",
+    "cef7158d78",
+    "cd2e09e62e"
+   ],
+   "tools": [
+    "chroma",
+    "gemini-api",
+    "matplotlib",
+    "uv"
+   ]
+  },
   {
    "id": "Dcz3tE5AnPu",
    "url": "https://www.instagram.com/reel/Dcz3tE5AnPu/",
