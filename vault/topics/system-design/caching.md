@@ -7,11 +7,6 @@ _6 insights from 3 reels · `system-design/caching`_
 
 - **Distributing cache keys using simple modulo hashing (hash(key) % N) causes the majority of keys to remap whenever node count changes, precipitating cache stampedes and database overload.** · _pitfall_ · [Ddjy_ZEpJJ0](../../reels/Ddjy_ZEpJJ0.md)
 - **Hashing user identifiers or client IP addresses ensures sticky sessions to maximize server-side in-memory cache reuse.** · _pattern_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)
-
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
-
 - **A semantic cache sits in front of an LLM by embedding incoming queries and serving stored answers when query cosine similarity meets or exceeds a target threshold.** · _pattern_ · [DeVz6IUmNBq](../../reels/DeVz6IUmNBq.md)
 - **Semantic cache thresholds should be chosen empirically by replaying intent-labeled historical queries and setting the cutoff immediately above the highest similarity score observed between queries of differing intents.** · _principle_ · [DeVz6IUmNBq](../../reels/DeVz6IUmNBq.md)
 - **Semantic caching should only be applied to shared, non-personalized knowledge queries, as caching user-specific queries risks data leakage across customers.** · _tradeoff_ · [DeVz6IUmNBq](../../reels/DeVz6IUmNBq.md)

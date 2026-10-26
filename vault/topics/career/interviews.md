@@ -3,6 +3,21 @@
 # Interviews
 _20 insights from 6 reels · `career/interviews`_
 
+## Algorithmic Problem Solving Strategies
+
+_See also: Strategic Interview Questions_
+
+- **Relying on topic-tagged roadmaps prevents candidates from developing the skill to independently recognize problem patterns on unseen questions.** · _pitfall_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
+- **Mastering data structures and algorithms requires moving from tagged practice problems to untagged problems while documenting missed insights.** · _principle_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
+- **Using platform difficulty ratings that provide fine-grained calibration keeps problem-solving practice at the edge of current competence.** · _pattern_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
+- **Studying written editorial solutions generally builds stronger algorithmic intuition than passively watching video explanations.** · _principle_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
+- **For software engineering interview preparation, mastering foundational competitive programming tiers (such as Bronze, Silver, and select DP/graph topics) offers more structured progression than unorganized problem grinding.** · _pattern_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
+- **Standard competitive programming benchmarks like the CSES problem set directly map to common technical interview patterns found on platforms like LeetCode.** · _example_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
+- **Solve small input examples step-by-step by hand to uncover algorithm mechanics before attempting to generalize to larger inputs.** · _pattern_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
+- **Use problem input constraints to identify feasible time complexities rather than arbitrarily guessing algorithmic patterns based on problem wording.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
+- **When upsolving problems missed during contests, analyze the trigger that should have prompted the missing insight instead of merely labeling the pattern used.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
+- **Give difficult problems incubation time across multiple hours or days rather than looking up the editorial immediately upon getting stuck.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
+
 ## Strategic Interview Questions
 
 _See also: Algorithmic Problem Solving Strategies_
@@ -15,25 +30,5 @@ _See also: Algorithmic Problem Solving Strategies_
 - **Begin an interview introduction with a concise one-sentence thesis summarizing total years of experience, industries, and an overarching career theme.** · _pattern_ · [DdPPpmgBVS-](../../reels/DdPPpmgBVS-.md)
 - **Group past roles into thematic chapters and emphasize key learnings and realizations rather than reading through resume bullet points.** · _principle_ · [DdPPpmgBVS-](../../reels/DdPPpmgBVS-.md)
 - **Conclude the introductory response by connecting your prior career trajectory directly to why the specific role and company are the logical next step.** · _pattern_ · [DdPPpmgBVS-](../../reels/DdPPpmgBVS-.md)
-
-## Algorithmic Problem Solving Strategies
-
-_See also: Strategic Interview Questions_
-
-- **Relying on topic-tagged roadmaps prevents candidates from developing the skill to independently recognize problem patterns on unseen questions.** · _pitfall_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
-- **Mastering data structures and algorithms requires moving from tagged practice problems to untagged problems while documenting missed insights.** · _principle_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
-- **Using platform difficulty ratings that provide fine-grained calibration keeps problem-solving practice at the edge of current competence.** · _pattern_ · [DdecbsEnSGo](../../reels/DdecbsEnSGo.md)
-- **Studying written editorial solutions generally builds stronger algorithmic intuition than passively watching video explanations.** · _principle_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
-- **For software engineering interview preparation, mastering foundational competitive programming tiers (such as Bronze, Silver, and select DP/graph topics) offers more structured progression than unorganized problem grinding.** · _pattern_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
-- **Standard competitive programming benchmarks like the CSES problem set directly map to common technical interview patterns found on platforms like LeetCode.** · _example_ · [DeJKcDqE2q3](../../reels/DeJKcDqE2q3.md)
-
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
-
-- **Solve small input examples step-by-step by hand to uncover algorithm mechanics before attempting to generalize to larger inputs.** · _pattern_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
-- **Use problem input constraints to identify feasible time complexities rather than arbitrarily guessing algorithmic patterns based on problem wording.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
-- **When upsolving problems missed during contests, analyze the trigger that should have prompted the missing insight instead of merely labeling the pattern used.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
-- **Give difficult problems incubation time across multiple hours or days rather than looking up the editorial immediately upon getting stuck.** · _principle_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
 - **Reference company news or recent articles in interview questions to demonstrate thorough research.** · _pattern_ · [Dcz3tE5AnPu](../../reels/Dcz3tE5AnPu.md)
 - **Ask how to make a lasting impression on peers and management to signal strong ambition and a desire to excel.** · _pattern_ · [Dcz3tE5AnPu](../../reels/Dcz3tE5AnPu.md)

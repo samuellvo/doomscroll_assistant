@@ -1,13 +1,20 @@
-{"topic": "ai-ml/engineering", "name": "Operational Efficiency and Interfaces", "pinned": false}
+{"topic": "ai-ml/engineering", "name": "Interface Control and Automation", "pinned": false}
+{"topic": "ai-ml/engineering", "name": "Local Infrastructure and Token Efficiency", "pinned": false}
+{"topic": "ai-ml/engineering", "name": "Structured Prompting and Templates", "pinned": false}
+{"topic": "ai-ml/engineering", "name": "Validation and Safety Protocols", "pinned": false}
 {"topic": "career/interviews", "name": "Algorithmic Problem Solving Strategies", "pinned": false}
 {"topic": "career/interviews", "name": "Strategic Interview Questions", "pinned": false}
 {"topic": "frontend/performance", "name": "Image Loading Optimization", "pinned": false}
 {"topic": "game-dev/general", "name": "Player Engagement and Retention", "pinned": false}
 {"topic": "game-dev/roblox", "name": "Quality Assurance and Exploit Prevention", "pinned": false}
-{"topic": "software-engineering/practices", "name": "Autonomous Agent Workflows", "pinned": false}
-{"topic": "software-engineering/practices", "name": "Credential Protection Strategies", "pinned": false}
+{"topic": "software-engineering/practices", "name": "Credential Security Management", "pinned": false}
+{"topic": "software-engineering/practices", "name": "Deterministic Agent Workflows", "pinned": false}
+{"topic": "software-engineering/practices", "name": "High Uncertainty Mitigation", "pinned": false}
+{"topic": "software-engineering/practices", "name": "Organic Traffic Strategies", "pinned": false}
 {"topic": "system-design/api-design", "name": "Network Transport Security", "pinned": false}
 {"topic": "system-design/caching", "name": "Node Count and Hashing Strategies", "pinned": false}
 {"topic": "system-design/distributed-systems", "name": "Network Socket Optimization", "pinned": false}
 {"topic": "system-design/reliability", "name": "Automated Failure Recovery Mechanisms", "pinned": false}
-{"topic": "system-design/scalability", "name": "Workload Scaling Strategies", "pinned": false}
+{"topic": "system-design/scalability", "name": "Resource Efficiency Tactics", "pinned": false}
+{"topic": "system-design/scalability", "name": "Traffic Distribution Strategies", "pinned": false}
+{"topic": "system-design/scalability", "name": "Traffic Pattern Optimization", "pinned": false}

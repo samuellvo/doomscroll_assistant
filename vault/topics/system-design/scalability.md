@@ -3,19 +3,26 @@
 # Scalability
 _9 insights from 5 reels · `system-design/scalability`_
 
-## Workload Scaling Strategies
+## Resource Efficiency Tactics
 
-- **Read-heavy workloads can be scaled using in-memory caching, read replicas, or proper database indexing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
-- **Write-heavy workloads can be scaled through batching multiple writes, sharding data across nodes, or persisting writes asynchronously.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
-  - Nuance: Batching incoming write operations into a single database commit per event loop iteration significantly amortizes commit overhead and boosts concurrent throughput. (×2)
+_See also: Traffic Distribution Strategies, Traffic Pattern Optimization_
+
 - **Distributing static assets across global edge locations via CDNs reduces latency for geographically dispersed users.** · _pattern_ · [DeSfbOYJrMU](../../reels/DeSfbOYJrMU.md)
+- **Using io_uring reduces kernel context switches by batching asynchronous I/O operations between user space and the kernel.** · _pattern_ · [De0L0-wN7P8](../../reels/De0L0-wN7P8.md)
+- **Sharing a common pool of network buffers across active requests reduces memory consumption compared to allocating dedicated buffers for idle connections.** · _pattern_ · [De0L0-wN7P8](../../reels/De0L0-wN7P8.md)
+
+## Traffic Distribution Strategies
+
+_See also: Resource Efficiency Tactics, Traffic Pattern Optimization_
+
 - **Round-robin load balancing assumes uniform request execution times and can cause requests to pile up if an individual backend node degrades.** · _pitfall_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)
 - **Least connections routing routes incoming traffic to the server with the fewest open requests, naturally throttling traffic to degraded or slow nodes.** · _pattern_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)
 - **Layer 4 load balancers route traffic based on transport-layer IP and port information, whereas Layer 7 load balancers inspect application-layer HTTP payloads to route to specialized backend pools.** · _principle_ · [Deq2G1sgANK](../../reels/Deq2G1sgANK.md)
 
-## Ungrouped
+## Traffic Pattern Optimization
 
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
+_See also: Resource Efficiency Tactics, Traffic Distribution Strategies_
 
-- **Using io_uring reduces kernel context switches by batching asynchronous I/O operations between user space and the kernel.** · _pattern_ · [De0L0-wN7P8](../../reels/De0L0-wN7P8.md)
-- **Sharing a common pool of network buffers across active requests reduces memory consumption compared to allocating dedicated buffers for idle connections.** · _pattern_ · [De0L0-wN7P8](../../reels/De0L0-wN7P8.md)
+- **Read-heavy workloads can be scaled using in-memory caching, read replicas, or proper database indexing.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
+- **Write-heavy workloads can be scaled through batching multiple writes, sharding data across nodes, or persisting writes asynchronously.** · _pattern_ · [Ddec1pfRwwc](../../reels/Ddec1pfRwwc.md)
+  - Nuance: Batching incoming write operations into a single database commit per event loop iteration significantly amortizes commit overhead and boosts concurrent throughput. (×2)
