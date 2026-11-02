@@ -3,11 +3,18 @@
 # Roblox
 _6 insights from 4 reels · `game-dev/roblox`_
 
-## Quality Assurance and Exploit Prevention
+## Cloud Asset Management
+
+_See also: Multiplatform Quality Assurance_
 
 - **Roblox 3D asset uploads can be automated by granting an AI agent access to a Roblox Open Cloud API key with read and write permissions for assets.** · _pattern_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)
 - **UI layer names in design tools like Figma can be tagged with special suffixes to automatically generate interactive animations during platform import.** · _pattern_ · [DdkCWaDpjIc](../../reels/DdkCWaDpjIc.md)
+- **While the built-in Roblox Toolbox guarantees asset compatibility within Roblox Studio, finding high-quality, reliable models often requires manual curation.** · _pitfall_ · [Derd99tTw_j](../../reels/Derd99tTw_j.md)
+
+## Multiplatform Quality Assurance
+
+_See also: Cloud Asset Management_
+
 - **Test touch controls, UI tweening, and input schemes across PC, mobile, console, and VR to prevent platform-specific interaction bugs.** · _pitfall_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
 - **Attract initial players by investing in polished storefront assets such as icons, thumbnails, descriptions, and video trailers.** · _pattern_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
 - **Assemble a dedicated QA testing team to actively exploit games for vulnerabilities like duplication glitches and game-breaking bugs prior to public release.** · _principle_ · [DddJLuVBjnZ](../../reels/DddJLuVBjnZ.md)
-- **While the built-in Roblox Toolbox guarantees asset compatibility within Roblox Studio, finding high-quality, reliable models often requires manual curation.** · _pitfall_ · [Derd99tTw_j](../../reels/Derd99tTw_j.md)

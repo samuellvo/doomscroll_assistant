@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-10-26",
+ "generated": "2026-11-02",
  "stats": {
   "reels": 36,
   "insights": 92,
@@ -655,9 +655,11 @@
    "ungroupedCount": 0,
    "groups": [
     {
-     "name": "Quality Assurance and Exploit Prevention",
+     "name": "Cloud Asset Management",
      "pinned": false,
-     "related": [],
+     "related": [
+      "Multiplatform Quality Assurance"
+     ],
      "insights": [
       {
        "id": "f51a04c21f",
@@ -683,6 +685,27 @@
        "nuances": [],
        "conflicts": []
       },
+      {
+       "id": "f2307cc529",
+       "text": "While the built-in Roblox Toolbox guarantees asset compatibility within Roblox Studio, finding high-quality, reliable models often requires manual curation.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "Derd99tTw_j"
+       ],
+       "created": "2026-10-20",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": "Multiplatform Quality Assurance",
+     "pinned": false,
+     "related": [
+      "Cloud Asset Management"
+     ],
+     "insights": [
       {
        "id": "b6a66c949d",
        "text": "Test touch controls, UI tweening, and input schemes across PC, mobile, console, and VR to prevent platform-specific interaction bugs.",
@@ -716,18 +739,6 @@
         "DddJLuVBjnZ"
        ],
        "created": "2026-10-01",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "f2307cc529",
-       "text": "While the built-in Roblox Toolbox guarantees asset compatibility within Roblox Studio, finding high-quality, reliable models often requires manual curation.",
-       "kind": "pitfall",
-       "count": 1,
-       "sources": [
-        "Derd99tTw_j"
-       ],
-       "created": "2026-10-20",
        "nuances": [],
        "conflicts": []
       }
