@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (56)
+## New (59)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -16,6 +16,7 @@
 | [Ponytail](tools/ponytail.md) | `dev-tools/ai` | 2 | An optimization plugin designed to compress output and reduce token usage for coding agents. |
 | [SQLite](tools/sqlite.md) | `dev-tools/databases` | 2 | A lightweight, in-process, serverless relational database engine. |
 | [Agent Skills](tools/agent-skills.md) | `dev-tools/ai` | 1 | A collection of 24 modular software engineering workflow prompts and processes for AI agents. |
+| [agent-skills (Addy Osmani)](tools/agent-skills-addy-osmani.md) | `dev-tools/ai` | 1 | A structured repository of engineering skills and indexed workflows for AI coding agents. |
 | [AI Engineering From Scratch](tools/ai-engineering-from-scratch.md) | `dev-tools/ai` | 1 | An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles. |
 | [Amazon CloudFront](tools/amazon-cloudfront.md) | `dev-tools/infra` | 1 | A global content delivery network (CDN) service. |
 | [Amazon Cognito](tools/amazon-cognito.md) | `dev-tools/infra` | 1 | An identity management service for user authentication and authorization. |
@@ -54,11 +55,13 @@
 | [Playwright](tools/playwright.md) | `dev-tools/productivity` | 1 | A cross-browser end-to-end automation and testing framework. |
 | [PostHog](tools/posthog.md) | `dev-tools/infra` | 1 | An open-source product analytics, error monitoring, and session recording platform. |
 | [pstack](tools/pstack.md) | `dev-tools/ai` | 1 | A developer agent skill suite for architectural evaluation and repository tasks. |
+| [pstack (Lauren Tan)](tools/pstack-lauren-tan.md) | `dev-tools/ai` | 1 | A plugin and skill configuration repository focused on top-down codebase-level constraints for Cursor and coding agents. |
 | [Puppeteer](tools/puppeteer.md) | `dev-tools/productivity` | 1 | A Node.js library providing a high-level API to control headless Chrome or Chromium. |
 | [Roblox](tools/roblox.md) | `dev-tools/game-dev` | 1 | An online game platform and game creation system that allows users to program games and play games created by others. |
 | [Roblox Open Cloud API](tools/roblox-open-cloud-api.md) | `dev-tools/game-dev` | 1 | A set of REST APIs allowing external services to interact with Roblox resources and assets. |
 | [Roblox Studio](tools/roblox-studio.md) | `dev-tools/game-dev` | 1 | The development environment for creating Roblox experiences. |
 | [Roblox Toolbox](tools/roblox-toolbox.md) | `dev-tools/game-dev` | 1 | Roblox Studio's integrated marketplace for models, audio, meshes, and plugins. |
 | [Screenpipe](tools/screenpipe.md) | `dev-tools/ai` | 1 | An open-source desktop tool for 24/7 local screen and audio recording integrated with AI workflows. |
+| [skills (Matt Pocock)](tools/skills-matt-pocock.md) | `dev-tools/ai` | 1 | A repository of agent skills focused on product discovery, requirements clarification, and PRD drafting. |
 | [Strix](tools/strix.md) | `dev-tools/ai` | 1 | An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities. |
 | [uv](tools/uv.md) | `dev-tools/runtimes-and-languages` | 1 | A fast Python package and project manager written in Rust. |

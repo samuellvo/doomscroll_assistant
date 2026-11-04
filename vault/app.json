@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "generated": "2026-11-02",
+ "generated": "2026-11-04",
  "stats": {
-  "reels": 36,
-  "insights": 92,
-  "tools": 56,
-  "ungrouped": 7
+  "reels": 37,
+  "insights": 95,
+  "tools": 59,
+  "ungrouped": 8
  },
  "topics": [
   {
    "path": "ai-ml/engineering",
    "title": "Engineering",
    "area": "AI ML",
-   "insightCount": 20,
-   "reelCount": 12,
-   "ungroupedCount": 0,
+   "insightCount": 21,
+   "reelCount": 13,
+   "ungroupedCount": 1,
    "groups": [
     {
      "name": "Local Infrastructure and Token Efficiency",
@@ -277,6 +277,25 @@
         "Dd9NdbFxJLo"
        ],
        "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "f513889091",
+       "text": "Applying 'The Bitter Lesson' to AI coding agents means defining boundary constraints and evaluation tests rather than micromanaging reasoning steps, allowing rules to be ablated as base model capabilities improve.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DfTRO1qHAQy"
+       ],
+       "created": "2026-11-04",
        "nuances": [],
        "conflicts": []
       }
@@ -750,8 +769,8 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 11,
-   "reelCount": 8,
+   "insightCount": 13,
+   "reelCount": 9,
    "ungroupedCount": 0,
    "groups": [
     {
@@ -771,7 +790,16 @@
         "DdXLdluKNwi"
        ],
        "created": "2026-09-30",
-       "nuances": [],
+       "nuances": [
+        {
+         "text": "Structuring AI coding agent skill packs generally follows one of three paradigms: process-based step-by-step roadmaps, environment-enforced code constraints, or product-clarification interrogations.",
+         "count": 1
+        },
+        {
+         "text": "For existing (brownfield) codebases, embedding constraints into automated CI/CD checks and linting rules is often more resilient than relying solely on prompting guidelines.",
+         "count": 1
+        }
+       ],
        "conflicts": []
       },
       {
@@ -1647,6 +1675,22 @@
    ]
   },
   {
+   "id": "agent-skills-addy-osmani",
+   "name": "agent-skills (Addy Osmani)",
+   "whatItIs": "A structured repository of engineering skills and indexed workflows for AI coding agents.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/addyosmani/agent-skills",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-11-04",
+   "mentions": [
+    {
+     "reel": "DfTRO1qHAQy",
+     "claim": "Highlighted as a prime example of a linear, zero-to-one master index approach to guiding agent engineering tasks."
+    }
+   ]
+  },
+  {
    "id": "ai-engineering-from-scratch",
    "name": "AI Engineering From Scratch",
    "whatItIs": "An open-source, comprehensive 20-phase curriculum and repository covering full-stack AI engineering from first principles.",
@@ -2255,6 +2299,22 @@
    ]
   },
   {
+   "id": "pstack-lauren-tan",
+   "name": "pstack (Lauren Tan)",
+   "whatItIs": "A plugin and skill configuration repository focused on top-down codebase-level constraints for Cursor and coding agents.",
+   "category": "dev-tools/ai",
+   "link": "",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-11-04",
+   "mentions": [
+    {
+     "reel": "DfTRO1qHAQy",
+     "claim": "Praised for hardening existing brownfield codebases using CI/CD rules and linters rather than bottom-up prompting."
+    }
+   ]
+  },
+  {
    "id": "puppeteer",
    "name": "Puppeteer",
    "whatItIs": "A Node.js library providing a high-level API to control headless Chrome or Chromium.",
@@ -2351,6 +2411,22 @@
    ]
   },
   {
+   "id": "skills-matt-pocock",
+   "name": "skills (Matt Pocock)",
+   "whatItIs": "A repository of agent skills focused on product discovery, requirements clarification, and PRD drafting.",
+   "category": "dev-tools/ai",
+   "link": "https://github.com/mattpocock/skills",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-11-04",
+   "mentions": [
+    {
+     "reel": "DfTRO1qHAQy",
+     "claim": "Featured as the leading example of product-direction-focused agent skills like 'grill-me' to uncover edge cases."
+    }
+   ]
+  },
+  {
    "id": "strix",
    "name": "Strix",
    "whatItIs": "An open-source AI penetration testing agent that identifies and fixes application security vulnerabilities.",
@@ -2384,6 +2460,28 @@
   }
  ],
  "reels": [
+  {
+   "id": "DfTRO1qHAQy",
+   "url": "https://www.instagram.com/reel/DfTRO1qHAQy/",
+   "author": "George Wang",
+   "title": "Three Philosophies for Structuring AI Coding Agent Skills",
+   "summary": "This video compares three approaches to structuring AI coding agent plugins and skills: process-driven (Addy Osmani), codebase constraint-driven (Lauren Tan), and product-driven (Matt Pocock). It advocates applying 'The Bitter Lesson' to agent instructions by constraining outcomes and testing rules for ablation rather than micromanaging model behavior.",
+   "transcript": "One developer just handed the entire planet the power to replace every engineer alive. Today is week two, day two of me explaining how to be a 10x AI-native builder. My name is George, and I've been a FAANG software engineer for over five years. I have a Master's in AI, and I'm also a tech content creator, and I use AI to make all of my videos. If you've been keeping up with tech Twitter over the past year or so, you'll see a lot of these goated engineers start to build these skills and plug-in packs to where they explain their entire engineering architecture. I have a list of about 10 to 20 repos that I've kept up to date with. I do feel like there are some key engineering philosophy differences between all of them. And for today, I want to focus on Addy Osmani, Lauren Tan's pstack, and Matt Pocock skills. Starting with Addy Osmani, I feel like he probably has the most linear, zero to one structure that is super easy to understand. His GitHub repo is called agent-skills, and if you go into his skills, he actually has this master index, which kind of gives you this like tree-like structure on what to do. So for example, don't know what you want yet, then you can use interview-me. If you're implementing code, then he has a series of steps including front-end UI engineering. Lauren Tan's pstack is a lot more top-down than Addy Osmani's skills. And what I mean by that is that her whole philosophy is really hardening the codebase so that all of the CI/CD, all of the lint rules, everything exists in the codebase so that you don't need to have a bottom-up structure. Now this works extremely well for brownfield projects in my opinion, because you can implement a lot of these rules and guidelines based off of the code that already exists. Finally, you have Matt Pocock skills, which in my opinion is more about figuring out the general direction of your project using the grill-me skill, understanding the PRDs, understanding sort of the edge cases around the general idea of the project, and it's more focused on the product itself. Now, in my opinion, I definitely feel like as the models get better, a lot of these skills will be obsolete because some of them violate the Bitter Lesson rule. And the whole idea with the Bitter Lesson is that you want to establish the rules of the game for the agent so that the agent performs well, but you don't want to over-instruct it. Because of that, I ended up building my own coding agent called George Coding Agent, which is based off of all three of these repos, as well as the other repos who I've looked at. And I kind of wanted to not only take what I felt made the most sense, but also evaluate it with Bitter Lesson so that there is a ranking system of things that will eventually get removed as the models get better. Comment PLUGIN below and I will send you all the repos I've mentioned in this video as well as my own George Coding Agent.",
+   "note": "",
+   "saved": "2026-11-04",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "2ddd0511e1",
+    "3f61704d0c",
+    "f513889091"
+   ],
+   "tools": [
+    "agent-skills-addy-osmani",
+    "pstack-lauren-tan",
+    "skills-matt-pocock"
+   ]
+  },
   {
    "id": "DeVz6IUmNBq",
    "url": "https://www.instagram.com/p/DeVz6IUmNBq/",
