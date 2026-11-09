@@ -27,10 +27,11 @@ _See also: Local Infrastructure and Token Efficiency, Structured Prompting and T
 - **Drafting an explicit PRD through an interactive questioning skill clarifies architectural requirements for both the developer and coding agent before writing implementation code.** · _pattern_ · [DeZqqXvASHs](../../reels/DeZqqXvASHs.md)
 - **Evaluating code with an independent agent operating in a clean context window prevents contamination and ensures alignment with broader project architecture and standards.** · _principle_ · [DeZqqXvASHs](../../reels/DeZqqXvASHs.md)
 - **Subjecting agent-generated code to adversarial review agents helps simplify logic and strip unnecessary bloat.** · _pattern_ · [DeZqqXvASHs](../../reels/DeZqqXvASHs.md)
+- **Applying 'The Bitter Lesson' to AI coding agents means defining boundary constraints and evaluation tests rather than micromanaging reasoning steps, allowing rules to be ablated as base model capabilities improve.** · _principle_ · [DfTRO1qHAQy](../../reels/DfTRO1qHAQy.md)
 
 ## Structured Prompting and Templates
 
-_See also: Local Infrastructure and Token Efficiency, Validation and Safety Protocols_
+_See also: Validation and Safety Protocols, Local Infrastructure and Token Efficiency_
 
 - **Mastering AI engineering effectively follows a sequential progression starting from math and machine learning fundamentals up through building custom LLMs and multi-agent autonomous systems.** · _pattern_ · [DYvxUUvRv97](../../reels/DYvxUUvRv97.md)
 - **Standardized open-source legal document templates can be supplied as prompt context to LLMs like Claude to generate custom legal agreements.** · _pattern_ · [DeFjXe4AboQ](../../reels/DeFjXe4AboQ.md)
@@ -42,9 +43,3 @@ _See also: Local Infrastructure and Token Efficiency, Validation and Safety Prot
 
 - **Integrating an in-page AI GUI agent via a single script tag allows users to control web application features using natural language.** · _pattern_ · [Dd3pfthsmAq](../../reels/Dd3pfthsmAq.md)
 - **Converting graphical interface controls into command-line interfaces enables LLM agents to reliably operate desktop software without relying on vision-based UI automation.** · _pattern_ · [Dd9NdbFxJLo](../../reels/Dd9NdbFxJLo.md)
-
-## Ungrouped
-
-_New arrivals. Sorted into groups weekly, or when you ask Claude._
-
-- **Applying 'The Bitter Lesson' to AI coding agents means defining boundary constraints and evaluation tests rather than micromanaging reasoning steps, allowing rules to be ablated as base model capabilities improve.** · _principle_ · [DfTRO1qHAQy](../../reels/DfTRO1qHAQy.md)
