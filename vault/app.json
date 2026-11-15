@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-11-09",
+ "generated": "2026-11-15",
  "stats": {
-  "reels": 37,
-  "insights": 95,
+  "reels": 38,
+  "insights": 98,
   "tools": 59,
-  "ungrouped": 7
+  "ungrouped": 10
  },
  "topics": [
   {
@@ -762,9 +762,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 13,
-   "reelCount": 9,
-   "ungroupedCount": 0,
+   "insightCount": 16,
+   "reelCount": 10,
+   "ungroupedCount": 3,
    "groups": [
     {
      "name": "Deterministic Agent Workflows",
@@ -942,6 +942,49 @@
         "DeKAwyEsCVq"
        ],
        "created": "2026-10-07",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "c80b017f09",
+       "text": "Internship code quality is tracked by the trajectory of code review cycles, progressing from multiple revision rounds initially to landing pull requests with minimal nits and zero revisions by the end.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "db8169ab8f",
+       "text": "Exceeding expectations in an internship involves finishing well-scoped starter projects early and proactively proposing enhancements or subsequent project scopes.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "13f4b39414",
+       "text": "Engineering productivity and impact are assessed through thorough design documentation and architectural trade-off evaluations rather than raw volume of lines of code.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
        "nuances": [],
        "conflicts": []
       }
@@ -2453,6 +2496,24 @@
   }
  ],
  "reels": [
+  {
+   "id": "DfvBNR9IYCd",
+   "url": "https://www.instagram.com/reel/DfvBNR9IYCd/",
+   "author": "Ryan Peterman",
+   "title": "How to get a return offer from a FAANG internship",
+   "summary": "Engineering managers share strategies for succeeding as a software engineering intern and securing a return offer. Success is driven by project completion speed, reducing code review iterations, and demonstrating initiative through follow-up work. Additionally, productivity is measured by technical depth—such as comprehensive design documents evaluating architectural trade-offs—rather than lines of code written.",
+   "transcript": "How to get a return offer from FAANG internships\nSlide: HOW TO SUCCEED AS AN INTERN?\nWhen you get into that internship, they're going to give you a project. And they're going to see how quickly you can get the project done. If you can do that project in half of your internship's time, obviously that's going to be really good. Another thing is the quality of your work. You can measure that by how many times your code needs to be reviewed until it's submittable. At the beginning of the internship, you write code and then it's trash and it needs to be reviewed many, many times because you don't know the code base yet. But ideally by the end of the internship, your code should be reviewed with nits and landing with one or zero revisions. Lastly, after you finish that project, what is that thing that you do afterwards? If you propose improvements on top of your project, maybe you propose a new project entirely, like that, that's like a really strong internship performance. Most of the time, internship projects should be pretty well scoped. They're really just trying to see if you can do some basic coding. During my junior year, my internship was at Google. I was halfway through the internship and I had submitted like 300 lines of code. And I look at my friend and they've submitted 11K lines of code. And I'm like, oh shit. While lines of code is definitely part of the metrics that people might use to evaluate your productivity, they also look at other things. So for me, I wrote a really complex design doc that explored a lot of pros and cons of different approaches.",
+   "note": "",
+   "saved": "2026-11-15",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "c80b017f09",
+    "db8169ab8f",
+    "13f4b39414"
+   ],
+   "tools": []
+  },
   {
    "id": "DfTRO1qHAQy",
    "url": "https://www.instagram.com/reel/DfTRO1qHAQy/",
