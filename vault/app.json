@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "stats": {
   "reels": 38,
   "insights": 98,
   "tools": 59,
-  "ungrouped": 10
+  "ungrouped": 7
  },
  "topics": [
   {
@@ -764,13 +764,13 @@
    "area": "Software Engineering",
    "insightCount": 16,
    "reelCount": 10,
-   "ungroupedCount": 3,
+   "ungroupedCount": 0,
    "groups": [
     {
      "name": "Deterministic Agent Workflows",
      "pinned": false,
      "related": [
-      "Credential Security Management",
+      "Organic Traffic Strategies",
       "High Uncertainty Mitigation"
      ],
      "insights": [
@@ -830,6 +830,42 @@
        "created": "2026-10-20",
        "nuances": [],
        "conflicts": []
+      },
+      {
+       "id": "c80b017f09",
+       "text": "Internship code quality is tracked by the trajectory of code review cycles, progressing from multiple revision rounds initially to landing pull requests with minimal nits and zero revisions by the end.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "db8169ab8f",
+       "text": "Exceeding expectations in an internship involves finishing well-scoped starter projects early and proactively proposing enhancements or subsequent project scopes.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "13f4b39414",
+       "text": "Engineering productivity and impact are assessed through thorough design documentation and architectural trade-off evaluations rather than raw volume of lines of code.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DfvBNR9IYCd"
+       ],
+       "created": "2026-11-15",
+       "nuances": [],
+       "conflicts": []
       }
      ]
     },
@@ -837,8 +873,8 @@
      "name": "Organic Traffic Strategies",
      "pinned": false,
      "related": [
-      "High Uncertainty Mitigation",
-      "Deterministic Agent Workflows"
+      "Deterministic Agent Workflows",
+      "High Uncertainty Mitigation"
      ],
      "insights": [
       {
@@ -942,49 +978,6 @@
         "DeKAwyEsCVq"
        ],
        "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": null,
-     "pinned": false,
-     "related": [],
-     "insights": [
-      {
-       "id": "c80b017f09",
-       "text": "Internship code quality is tracked by the trajectory of code review cycles, progressing from multiple revision rounds initially to landing pull requests with minimal nits and zero revisions by the end.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DfvBNR9IYCd"
-       ],
-       "created": "2026-11-15",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "db8169ab8f",
-       "text": "Exceeding expectations in an internship involves finishing well-scoped starter projects early and proactively proposing enhancements or subsequent project scopes.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DfvBNR9IYCd"
-       ],
-       "created": "2026-11-15",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "13f4b39414",
-       "text": "Engineering productivity and impact are assessed through thorough design documentation and architectural trade-off evaluations rather than raw volume of lines of code.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DfvBNR9IYCd"
-       ],
-       "created": "2026-11-15",
        "nuances": [],
        "conflicts": []
       }
