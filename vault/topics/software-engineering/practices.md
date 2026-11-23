@@ -3,38 +3,33 @@
 # Practices
 _16 insights from 10 reels · `software-engineering/practices`_
 
-## Deterministic Agent Workflows
+## High Uncertainty Mitigation
 
-_See also: Organic Traffic Strategies, High Uncertainty Mitigation_
+_See also: Credential Security Management, Organic Traffic Strategies_
 
-- **Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.** · _principle_ · [DdXLdluKNwi](../../reels/DdXLdluKNwi.md)
-  - Nuance: Structuring AI coding agent skill packs generally follows one of three paradigms: process-based step-by-step roadmaps, environment-enforced code constraints, or product-clarification interrogations.
-  - Nuance: For existing (brownfield) codebases, embedding constraints into automated CI/CD checks and linting rules is often more resilient than relying solely on prompting guidelines.
-- **Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.** · _pattern_ · [Dd_qig-AS8Y](../../reels/Dd_qig-AS8Y.md)
-- **Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.** · _pattern_ · [DeHphfnxfZg](../../reels/DeHphfnxfZg.md)
+- **De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.** · _principle_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
+- **Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.** · _pattern_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
 - **Stress test optimized solutions against a naive, guaranteed-correct brute-force implementation using randomized inputs to catch subtle edge-case bugs.** · _pattern_ · [Der3XLgjh4R](../../reels/Der3XLgjh4R.md)
 - **Internship code quality is tracked by the trajectory of code review cycles, progressing from multiple revision rounds initially to landing pull requests with minimal nits and zero revisions by the end.** · _pattern_ · [DfvBNR9IYCd](../../reels/DfvBNR9IYCd.md)
 - **Exceeding expectations in an internship involves finishing well-scoped starter projects early and proactively proposing enhancements or subsequent project scopes.** · _principle_ · [DfvBNR9IYCd](../../reels/DfvBNR9IYCd.md)
 - **Engineering productivity and impact are assessed through thorough design documentation and architectural trade-off evaluations rather than raw volume of lines of code.** · _principle_ · [DfvBNR9IYCd](../../reels/DfvBNR9IYCd.md)
 
+## Credential Security Management
+
+_See also: High Uncertainty Mitigation, Organic Traffic Strategies_
+
+- **API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.** · _principle_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)
+- **Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.** · _principle_ · [Db7Vx2Hhf9c](../../reels/Db7Vx2Hhf9c.md)
+- **Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.** · _principle_ · [DdXLdluKNwi](../../reels/DdXLdluKNwi.md)
+  - Nuance: Structuring AI coding agent skill packs generally follows one of three paradigms: process-based step-by-step roadmaps, environment-enforced code constraints, or product-clarification interrogations.
+  - Nuance: For existing (brownfield) codebases, embedding constraints into automated CI/CD checks and linting rules is often more resilient than relying solely on prompting guidelines.
+- **Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.** · _pattern_ · [Dd_qig-AS8Y](../../reels/Dd_qig-AS8Y.md)
+- **Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.** · _pattern_ · [DeHphfnxfZg](../../reels/DeHphfnxfZg.md)
+
 ## Organic Traffic Strategies
 
-_See also: Deterministic Agent Workflows, High Uncertainty Mitigation_
+_See also: High Uncertainty Mitigation, Credential Security Management_
 
 - **Do not model SEO strategies after large enterprise brands, as high domain authority often masks poor practices like keyword stuffing that eventually suffer ranking drops.** · _pitfall_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
 - **Optimize target keyword placement by prioritizing the page title, URL slug, H1 heading, and the beginning of the first sentence.** · _pattern_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
 - **Build domain authority by acquiring backlinks that drive real referral traffic rather than relying solely on keyword volume.** · _principle_ · [DagE_4PML7C](../../reels/DagE_4PML7C.md)
-
-## Credential Security Management
-
-_See also: Deterministic Agent Workflows, Organic Traffic Strategies_
-
-- **API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.** · _principle_ · [Dd4_kY-StGS](../../reels/Dd4_kY-StGS.md)
-- **Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.** · _principle_ · [Db7Vx2Hhf9c](../../reels/Db7Vx2Hhf9c.md)
-
-## High Uncertainty Mitigation
-
-_See also: Deterministic Agent Workflows, Organic Traffic Strategies_
-
-- **De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.** · _principle_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)
-- **Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.** · _pattern_ · [DeKAwyEsCVq](../../reels/DeKAwyEsCVq.md)

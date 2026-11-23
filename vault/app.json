@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-11-16",
+ "generated": "2026-11-23",
  "stats": {
   "reels": 38,
   "insights": 98,
@@ -767,55 +767,34 @@
    "ungroupedCount": 0,
    "groups": [
     {
-     "name": "Deterministic Agent Workflows",
+     "name": "High Uncertainty Mitigation",
      "pinned": false,
      "related": [
-      "Organic Traffic Strategies",
-      "High Uncertainty Mitigation"
+      "Credential Security Management",
+      "Organic Traffic Strategies"
      ],
      "insights": [
       {
-       "id": "b34a21ed9f",
-       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
+       "id": "ca518e760e",
+       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
        "kind": "principle",
        "count": 1,
        "sources": [
-        "DdXLdluKNwi"
+        "DeKAwyEsCVq"
        ],
-       "created": "2026-09-30",
-       "nuances": [
-        {
-         "text": "Structuring AI coding agent skill packs generally follows one of three paradigms: process-based step-by-step roadmaps, environment-enforced code constraints, or product-clarification interrogations.",
-         "count": 1
-        },
-        {
-         "text": "For existing (brownfield) codebases, embedding constraints into automated CI/CD checks and linting rules is often more resilient than relying solely on prompting guidelines.",
-         "count": 1
-        }
-       ],
-       "conflicts": []
-      },
-      {
-       "id": "a8abd9ea2a",
-       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "Dd_qig-AS8Y"
-       ],
-       "created": "2026-10-03",
+       "created": "2026-10-07",
        "nuances": [],
        "conflicts": []
       },
       {
-       "id": "59fc34b8c3",
-       "text": "Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.",
+       "id": "9e27481add",
+       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
        "kind": "pattern",
        "count": 1,
        "sources": [
-        "DeHphfnxfZg"
+        "DeKAwyEsCVq"
        ],
-       "created": "2026-10-12",
+       "created": "2026-10-07",
        "nuances": [],
        "conflicts": []
       },
@@ -870,11 +849,90 @@
      ]
     },
     {
+     "name": "Credential Security Management",
+     "pinned": false,
+     "related": [
+      "High Uncertainty Mitigation",
+      "Organic Traffic Strategies"
+     ],
+     "insights": [
+      {
+       "id": "ca1135720a",
+       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Dd4_kY-StGS"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "5cb4776f2d",
+       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "Db7Vx2Hhf9c"
+       ],
+       "created": "2026-09-30",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "b34a21ed9f",
+       "text": "Equipping coding agents with structured lifecycle workflows—such as spec definition, incremental implementation, and test-driven development—improves the quality and consistency of generated software.",
+       "kind": "principle",
+       "count": 1,
+       "sources": [
+        "DdXLdluKNwi"
+       ],
+       "created": "2026-09-30",
+       "nuances": [
+        {
+         "text": "Structuring AI coding agent skill packs generally follows one of three paradigms: process-based step-by-step roadmaps, environment-enforced code constraints, or product-clarification interrogations.",
+         "count": 1
+        },
+        {
+         "text": "For existing (brownfield) codebases, embedding constraints into automated CI/CD checks and linting rules is often more resilient than relying solely on prompting guidelines.",
+         "count": 1
+        }
+       ],
+       "conflicts": []
+      },
+      {
+       "id": "a8abd9ea2a",
+       "text": "Recording UI action sequences discovered by an AI agent allows subsequent test runs to replay deterministically without incurring recurring model invocation latency or costs until UI changes invalidate the path.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "Dd_qig-AS8Y"
+       ],
+       "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "59fc34b8c3",
+       "text": "Autonomous fix-and-merge pipelines can use risk-based gating, automatically merging minor fixes while routing larger architectural changes to human review.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DeHphfnxfZg"
+       ],
+       "created": "2026-10-12",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
      "name": "Organic Traffic Strategies",
      "pinned": false,
      "related": [
-      "Deterministic Agent Workflows",
-      "High Uncertainty Mitigation"
+      "High Uncertainty Mitigation",
+      "Credential Security Management"
      ],
      "insights": [
       {
@@ -910,74 +968,6 @@
         "DagE_4PML7C"
        ],
        "created": "2026-10-03",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": "Credential Security Management",
-     "pinned": false,
-     "related": [
-      "Deterministic Agent Workflows",
-      "Organic Traffic Strategies"
-     ],
-     "insights": [
-      {
-       "id": "ca1135720a",
-       "text": "API keys should be passed to AI assistants via secure environment variables rather than pasted directly into chat prompts to avoid security leaks.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "Dd4_kY-StGS"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "5cb4776f2d",
-       "text": "Isolating environment variables in a single dot-env file coupled with git-ignore prevents credential leakage when syncing agent workspaces.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "Db7Vx2Hhf9c"
-       ],
-       "created": "2026-09-30",
-       "nuances": [],
-       "conflicts": []
-      }
-     ]
-    },
-    {
-     "name": "High Uncertainty Mitigation",
-     "pinned": false,
-     "related": [
-      "Deterministic Agent Workflows",
-      "Organic Traffic Strategies"
-     ],
-     "insights": [
-      {
-       "id": "ca518e760e",
-       "text": "De-risk high-uncertainty initiatives by attacking the hardest unknown first rather than building solvable supporting infrastructure that creates a false sense of progress.",
-       "kind": "principle",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
-       "nuances": [],
-       "conflicts": []
-      },
-      {
-       "id": "9e27481add",
-       "text": "Design cheap, early experiments aimed at invalidating core project assumptions quickly to avoid sunk-cost traps on unviable ideas.",
-       "kind": "pattern",
-       "count": 1,
-       "sources": [
-        "DeKAwyEsCVq"
-       ],
-       "created": "2026-10-07",
        "nuances": [],
        "conflicts": []
       }
