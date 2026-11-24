@@ -2,7 +2,7 @@
 
 # Tool queue
 
-## New (59)
+## New (60)
 
 | Tool | Category | Mentions | What it is |
 |---|---|---|---|
@@ -32,6 +32,7 @@
 | [Cloudflare Computer](tools/cloudflare-computer.md) | `dev-tools/ai` | 1 | A virtual filesystem and execution environment for AI agents that maintains authoritative state in SQLite. |
 | [CSES Problem Set](tools/cses-problem-set.md) | `products/other` | 1 | A curated collection of algorithmic competitive programming problems maintained by the University of Helsinki. |
 | [Cursor](tools/cursor.md) | `dev-tools/ai` | 1 | An AI-powered code editor with support for background and cloud coding agents. |
+| [Disc Image Studio](tools/disc-image-studio.md) | `dev-tools/productivity` | 1 | An open-source C# application that encodes visual images into optical disc data tracks for burning graphic patterns onto media. |
 | [e2e](tools/e2e.md) | `dev-tools/ai` | 1 | An open-source end-to-end testing framework for web and mobile applications powered by AI agents. |
 | [Figma](tools/figma.md) | `dev-tools/productivity` | 1 | A collaborative web-based interface design tool. |
 | [Fortran](tools/fortran.md) | `dev-tools/runtimes-and-languages` | 1 | A compiled imperative programming language historically used for scientific and numerical computing. |

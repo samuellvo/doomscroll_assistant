@@ -15,6 +15,7 @@ Approve (add to taxonomy.md) or remap them.
 Grouped by the weekly regroup, or ask Claude to group them now.
 
 - [game-dev/general](topics/game-dev/general.md): 1
+- [software-engineering/practices](topics/software-engineering/practices.md): 2
 - [system-design/async-processing](topics/system-design/async-processing.md): 1
 - [system-design/databases](topics/system-design/databases.md): 2
 - [system-design/distributed-systems](topics/system-design/distributed-systems.md): 1

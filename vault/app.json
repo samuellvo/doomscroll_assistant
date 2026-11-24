@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "stats": {
-  "reels": 38,
-  "insights": 98,
-  "tools": 59,
-  "ungrouped": 7
+  "reels": 39,
+  "insights": 100,
+  "tools": 60,
+  "ungrouped": 9
  },
  "topics": [
   {
@@ -762,9 +762,9 @@
    "path": "software-engineering/practices",
    "title": "Practices",
    "area": "Software Engineering",
-   "insightCount": 16,
-   "reelCount": 10,
-   "ungroupedCount": 0,
+   "insightCount": 18,
+   "reelCount": 11,
+   "ungroupedCount": 2,
    "groups": [
     {
      "name": "High Uncertainty Mitigation",
@@ -968,6 +968,37 @@
         "DagE_4PML7C"
        ],
        "created": "2026-10-03",
+       "nuances": [],
+       "conflicts": []
+      }
+     ]
+    },
+    {
+     "name": null,
+     "pinned": false,
+     "related": [],
+     "insights": [
+      {
+       "id": "ca9fc40c9c",
+       "text": "Optical disc hardware automatically scrambles written data with masks, requiring pre-scrambled payloads in reverse to produce specific physical burn textures.",
+       "kind": "pattern",
+       "count": 1,
+       "sources": [
+        "DfcTA74D4Bs"
+       ],
+       "created": "2026-11-24",
+       "nuances": [],
+       "conflicts": []
+      },
+      {
+       "id": "717b241b02",
+       "text": "Variations in physical optical disc track pitch distort linear geometry along spiral tracks unless calibrated against a photographed test burn.",
+       "kind": "pitfall",
+       "count": 1,
+       "sources": [
+        "DfcTA74D4Bs"
+       ],
+       "created": "2026-11-24",
        "nuances": [],
        "conflicts": []
       }
@@ -1950,6 +1981,22 @@
    ]
   },
   {
+   "id": "disc-image-studio",
+   "name": "Disc Image Studio",
+   "whatItIs": "An open-source C# application that encodes visual images into optical disc data tracks for burning graphic patterns onto media.",
+   "category": "dev-tools/productivity",
+   "link": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+   "status": "new",
+   "notes": "",
+   "firstSeen": "2026-11-24",
+   "mentions": [
+    {
+     "reel": "DfcTA74D4Bs",
+     "claim": "Demoed as a tool to burn visible pictures directly onto CDs, DVDs, and Blu-rays using standard burners."
+    }
+   ]
+  },
+  {
    "id": "e2e",
    "name": "e2e",
    "whatItIs": "An open-source end-to-end testing framework for web and mobile applications powered by AI agents.",
@@ -2479,6 +2526,25 @@
   }
  ],
  "reels": [
+  {
+   "id": "DfcTA74D4Bs",
+   "url": "https://www.instagram.com/reel/DfcTA74D4Bs/",
+   "author": "Git Hype",
+   "title": "Disc Image Studio: Drawing Pictures on Optical Discs Using Burned Data",
+   "summary": "Disc Image Studio allows users to burn visual artwork directly onto standard optical media (CDs, DVDs, Blu-rays) without printing. It converts images into dithered binary data, maps them onto the disc's spiral track, counteracts drive-level data scrambling via pre-masking, and compensates for real-world track pitch curvature.",
+   "transcript": "This picture isn't printed on the disc. It's data. Disc Image Studio makes it. Pick a blank CD, DVD, or Blu-ray, and import an image. The Tone panel turns it into black and white dots. A DVD's data runs along one spiral track, about 46,000 turns. The app walks it, asking which pixel lands here? Dark pixel: byte A5. Light pixel: byte 92. Each burns a different texture, so you see dark or light. Burners scramble data, so the app pre-scrambles it to cancel that. Export an ISO and burn it. First burns bend, because real track spacing varies. Burn a test target, trace its photo, and the app fits your disc. Now lines land straight, and your picture appears. Ordinary discs, ordinary burners: over 7,700 stars. The catch: results vary by disc and by burner. Use spare discs. Disc Image Studio. Link on GitHub.",
+   "note": "",
+   "saved": "2026-11-24",
+   "kind": "reel",
+   "items": 1,
+   "insights": [
+    "ca9fc40c9c",
+    "717b241b02"
+   ],
+   "tools": [
+    "disc-image-studio"
+   ]
+  },
   {
    "id": "DfvBNR9IYCd",
    "url": "https://www.instagram.com/reel/DfvBNR9IYCd/",
